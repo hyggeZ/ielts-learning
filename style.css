@@ -16,3 +16,14 @@ nav{top:var(--header-height);z-index:35;min-height:var(--tabs-height);height:var
 [data-theme=dark] .annotation.vocab{--color:#a18050;--wash:#2b261f}[data-theme=dark] .annotation.syntax{--color:#6687b1;--wash:#202a38}[data-theme=dark] .annotation.link{--color:#9674ae;--wash:#2d2534}[data-theme=dark] .annotation.expression{--color:#57989c;--wash:#1e2d30}[data-theme=dark] .annotation.structure{--color:#7b8491;--wash:#282d35}[data-theme=dark] .note.selected,[data-theme=dark] .annotation.selected{background:#354052}[data-theme=dark] .note-editor .save-state{color:#f2b4a5}
 @media(max-width:720px){.app-header{padding:0 12px;font-size:11px}.header-actions{gap:8px}.header-actions>button:not(.theme-toggle),.import-label{font-size:9px}nav{padding:0 12px}.reading-header{max-width:100%}}
 @media print{.app-header,nav,.filter-row,footer{display:none!important}.reading-header{position:static}body{background:white;color:black}.note{color:black}.note p,.note ul,.translation{color:#333}}
+
+/* Compact article strip; no visible scrollbar, all titles in the arrow menu. */
+.essay-navigation{overflow:visible;display:flex;padding-right:12px;gap:0;position:sticky}
+#essay-tabs{display:flex;flex:1;min-width:0;overflow-x:auto;overflow-y:hidden;scrollbar-width:none;position:relative}
+#essay-tabs::-webkit-scrollbar{display:none}
+#essay-picker-toggle{flex:0 0 32px;min-width:32px;max-width:32px;padding:8px;border:0;display:grid;place-items:center;background:var(--paper);color:var(--ink)}
+#essay-picker-toggle svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+#essay-picker{position:absolute;right:12px;top:100%;width:min(340px,calc(100vw - 24px));max-height:65vh;overflow-y:auto;border:1px solid var(--border);background:var(--paper);box-shadow:0 5px 16px #0002;padding:5px 0;z-index:45}
+#essay-picker button{display:block;width:100%;max-width:none;min-width:0;padding:9px 14px;white-space:normal;text-align:left;border:0;line-height:1.5}
+#essay-picker button:hover,#essay-picker button:focus-visible{background:var(--border);outline:none}
+#essay-picker button[aria-current=page]{color:var(--ink);font-weight:600}

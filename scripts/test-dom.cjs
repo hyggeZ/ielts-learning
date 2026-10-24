@@ -3,6 +3,12 @@ const path=require('node:path');const html=fs.readFileSync(path.join(__dirname,'
 function open(seed={}){return new JSDOM(html,{runScripts:'dangerously',url:'https://hyggez.github.io/ielts-learning/',pretendToBeVisual:true,beforeParse(w){w.matchMedia=()=>({matches:false});w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};for(const [k,v] of Object.entries(seed))w.localStorage.setItem(k,v);}});}
 const dom=open(),w=dom.window,d=w.document,essays=JSON.parse(d.querySelector('#essay-data').textContent);
 assert.equal(d.querySelectorAll('[data-essay]').length,25);
+assert.equal(d.querySelectorAll('[data-pick]').length,25);
+d.querySelector('#essay-picker-toggle').click();assert(!d.querySelector('#essay-picker').hidden);
+d.querySelector('[data-pick="essay-25"]').click();assert.equal(w.location.hash,'#essay-25');assert(d.querySelector('#essay-picker').hidden);
+d.querySelector('#essay-picker-toggle').click();d.querySelector('#essay-picker').dispatchEvent(new w.KeyboardEvent('keydown',{key:'Escape',bubbles:true}));assert(d.querySelector('#essay-picker').hidden);
+d.querySelector('#essay-picker-toggle').click();d.querySelector('main').click();assert(d.querySelector('#essay-picker').hidden);
+
 for(const e of essays){d.querySelector(`[data-essay="${e.id}"]`).click();assert.equal(d.querySelectorAll('.original').length,e.paragraphs.length);for(const mode of ['all','structure','syntax','link','expression']){d.querySelector(`[data-filter="${mode}"]`).click();assert.deepEqual([...d.querySelectorAll('.original')].map(p=>p.textContent),e.paragraphs);assert([...d.querySelectorAll('.left .note')].every(n=>n.hidden));for(const n of d.querySelectorAll('.right [data-category]'))assert.equal(n.hidden,mode!=='all'&&n.dataset.category!==mode);}}
 d.querySelector('[data-essay="essay-01"]').click();d.querySelector('[data-filter="all"]').click();
 d.querySelector('#translate').click();assert([...d.querySelectorAll('.trans')].every(e=>!e.hidden));d.querySelector('#translate').click();assert([...d.querySelectorAll('.trans')].every(e=>e.hidden));
