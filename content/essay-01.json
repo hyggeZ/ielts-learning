@@ -1,0 +1,884 @@
+{
+  "paragraphs": [
+    "In recent years, the rising academic burden on children has sparked widespread concern among parents and educators. While physical exercise is undeniably vital for childhood development, I disagree with the idea that study time should be reduced across the board. Instead, parents should focus on managing study efficiency so that children can engage in regular physical activity without compromising their academic foundation.",
+    "On the one hand, encouraging children to participate in physical activities brings distinct health and psychological benefits that pure academic work cannot provide. When children engage in regular sports, their bodies release endorphins and experience increased blood circulation, which helps relieve the mental strain accumulated from long hours of stationary learning. Furthermore, team sports like basketball or football create dynamic social settings where children must cooperate, handle victory and defeat, and resolve conflict with peers. These real-world interactions foster social competence and emotional resilience—qualities that traditional textbook study rarely cultivates.",
+    "On the other hand, simply cutting back on study time is a misplaced solution that could harm a child’s future opportunities. In most modern societies, academic performance remains the primary metric for high school and university admissions, which directly shapes a young person's career path. If parents blindly reduce study hours without addressing unproductive habits, children may simply fall behind in core subjects without gaining any meaningful athletic benefit. A far more effective approach is to eliminate inefficient study practices, such as passive memorization or digital distractions during homework. By mastering better time management, children can complete their academic tasks in less time, naturally freeing up room for sports.",
+    "In conclusion, I disagree that parents should deliberately cut down on study time just to accommodate more physical activity. Academic knowledge and physical fitness are not mutually exclusive; rather than treating them as a zero-sum trade-off, parents should guide children to study more efficiently, ensuring they have ample time for exercise while maintaining strong academic performance."
+  ],
+  "translations": [
+    "近年来，儿童日益加重的学业负担引发了家长和教育工作者的广泛关注。虽然体育锻炼对儿童成长无疑至关重要，但我不赞成一概缩减学习时间。相反，家长应着重改善学习效率，让孩子能够在不损害学业基础的前提下，经常参加体育活动。",
+    "一方面，鼓励孩子参加体育活动，能够带来单纯的学业学习无法提供的显著身心益处。孩子经常参加运动时，身体会释放内啡肽，血液循环也会加快，这有助于缓解长时间静坐学习积累的精神压力。此外，篮球、足球等团队运动会创造充满活力的社交情境，孩子必须在其中合作、面对胜负，并解决与同伴之间的冲突。这些现实生活中的互动能够培养社交能力和情绪韧性，而这些品质是传统课本学习很少能培养出来的。",
+    "另一方面，单纯缩减学习时间是一种没有找准问题的解决办法，可能损害孩子未来的发展机会。在大多数现代社会中，学业成绩仍然是高中和大学录取的首要衡量标准，而这会直接影响年轻人的职业道路。如果家长不解决低效的学习习惯，只是盲目减少学习时长，孩子可能只会在核心科目上落后，却没有获得任何实质性的运动益处。有效得多的办法是消除低效的学习做法，例如被动记忆，或在做作业时被电子设备分散注意力。通过更好地掌握时间管理方法，孩子能够用更少的时间完成学业任务，从而自然腾出运动的时间。",
+    "总之，我不赞成家长仅仅为了安排更多体育活动而刻意压缩学习时间。学科知识与身体健康并不相互排斥；家长不应把两者看作此消彼长的零和取舍，而应引导孩子提高学习效率，确保他们在保持良好学业表现的同时，有充足的时间锻炼。"
+  ],
+  "notes": [
+    {
+      "p": 0,
+      "q": "In recent years",
+      "c": "link",
+      "t": "时间背景，不是论证",
+      "e": "把讨论放入近年的背景中。现在完成时 has sparked 与这类时间范围常搭配；不是每道题都需要套一个“近年来”。",
+      "x": ""
+    },
+    {
+      "p": 0,
+      "q": "the rising academic burden on children",
+      "c": "vocab",
+      "t": "academic burden｜学业负担",
+      "e": "burden 是名词“负担”；rising 表示不断增加；on children 表明负担由谁承受。academic 在这里指学业的。",
+      "x": "搭配：reduce the academic burden on students 减轻学生的学业负担。"
+    },
+    {
+      "p": 0,
+      "q": "has sparked widespread concern among parents and educators",
+      "c": "vocab",
+      "t": "spark concern｜引发关注／担忧",
+      "e": "spark 原义为“火花”，这里是动词“引发”。widespread 修饰 concern；among 表示在家长与教育工作者这一群体中。educator 指教育工作者。",
+      "x": "句架：X has sparked widespread concern among Y.｜Excessive screen time has sparked concern among parents.（屏幕使用时间过长引发了家长的担忧。）"
+    },
+    {
+      "p": 0,
+      "q": "While physical exercise is undeniably vital for childhood development",
+      "c": "syntax",
+      "t": "While + 从句：先承认，再表态",
+      "e": "此处 while = although（虽然），不是“当……时”。从句主干是 physical exercise is vital；undeniably 是副词“不可否认地”。先承认运动的重要性，再限定反对的对象。",
+      "x": "While A is important, I disagree that B should …｜While homework is useful, I disagree that children should spend all evening on it.（虽然作业有用，但我不赞成孩子整晚都做作业。）"
+    },
+    {
+      "p": 0,
+      "q": "study time should be reduced",
+      "c": "syntax",
+      "t": "主语 + should be + 过去分词",
+      "e": "study time 是被减少的对象；should 表示“应该”；be reduced 是被动语态。这里 that study time should be reduced 是解释 idea 内容的同位语从句。主语不必是单个名词，也可以是名词短语或代词。",
+      "x": "Active: Parents should reduce study time. → Passive: Study time should be reduced.｜Unnecessary homework should be reduced.（应减少不必要的家庭作业。）"
+    },
+    {
+      "p": 0,
+      "q": "across the board",
+      "c": "vocab",
+      "t": "across the board｜全面地／一概地",
+      "e": "固定短语，此处修饰 should be reduced，意为不加区分地普遍减少。这个限定语很关键：作者反对的是“一刀切”。原题并没有明确说“一刀切”，这是作者给反对对象加上的限定。",
+      "x": ""
+    },
+    {
+      "p": 0,
+      "q": "Instead",
+      "c": "link",
+      "t": "替代方案：不要只减时长，要提效率",
+      "e": "不是普通的“另外”。它把论证从反对某做法转向推荐另一做法，后面应给出替代路径。",
+      "x": "X is ineffective. Instead, we should address its causes.（X 无效；相反，我们应解决其原因。）"
+    },
+    {
+      "p": 0,
+      "q": "parents should focus on managing study efficiency",
+      "c": "syntax",
+      "t": "focus on + 名词／动名词",
+      "e": "on 是介词，所以后面用 managing，而不是 manage。主干是 parents should focus on …。但 managing study efficiency 搭配略生硬，表达“提高效率”用 improving study efficiency 更自然。",
+      "x": "Parents should focus on improving study efficiency.（家长应着重提高学习效率。）"
+    },
+    {
+      "p": 0,
+      "q": "so that children can engage in regular physical activity",
+      "c": "syntax",
+      "t": "so that + 主语 + can：说明目的",
+      "e": "前面是家长采取的做法，后面是希望达成的目标。这里 so that 引导目的状语从句；不能只把它当作“所以”。engage in = 参与；in 后接名词或动名词。",
+      "x": "Schools can reduce repetitive homework so that students have more time for exercise.（学校可以减少重复性作业，让学生有更多时间锻炼。）"
+    },
+    {
+      "p": 0,
+      "q": "without compromising their academic foundation",
+      "c": "syntax",
+      "t": "without + doing：在不……的情况下",
+      "e": "without 是介词，后接动名词 compromising；compromise 在这里不是“妥协”，而是“损害、削弱”。整块表示参加运动时不牺牲学业基础，不宜直接标成让步从句。",
+      "x": "Children can exercise regularly without compromising their studies.（孩子可以经常锻炼，同时不影响学习。）"
+    },
+    {
+      "p": 1,
+      "q": "On the one hand",
+      "c": "link",
+      "t": "第一方面：承认运动的价值",
+      "e": "与下一段 On the other hand 成对。这里服务于“让步＋反驳”，并不能据此把题型判成双边讨论题。",
+      "x": ""
+    },
+    {
+      "p": 1,
+      "q": "encouraging children to participate in physical activities brings",
+      "c": "syntax",
+      "t": "动名词短语作主语：谓语用单数",
+      "e": "主语是整个 encouraging children to participate in physical activities，而不是 children；因此用 brings。内部是 encourage sb to do sth（鼓励某人做某事）。",
+      "x": "Encouraging students to read widely develops their vocabulary.（鼓励学生广泛阅读有助于增加词汇量。）"
+    },
+    {
+      "p": 1,
+      "q": "distinct health and psychological benefits that pure academic work cannot provide",
+      "c": "syntax",
+      "t": "benefits + that 定语从句",
+      "e": "that 指代 benefits，在从句中作 provide 的宾语。distinct = 明显的；psychological = 心理的；pure academic work 指单纯的学业学习。作者用 cannot 作较强的排他判断，可考虑用 may not fully provide 更审慎。",
+      "x": "X offers benefits that Y may not provide.（X 能带来 Y 未必能提供的益处。）"
+    },
+    {
+      "p": 1,
+      "q": "endorphins",
+      "c": "vocab",
+      "t": "endorphins｜内啡肽",
+      "e": "名词，文中指身体产生的一类与疼痛调节、愉悦感有关的物质。阅读认识即可，不必为了写得“高级”强行记忆专业词。本文的生理机制是范文的解释，并未给出研究证据。",
+      "x": ""
+    },
+    {
+      "p": 1,
+      "q": "which helps relieve the mental strain accumulated from long hours of stationary learning",
+      "c": "syntax",
+      "t": "which 补充说明 + 过去分词后置修饰",
+      "e": "which 在这里概括前面的生理变化及其作用。accumulated … 修饰 mental strain，可展开为 strain that has accumulated …；不是整句的新谓语。relieve strain = 缓解压力。stationary learning 不太自然，可改为 prolonged periods of sitting and studying。",
+      "x": "Regular exercise can relieve stress associated with schoolwork.（经常锻炼可以缓解与学业有关的压力。）"
+    },
+    {
+      "p": 1,
+      "q": "Furthermore",
+      "c": "link",
+      "t": "递进：从身心健康扩展到社交成长",
+      "e": "不是换个词重复“运动有益”，而是引入第二条独立的论证路径：团队运动 → 人际互动 → 社交与情绪能力。",
+      "x": ""
+    },
+    {
+      "p": 1,
+      "q": "social settings where children must cooperate, handle victory and defeat, and resolve conflict with peers",
+      "c": "syntax",
+      "t": "where 定语从句 + 三个并列动作",
+      "e": "where = in which，指在这些社交情境中。must 后并列 cooperate、handle、resolve，三个动词形式一致。peers 是同龄人／同辈；handle 在此为“应对”。",
+      "x": "Group projects create settings where students share ideas, divide tasks, and solve problems.（小组项目创造了学生交流想法、分工并解决问题的情境。）"
+    },
+    {
+      "p": 1,
+      "q": "foster social competence and emotional resilience",
+      "c": "vocab",
+      "t": "品质与能力：社交能力、情绪韧性",
+      "e": "foster = 培养／促进；social competence 是有效处理人际互动的能力；emotional resilience 是遭遇挫折后调整情绪、恢复状态的能力。二者适合教育、运动、成长类题目。",
+      "x": "搭配：develop social competence；build emotional resilience；foster cooperation（培养合作精神，迁移表达，非原文）。"
+    },
+    {
+      "p": 1,
+      "q": "qualities that traditional textbook study rarely cultivates",
+      "c": "syntax",
+      "t": "破折号后解释前面的两种能力",
+      "e": "qualities 是对 social competence 和 emotional resilience 的概括说明；that 引导定语从句，在从句中作 cultivates 的宾语。rarely 是“很少”，比 never 更有余地。",
+      "x": "cultivate patience / self-discipline（培养耐心／自律；迁移表达，非原文）。"
+    },
+    {
+      "p": 2,
+      "q": "On the other hand",
+      "c": "link",
+      "t": "第二方面：转入主要反对理由",
+      "e": "前段说明运动的价值，这段质疑“减少学习时长”这一办法，并提出替代方案。它不是在论证“运动有坏处”。",
+      "x": ""
+    },
+    {
+      "p": 2,
+      "q": "simply cutting back on study time is a misplaced solution that could harm a child’s future opportunities",
+      "c": "syntax",
+      "t": "动名词主语 + 表语 + 定语从句",
+      "e": "cutting back on study time 是主语；is 是谓语；a misplaced solution 是表语；that could harm … 修饰 solution。could 表示可能性，避免把损害说成必然。misplaced 在此指方法不恰当、没有对准问题。",
+      "x": "Simply increasing homework is not a solution to poor learning habits.（单纯增加作业并不能解决不良学习习惯。）"
+    },
+    {
+      "p": 2,
+      "q": "the primary metric for high school and university admissions",
+      "c": "vocab",
+      "t": "metric / admissions｜衡量标准／招生录取",
+      "e": "primary = 首要的；metric 是指标或衡量标准；admissions 在这里指学校录取。for 后说明指标的用途。文中把学业表现称为“首要指标”是概括性论据，不代表所有地区、学校都如此。",
+      "x": "academic performance 学业表现；admission criteria 录取标准（迁移表达）。"
+    },
+    {
+      "p": 2,
+      "q": "which directly shapes a young person's career path",
+      "c": "syntax",
+      "t": "which 的指代需要清楚",
+      "e": "作者想表达“学业表现影响升学，继而影响职业发展”，但 which 接在 admissions 后，具体指代不够清晰。可拆成两句，让因果链更明确。",
+      "x": "Academic performance strongly influences admission decisions. Access to further education can, in turn, shape a young person’s career prospects.（学业表现显著影响录取决定；升学机会又会影响职业前景。）"
+    },
+    {
+      "p": 2,
+      "q": "If parents blindly reduce study hours without addressing unproductive habits",
+      "c": "syntax",
+      "t": "If + 现在时，主句 + may：条件与风险",
+      "e": "不是虚拟语气，而是提出一种可能发生的情况。blindly = 盲目地；address 是“处理、解决”，不是“地址”；unproductive habits 指低效习惯。",
+      "x": "If schools increase homework without improving its quality, students may become less motivated.（若学校只增加作业却不提高质量，学生可能失去动力。）"
+    },
+    {
+      "p": 2,
+      "q": "fall behind in core subjects",
+      "c": "vocab",
+      "t": "fall behind in｜在……方面落后",
+      "e": "core subjects = 核心科目。fall behind in maths 是数学落后；fall behind their classmates 是落后于同学。不要把所有介词搭配机械互换。",
+      "x": ""
+    },
+    {
+      "p": 2,
+      "q": "A far more effective approach is to eliminate inefficient study practices",
+      "c": "syntax",
+      "t": "A more … approach is to do：提出更优方法",
+      "e": "far 修饰比较级 more effective，意为“有效得多”；不说 far effective。to eliminate … 作表语，说明方法是什么。eliminate = 消除。",
+      "x": "A more practical approach is to set clear study goals.（更实际的方法是设定明确的学习目标。）"
+    },
+    {
+      "p": 2,
+      "q": "such as passive memorization or digital distractions during homework",
+      "c": "vocab",
+      "t": "具体例子让“低效”可理解",
+      "e": "such as 引出例子；passive memorization = 被动记忆；digital distractions = 电子设备或数字内容造成的干扰。严格说 distractions 不是 practices，分类略松，可改成被动背诵和频繁查看手机两种行为。",
+      "x": "such as rote memorization and repeatedly checking a phone while doing homework（例如死记硬背和做作业时反复查看手机）。"
+    },
+    {
+      "p": 2,
+      "q": "By mastering better time management",
+      "c": "syntax",
+      "t": "By + doing：交代实现方法",
+      "e": "by 后接动名词 mastering。逻辑主语是后面的 children，也就是孩子掌握时间管理；不要写成 By managing time better, more exercise can be done. 这种主语不对应的句子。",
+      "x": "By planning their homework, children can avoid wasting time.（通过规划作业，孩子能避免浪费时间。）"
+    },
+    {
+      "p": 2,
+      "q": "naturally freeing up room for sports",
+      "c": "syntax",
+      "t": "现在分词短语：说明随之产生的结果",
+      "e": "freeing … 补充说明“更快完成学业任务”的结果；不是一个独立完整句。free up = 腾出；room 在这里不是房间，而是空间／余地，在本语境指运动的时间。",
+      "x": "Students can finish tasks sooner, leaving more time for rest.（学生可以更早完成任务，从而留出更多休息时间。）"
+    },
+    {
+      "p": 3,
+      "q": "In conclusion",
+      "c": "link",
+      "t": "结尾信号：收束立场和方案",
+      "e": "这段重申反对刻意压缩学习时间，并归纳效率方案，没有另起一个新的主要论点。",
+      "x": ""
+    },
+    {
+      "p": 3,
+      "q": "deliberately cut down on study time just to accommodate more physical activity",
+      "c": "vocab",
+      "t": "deliberately / accommodate｜刻意地／为……作安排",
+      "e": "cut down on = 减少；just to … = 仅仅为了……；accommodate 在此是为某活动留出安排上的空间，不是“提供住宿”。",
+      "x": ""
+    },
+    {
+      "p": 3,
+      "q": "not mutually exclusive",
+      "c": "vocab",
+      "t": "not mutually exclusive｜并不相互排斥",
+      "e": "mutually = 相互地；exclusive 在这个固定表达中表示排斥另一方。整体说明两者可以同时实现，不等于“两者完全一样”或“毫无冲突”。",
+      "x": "Academic success and a balanced lifestyle are not mutually exclusive.（学业成功与均衡生活可以兼得。）"
+    },
+    {
+      "p": 3,
+      "q": "rather than treating them as a zero-sum trade-off",
+      "c": "syntax",
+      "t": "rather than + doing：与其……不如……",
+      "e": "它与后面的 should guide … 构成行为选择。treat A as B = 把 A 视作 B；zero-sum trade-off 指一方获得就必须由另一方损失来交换的取舍。这个表达有力度，但不必在每篇结论中套用。",
+      "x": "Rather than adding more lessons, schools should improve teaching quality.（与其增加课时，学校更应改善教学质量。）"
+    },
+    {
+      "p": 3,
+      "q": "ensuring they have ample time for exercise while maintaining strong academic performance",
+      "c": "syntax",
+      "t": "结果分词 + 省略的 while 从句",
+      "e": "ensuring 补充说明引导孩子提高效率要达到的结果，后面省略 that：ensuring (that) they have …。while maintaining … 表示孩子在保持良好成绩的同时，不是此处又一次“虽然”。ample = 充足的。",
+      "x": "…, allowing students to rest while keeping up with their studies.（……使学生既能休息，也能跟上学业。）"
+    }
+  ],
+  "structure": [
+    {
+      "title": "引言｜背景 → 让步 → 立场 → 方案",
+      "role": "3 句。提出中心立场，不详细展开论据。",
+      "points": [
+        "S1：学业负担增加，引出家长与教育界的关注。",
+        "S2：承认运动重要；反对一刀切减少学习时间。",
+        "S3：提出替代方案——提高学习效率，以兼顾运动和学业。"
+      ],
+      "chain": "学业负担 → 承认运动价值 → 反对普遍减时 → 提高效率"
+    },
+    {
+      "title": "主体一｜让步：运动确实值得鼓励",
+      "role": "4 句，2 个主要论点。主题句统领两条收益。",
+      "points": [
+        "S1：总论点——运动带来学业学习难以充分提供的身心益处。",
+        "S2：论点① 身心健康：运动产生生理变化 → 缓解久坐学习的精神压力。",
+        "S3–S4：论点② 社交与情绪成长：团队运动 → 合作、面对胜负、解决冲突 → 社交能力与情绪韧性。"
+      ],
+      "chain": "运动 → 压力缓解；团队运动 → 真实互动 → 能力与品质成长"
+    },
+    {
+      "title": "主体二｜反驳：只减时间没有解决低效",
+      "role": "5 句。1 条核心反对理由 + 1 个替代方案；不是简单堆砌 5 个论点。",
+      "points": [
+        "S1：段落立场——单纯减时是错位的办法，可能损害未来机会。",
+        "S2–S3：解释风险——学业影响升学和发展；若坏习惯不变，减时可能造成落后，又未必带来运动收益。",
+        "S4–S5：给出方案与机制——消除低效做法 → 更好地管理时间 → 更快完成学业 → 腾出运动时间。"
+      ],
+      "chain": "只减时 + 低效习惯未改 → 学业风险；改习惯 → 提效率 → 有时间运动"
+    },
+    {
+      "title": "结论｜重申立场 → 兼顾两者",
+      "role": "2 句。收束前文，不添加新论据。",
+      "points": [
+        "S1：重申不赞成为运动而刻意压缩学习时间。",
+        "S2：否定零和取舍，重申通过效率兼顾学业与锻炼。"
+      ],
+      "chain": "反对机械减时 → 学业与运动可以兼顾 → 再次落到效率"
+    }
+  ],
+  "synonyms": [
+    [
+      "physical activities（题目）",
+      "physical exercise / regular sports / physical activity",
+      "都是运动相关表达，但 team sports 仅指团队运动，是下位类别；physical fitness 指身体健康／体能，是结果，不能直接替换活动。"
+    ],
+    [
+      "spend less time studying（题目）",
+      "study time should be reduced / cutting back on study time / reduce study hours / cut down on study time",
+      "表达减少学习时长，可变换主被动和动词搭配；不是减少知识的重要性。"
+    ],
+    [
+      "engage in",
+      "participate in",
+      "在“参加运动”的语境中相近，均接名词或动名词；encourage 是鼓励别人做，不是 participate 的同义词。"
+    ],
+    [
+      "foster",
+      "cultivate",
+      "在培养能力或品质的语境中接近；常搭配 competence、resilience、qualities。不能在任何语境都逐词替换。"
+    ],
+    [
+      "academic foundation",
+      "academic performance / academic knowledge / academic tasks",
+      "这是同一话题的词汇链，不是同义词：分别是基础、表现、知识、任务。保持概念准确比避免重复更重要。"
+    ],
+    [
+      "cut back on",
+      "cut down on / reduce",
+      "前两者需要 on；reduce 直接接宾语。可说 reduce study time，不说 reduce on study time。"
+    ]
+  ],
+  "vocab": [
+    [
+      "优先会用",
+      "spark concern",
+      "引发关注／担忧",
+      "Too much homework can spark concern among parents."
+    ],
+    [
+      "优先会用",
+      "be vital for",
+      "对……至关重要",
+      "Sleep is vital for healthy development."
+    ],
+    [
+      "优先会用",
+      "engage in / participate in",
+      "参与",
+      "Children should engage in regular exercise."
+    ],
+    [
+      "优先会用",
+      "relieve mental strain",
+      "缓解精神压力",
+      "Outdoor activities can relieve mental strain."
+    ],
+    [
+      "优先会用",
+      "resolve conflict with peers",
+      "解决与同伴的冲突",
+      "Children learn to resolve conflict with peers."
+    ],
+    [
+      "品质与能力",
+      "social competence",
+      "社交能力",
+      "Group activities help develop social competence."
+    ],
+    [
+      "品质与能力",
+      "emotional resilience",
+      "情绪韧性；受挫后的恢复能力",
+      "Facing setbacks can build emotional resilience."
+    ],
+    [
+      "优先会用",
+      "address unproductive habits",
+      "处理低效习惯",
+      "Parents should address unproductive study habits."
+    ],
+    [
+      "优先会用",
+      "fall behind in",
+      "在……方面落后",
+      "Students may fall behind in core subjects."
+    ],
+    [
+      "优先会用",
+      "free up time for",
+      "为……腾出时间（由原文 room 迁移）",
+      "Better planning frees up time for exercise."
+    ],
+    [
+      "优先会用",
+      "ample time for",
+      "充足的……时间",
+      "Children need ample time for rest."
+    ],
+    [
+      "阅读认识",
+      "endorphins / blood circulation",
+      "内啡肽／血液循环",
+      "专业生理词；本文理解即可，不列为优先输出词。"
+    ],
+    [
+      "阅读认识",
+      "primary metric / admissions",
+      "首要指标／招生录取",
+      "a key factor in university admissions（大学录取中的关键因素）"
+    ],
+    [
+      "进阶表达",
+      "mutually exclusive / zero-sum trade-off",
+      "相互排斥的／零和取舍",
+      "用于讨论两项目标是否能兼顾；先理解逻辑，再使用。"
+    ]
+  ],
+  "wordcount": 318,
+  "readerNotes": [
+    {
+      "p": 0,
+      "c": "vocab",
+      "q": "academic burden",
+      "t": "academic burden",
+      "e": "学业负担。burden n. 负担；academic adj. 学业的。"
+    },
+    {
+      "p": 0,
+      "c": "vocab",
+      "q": "sparked",
+      "t": "spark v.",
+      "e": "熟词生义：引发，而不是名词“火花”。此处引发广泛关注。"
+    },
+    {
+      "p": 0,
+      "c": "vocab",
+      "q": "undeniably vital",
+      "t": "undeniably / vital",
+      "e": "undeniably adv. 不可否认地；vital adj. 至关重要的。"
+    },
+    {
+      "p": 0,
+      "c": "vocab",
+      "q": "across the board",
+      "t": "across the board",
+      "e": "全面地、一概地；这里强调不加区分地缩减时间。"
+    },
+    {
+      "p": 0,
+      "c": "vocab",
+      "q": "compromising",
+      "t": "compromise v.",
+      "e": "熟词生义：损害、削弱；不是“妥协”。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "distinct",
+      "t": "distinct adj.",
+      "e": "明显的、显著的；修饰运动带来的益处。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "psychological",
+      "t": "psychological adj.",
+      "e": "心理的；与身体健康这一维度相对。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "endorphins",
+      "t": "endorphins n.",
+      "e": "内啡肽；生理类专门词，阅读认识即可。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "blood circulation",
+      "t": "blood circulation",
+      "e": "血液循环。circulation n. 循环、流通。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "mental strain accumulated",
+      "t": "strain / accumulated",
+      "e": "strain n. 压力；accumulated 为过去分词，表示积累起来的。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "stationary",
+      "t": "stationary adj.",
+      "e": "静止的、不移动的。此处指静坐学习；stationary learning 搭配不够自然。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "peers",
+      "t": "peers n.",
+      "e": "同龄人、同辈。这里是一起运动的孩子。"
+    },
+    {
+      "p": 1,
+      "c": "vocab",
+      "q": "social competence and emotional resilience",
+      "t": "competence / resilience",
+      "e": "competence n. 能力；resilience n. 韧性、受挫后的恢复能力。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "misplaced",
+      "t": "misplaced adj.",
+      "e": "不恰当的、用错地方的；这里说解决办法没有对准问题。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "primary metric",
+      "t": "primary metric",
+      "e": "首要衡量标准。metric n. 指标。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "admissions",
+      "t": "admissions n.",
+      "e": "熟词生义：招生、录取；不是“承认”。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "addressing",
+      "t": "address v.",
+      "e": "熟词生义：处理、解决；不是“地址”。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "eliminate inefficient",
+      "t": "eliminate / inefficient",
+      "e": "eliminate v. 消除；inefficient adj. 低效的。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "passive memorization",
+      "t": "passive memorization",
+      "e": "被动记忆。memorization n. 记忆、背诵。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "digital distractions",
+      "t": "digital distractions",
+      "e": "数字设备或内容造成的注意力干扰。"
+    },
+    {
+      "p": 2,
+      "c": "vocab",
+      "q": "room",
+      "t": "room n.",
+      "e": "熟词生义：余地、空间；此处指留给运动的时间。"
+    },
+    {
+      "p": 3,
+      "c": "vocab",
+      "q": "deliberately",
+      "t": "deliberately adv.",
+      "e": "刻意地、有意地。"
+    },
+    {
+      "p": 3,
+      "c": "vocab",
+      "q": "accommodate",
+      "t": "accommodate v.",
+      "e": "熟词生义：为……作安排、留出空间；不是“提供住宿”。"
+    },
+    {
+      "p": 3,
+      "c": "vocab",
+      "q": "mutually exclusive",
+      "t": "mutually exclusive",
+      "e": "相互排斥的；not mutually exclusive 表示两者可以兼顾。"
+    },
+    {
+      "p": 3,
+      "c": "vocab",
+      "q": "zero-sum trade-off",
+      "t": "zero-sum trade-off",
+      "e": "零和取舍：一方增加就要以另一方减少为代价。"
+    },
+    {
+      "p": 3,
+      "c": "vocab",
+      "q": "ample",
+      "t": "ample adj.",
+      "e": "充足的；修饰时间、空间、机会等。"
+    },
+    {
+      "p": 0,
+      "c": "syntax",
+      "q": "study time should be reduced",
+      "t": "主语 + should be + 过去分词",
+      "e": "情态动词的被动语态：学习时间“应该被减少”。that 从句解释 idea 的内容，是同位语从句。"
+    },
+    {
+      "p": 0,
+      "c": "syntax",
+      "q": "focus on managing study efficiency",
+      "t": "focus on + doing",
+      "e": "on 是介词，后接动名词 managing。这里用 improving study efficiency（提高学习效率）更自然。"
+    },
+    {
+      "p": 1,
+      "c": "syntax",
+      "q": "encouraging children to participate in physical activities brings",
+      "t": "动名词短语作主语",
+      "e": "整个 encouraging … activities 是主语，因此谓语用单数 brings。内部结构：encourage sb to do sth。"
+    },
+    {
+      "p": 1,
+      "c": "syntax",
+      "q": "which helps relieve the mental strain accumulated from long hours of stationary learning",
+      "t": "which + 补充说明；过去分词修饰",
+      "e": "which 概括前面的生理变化。accumulated … 后置修饰 strain，相当于 that has accumulated …，不是新的谓语。"
+    },
+    {
+      "p": 1,
+      "c": "syntax",
+      "q": "where children must cooperate, handle victory and defeat, and resolve conflict with peers",
+      "t": "where 从句 + 并列动作",
+      "e": "where = in which，修饰 social settings。must 后并列 cooperate、handle、resolve，形式保持一致。"
+    },
+    {
+      "p": 1,
+      "c": "syntax",
+      "q": "qualities that traditional textbook study rarely cultivates",
+      "t": "概括名词 + 定语从句",
+      "e": "qualities 概括前面的两种能力。that 指代 qualities，作 cultivates 的宾语；rarely 表示“很少”。"
+    },
+    {
+      "p": 2,
+      "c": "syntax",
+      "q": "simply cutting back on study time is a misplaced solution",
+      "t": "动名词主语 + be + 表语",
+      "e": "cutting back on study time 是主语，a misplaced solution 是表语。simply 限定“仅仅缩减时间”。"
+    },
+    {
+      "p": 2,
+      "c": "syntax",
+      "q": "A far more effective approach is to eliminate inefficient study practices",
+      "t": "A more … approach is to do",
+      "e": "不定式作表语，说明方法。far 加强比较级 more effective，表示“有效得多”。"
+    },
+    {
+      "p": 2,
+      "c": "syntax",
+      "q": "naturally freeing up room for sports",
+      "t": "现在分词短语表示结果",
+      "e": "freeing … 说明更快完成学业任务带来的结果：腾出运动时间。"
+    },
+    {
+      "p": 3,
+      "c": "syntax",
+      "q": "ensuring they have ample time for exercise",
+      "t": "ensuring + (that) 从句",
+      "e": "分词短语补充说明预期结果；they 指 children，that 可以省略。"
+    },
+    {
+      "p": 0,
+      "c": "link",
+      "q": "In recent years",
+      "t": "时间背景",
+      "e": "介词短语，限定近年的时间范围；对应 has sparked 的现在完成时。"
+    },
+    {
+      "p": 0,
+      "c": "link",
+      "q": "among parents and educators",
+      "t": "among + 群体",
+      "e": "介词，表示关注存在于家长和教育工作者之中。不是连词。"
+    },
+    {
+      "p": 0,
+      "c": "link",
+      "q": "While physical exercise is undeniably vital for childhood development",
+      "t": "While：让步",
+      "e": "相当于 although：先承认运动重要，再提出不同意见。"
+    },
+    {
+      "p": 0,
+      "c": "link",
+      "q": "Instead",
+      "t": "Instead：替代",
+      "e": "从“不赞成减时”转向“应提高效率”，不是简单追加观点。"
+    },
+    {
+      "p": 0,
+      "c": "link",
+      "q": "so that",
+      "t": "so that：目的",
+      "e": "连接家长的做法与希望实现的目标；后接 children can …。"
+    },
+    {
+      "p": 0,
+      "c": "link",
+      "q": "without compromising their academic foundation",
+      "t": "without + doing",
+      "e": "介词短语：在不损害学业基础的情况下。不是让步从句。"
+    },
+    {
+      "p": 1,
+      "c": "link",
+      "q": "On the one hand",
+      "t": "第一方面",
+      "e": "引出对运动益处的承认，与下一段的 On the other hand 呼应。"
+    },
+    {
+      "p": 1,
+      "c": "link",
+      "q": "When children engage in regular sports",
+      "t": "When：时间／情境",
+      "e": "引出运动发生时的身体变化，为解释其益处提供情境。"
+    },
+    {
+      "p": 1,
+      "c": "link",
+      "q": "Furthermore",
+      "t": "Furthermore：递进",
+      "e": "从身心健康扩展到社交、情绪成长这一独立维度。"
+    },
+    {
+      "p": 2,
+      "c": "link",
+      "q": "On the other hand",
+      "t": "第二方面",
+      "e": "由承认运动价值转入质疑“单纯减时”，不是列举运动的坏处。"
+    },
+    {
+      "p": 2,
+      "c": "link",
+      "q": "If parents blindly reduce study hours without addressing unproductive habits",
+      "t": "If：条件",
+      "e": "设定“减时但不改低效习惯”的条件；主句 may 表示可能后果，不是必然结果。"
+    },
+    {
+      "p": 2,
+      "c": "link",
+      "q": "such as",
+      "t": "such as：举例",
+      "e": "引出低效学习的实例，让前面的抽象判断具体化。"
+    },
+    {
+      "p": 2,
+      "c": "link",
+      "q": "By mastering better time management",
+      "t": "By + doing：方式",
+      "e": "通过掌握时间管理实现主句的结果；动作执行者是 children。"
+    },
+    {
+      "p": 3,
+      "c": "link",
+      "q": "In conclusion",
+      "t": "结论信号",
+      "e": "收束前文并重申立场，不引入新的主要论点。"
+    },
+    {
+      "p": 3,
+      "c": "link",
+      "q": "rather than treating them as a zero-sum trade-off",
+      "t": "rather than：选择",
+      "e": "与其把二者当作零和取舍，不如引导孩子提高效率。"
+    },
+    {
+      "p": 3,
+      "c": "link",
+      "q": "while maintaining strong academic performance",
+      "t": "while：同时",
+      "e": "这里表示保持成绩与锻炼同时实现；与第一段的让步含义不同。"
+    },
+    {
+      "p": 0,
+      "c": "expression",
+      "q": "sparked widespread concern",
+      "t": "spark widespread concern",
+      "e": "引发广泛关注／担忧。动词 spark 与 concern 搭配。"
+    },
+    {
+      "p": 0,
+      "c": "expression",
+      "q": "engage in regular physical activity",
+      "t": "engage in ↔ participate in",
+      "e": "本篇均表示参加运动。physical exercise / physical activity / sports 形成近义表达；team sports 范围更窄。"
+    },
+    {
+      "p": 1,
+      "c": "expression",
+      "q": "relieve the mental strain",
+      "t": "relieve mental strain",
+      "e": "缓解精神压力。relieve 是可积累的动词，比简单的 make … less 直接。"
+    },
+    {
+      "p": 1,
+      "c": "expression",
+      "q": "foster social competence and emotional resilience",
+      "t": "foster / cultivate + 能力或品质",
+      "e": "文中的 foster 与 cultivates 近义。social competence＝社交能力；emotional resilience＝情绪韧性。"
+    },
+    {
+      "p": 1,
+      "c": "expression",
+      "q": "handle victory and defeat, and resolve conflict with peers",
+      "t": "handle / resolve",
+      "e": "handle victory and defeat：应对胜负；resolve conflict：解决冲突。两个动词各有搭配对象。"
+    },
+    {
+      "p": 2,
+      "c": "expression",
+      "q": "cutting back on study time",
+      "t": "cut back on / cut down on / reduce",
+      "e": "都是减少学习时间的改写。前两者加 on；reduce 直接接宾语。"
+    },
+    {
+      "p": 2,
+      "c": "expression",
+      "q": "academic performance",
+      "t": "academic 话题词汇链",
+      "e": "foundation＝基础；performance＝表现；knowledge＝知识；tasks＝任务。是相关表达，不可互当同义词。"
+    },
+    {
+      "p": 2,
+      "c": "expression",
+      "q": "fall behind in core subjects",
+      "t": "fall behind in + 学科",
+      "e": "在核心科目上落后。core subjects 是常用的教育话题名词搭配。"
+    },
+    {
+      "p": 2,
+      "c": "expression",
+      "q": "freeing up room for sports",
+      "t": "free up room for",
+      "e": "为……腾出余地；本文具体指为体育活动腾出时间。"
+    },
+    {
+      "p": 3,
+      "c": "expression",
+      "q": "not mutually exclusive",
+      "t": "not mutually exclusive",
+      "e": "说明两个目标并不相互排斥，用于概括“学业与运动可兼顾”的观点。"
+    }
+  ]
+}

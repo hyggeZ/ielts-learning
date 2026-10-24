@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  },
+  "name": "ielts-learning",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/test-dom.cjs"
+  }
+}
