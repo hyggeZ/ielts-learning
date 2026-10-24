@@ -122,5 +122,7 @@ first.update(id='essay-01',title='少学习多锻炼',question='Parents should e
 first={k:first[k] for k in ['id','title','question','qzh','paragraphs','translations','kind','stance','structure','readerNotes','sourcePage']}
 all_essays=[first]+ESSAYS
 assert len(all_essays)==25
+from enrich import enrich
+all_essays=enrich(all_essays)
 (ROOT/'content/essays.json').write_text(json.dumps(all_essays,ensure_ascii=False,indent=2),encoding='utf-8')
 print('Authored',len(all_essays),'essays')

@@ -29,7 +29,7 @@ python scripts/validate.py
 npm test
 ```
 
-初始内容的可复现编辑源为 `scripts/author.py`、`author_b.py`、`author_c.py` 及第一篇数据。改这些源后运行 `python scripts/author.py` 再构建。不要同时改生成数据和编辑源，避免相互覆盖。
+初始内容的可复现编辑源为 `scripts/author.py`、`author_b.py`、`author_c.py`、`content/close-reading-*.txt` 及第一篇数据。改这些源后运行 `python scripts/author.py` 再构建。不要同时改生成数据和编辑源，避免相互覆盖。
 
 ## 发布
 

@@ -13,6 +13,9 @@ for i,e in enumerate(essays,1):
     assert all(e['translations'])
     assert {n['c'] for n in e['readerNotes']}==categories
     for n in e['readerNotes']:assert n['q'] in e['paragraphs'][n['p']],(e['id'],n)
+    for p in range(len(e['paragraphs'])):
+        assert any(n['p']==p and n['c']!='vocab' for n in e['readerNotes']),(e['id'],'paragraph without analysis',p)
+    assert len({(n['p'],n['c'],n['q']) for n in e['readerNotes']})==len(e['readerNotes'])
     raw=source[i].replace('quick-\nwitted','quick-witted').replace('well-\ninformed','well-informed').replace('problem-\nsolving','problem-solving').replace('ofjobs','of jobs')
     raw=re.sub(r'\s+\d+\s*$','',' '.join(raw.split()))
     full=' '.join(e['paragraphs'])

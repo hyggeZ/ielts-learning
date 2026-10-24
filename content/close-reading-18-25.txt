@@ -1,0 +1,223 @@
+18|0|syntax|influencing nearly every aspect of human life|分词补充说明|influencing 的逻辑主语为 scientific research，说明其重要性体现在哪些范围。
+18|0|link|as the benefits of scientific research are undeniable|as：原因|解释值得投入的立场；undeniable 是作者评价，具体支持在后文。
+18|0|vocab|substantial|substantial adj.|大量的、可观的；修饰时间和金钱的投入。
+18|0|expression|nearly every aspect of human life|aspect of|生活的各个方面；nearly 表示几乎，避免绝对覆盖。
+18|1|syntax|One major area where scientific inquiry has proved indispensable is healthcare|where 定语从句＋主干|主干是 One major area is healthcare；where 从句说明科研在该领域的重要性。
+18|1|syntax|vaccines that ultimately contained the spread of the virus|that 定语从句|that 指 vaccines，在从句中作主语，说明疫苗的效果；原文表述概括，效果受病毒和疫苗类型影响。
+18|1|link|during the COVID-19 pandemic|during + 名词|限定例子发生的时间，而不是原因连词。
+18|1|vocab|inquiry|inquiry n.|探究、研究；scientific inquiry 指科学探究，不是一般询问。
+18|1|vocab|innovative|innovative adj.|创新的，修饰 treatments。
+18|1|vocab|intensively|intensively adv.|集中而深入地、密集地，描述研发投入。
+18|1|expression|life-saving medicines|life-saving adj.|能够挽救生命的，作 medicines 的前置修饰语。
+18|1|expression|address urgent health crises|address a crisis|应对紧急健康危机；address 在此不是说话或地址。
+18|2|syntax|inventions that shape our daily lives|that 定语从句|that 指 inventions，作 shape 的主语；说明这些发明的重要作用。
+18|2|syntax|the internet, which initially emerged as a scientific project, has now become|插入非限制性从句|主干是 the internet has now become …；which 从句交代最初起源。
+18|2|syntax|digital devices such as smartphones, laptops, and computers, which stem from scientific progress|名词列举＋which 从句|such as 提供设备例子；which 回指这些设备，补充它们与科学发展的联系。
+18|2|link|For instance|实例支持|互联网的用途变化说明科研可能发展出广泛社会价值。
+18|2|link|Moreover|追加实例|从互联网再补充数字设备，仍围绕技术进步同一论点。
+18|2|vocab|initially|initially adv.|最初，与 has now become 的如今形成时间对照。
+18|2|expression|has been the foundation for|the foundation for|为某事奠定基础，for 引出被支持的发明或发展。
+18|3|syntax|as viable alternatives to fossil fuels|as＋名词；alternative to|作为化石燃料的可行替代品，to 引出被替代的对象。
+18|3|syntax|which severely damage the environment|which 非限制性从句|指紧邻的 fossil fuels，补充选择替代能源的理由。
+18|3|syntax|The adoption of these cleaner technologies not only alleviates|名词化主语＋单数谓语|adoption 为单数中心词，故用 alleviates；technologies 复数不决定谓语形式。
+18|3|vocab|adoption|adoption n.|熟词生义：采用，不是收养。
+18|3|vocab|ecosystems|ecosystem n.|生态系统，包含生物与环境的相互关系。
+18|3|expression|alleviates the pressure on ecosystems|alleviate pressure on|减轻对生态系统的压力，on 指压力承受对象。
+18|4|syntax|Its contributions to medicine, technology, and global problem-solving demonstrate that|名词主语＋that 宾语从句|主语 contributions 为复数，谓语 demonstrate；that 从句给出由三类贡献导出的结论。
+18|4|syntax|fundamental for building a healthier, more sustainable, and more prosperous future|for + doing＋并列比较级|building 作介词宾语，三个比较级分别描述健康、持续性与繁荣。
+18|4|vocab|fundamental|fundamental adj.|基础性的、根本重要的；与 essential、indispensable 语义相关。
+18|4|expression|essential to the progress of modern society|be essential to|对……必不可少；to 为介词，不是不定式标记。
+19|0|syntax|whether parents should bear legal consequences for their children's criminal actions|whether 从句作介词宾语|作 regarding 的宾语，明确争论的具体法律责任内容。
+19|0|link|While I agree|While：让步|承认父母的教养责任，但不接受普遍惩罚。
+19|0|link|as other external factors contribute to juvenile delinquency|as：原因|解释为何不能将所有责任一概归给父母。
+19|0|vocab|controversial|controversial adj.|有争议的，表明存在明显分歧。
+19|0|expression|bear legal consequences|bear consequences|承担法律后果；bear 在此为动词承担。
+19|1|syntax|If children break the law, it sometimes reflects|If 条件＋程度限定|以违法为条件讨论教养问题；sometimes 表示并非每一次都如此。
+19|1|syntax|if parents turn a blind eye to their children's early misbehaviors|if 条件从句|具体设定父母忽视早期问题的情境，让责任论证有条件而非一概而论。
+19|1|syntax|holding parents partially accountable can force them to take their parenting responsibilities more seriously|动名词主语＋force sb to do|holding … accountable 作主语；partially 限定责任程度，force 后用 to take。
+19|1|syntax|By being more involved, parents can identify early signs of trouble|By + being + 形容词|being more involved 表示更积极参与，逻辑主语是 parents。
+19|1|link|Therefore|由机制导出措施|从忽视早期问题可能导致升级，推出部分追责促使尽责。
+19|1|link|before their children commit actual crimes|before 时间从句|指出介入应发生在真正犯罪之前，强调预防价值。
+19|1|vocab|parental supervision|parental supervision|父母监督，parental 为形容词。
+19|1|vocab|offenses|offense n.|违法或犯罪行为；在此不是冒犯他人的言语。
+19|1|expression|take their parenting responsibilities more seriously|take sth seriously|认真对待某事；more seriously 是副词比较级。
+19|2|syntax|it is unreasonable to place all the blame entirely on parents|It is + adj. + to do|真正主语为 to place …；all 与 entirely 意义重复，可保留一个。
+19|2|syntax|they are heavily influenced by the outside world|被动＋程度副词|孩子受到外部影响，heavily 强调程度，by 指影响来源。
+19|2|syntax|teenagers can be led astray by bad company or harmful online content|情态被动|can be led astray 指可能被引入歧途，by 后有两个来源。
+19|2|syntax|Punishing parents for crimes they did not commit or endorse would be unjust|动名词主语＋假设评价|Punishing … endorse 整体作主语，would 表示该做法的可能评价或后果。
+19|2|link|As children grow up|As：随时间发展|随着孩子长大，其社会接触和自主性增加。
+19|2|link|Furthermore|新增责任主体|从外界影响进一步转向孩子自己的独立责任。
+19|2|vocab|bad company|bad company|熟词生义：不良同伴，不是经营不善的公司。
+19|2|vocab|family dynamic|family dynamic|家庭成员之间的互动与关系模式。
+19|2|expression|capable of independent thought|be capable of|有能力独立思考；of 后接名词或动名词。
+19|3|syntax|every crime committed by their children|过去分词后置修饰|committed by … 修饰 crime，相当于 that is committed …。
+19|3|syntax|should evaluate each case individually|should＋动词＋副词|说明司法系统应逐案评估，individually 反对一刀切。
+19|3|link|while parents should face some form of accountability|while：让步|同意有条件承担责任，但主句强调不能自动受罚。
+19|3|expression|accountability|accountability / responsibility|accountability 强调需解释、接受追责；responsibility 可泛指职责，不能完全混同。
+20|0|syntax|It is often said that|It is said that …|形式主语和被动报告结构，呈现常见说法而非已被证实的数据。
+20|0|link|While I agree that people want to escape from tiring jobs|While：让步|承认人们想摆脱疲惫工作，但不推出永不工作的结论。
+20|0|link|because work gives us a sense of purpose|because：核心理由|预告主体二的工作价值，不只是说作者不同意。
+20|0|vocab|escape from|escape from|摆脱、逃离，from 后为想离开的状态或环境。
+20|1|syntax|a life without work sounds attractive|感官系动词＋形容词|sounds 后用 attractive 作表语，说明这种生活看起来有吸引力。
+20|1|syntax|If people did not have to worry about making money, they would certainly want to leave|虚拟条件句|did not … 与 would … 配合，假设无需考虑收入；about 后用 making。
+20|1|syntax|they could spend more time on their hobbies, stay with their families, and travel|could＋三个并列动词|spend、stay、travel 共享 could，给出不工作的具体时间用途。
+20|1|syntax|wanting to escape from an exhausting working life is a very natural reaction to stress|动名词主语|wanting … life 作 is 的主语；reaction to 表对压力的反应。
+20|1|link|especially today when many people are too busy|especially＋when 从句|突出当今繁忙的背景；when 修饰时间 today。
+20|1|link|because of their careers|because of + 名词|解释为何必须放弃休闲或家庭时间，不接完整句子。
+20|1|vocab|stressful|stressful adj.|造成压力的；与 stressed（感到压力的）区分。
+20|1|expression|take up most of our time|take up time|占用时间，不是开始某项爱好的 take up。
+20|1|expression|a very natural reaction to stress|reaction to|对压力的自然反应，to 引出反应对象。
+20|2|syntax|never working will not bring true happiness|动名词主语的否定|never working 是主语，not bring 是否定谓语，分别否定工作频率和结果。
+20|2|syntax|Work is not just a way to make a living; it also gives us|not just … also …|用分号连接两个独立分句，将工作价值从收入扩展到其他需求。
+20|2|syntax|solving problems at work gives us a feeling of success that hobbies usually cannot provide|动名词主语＋that 定语从句|solving … 作主语；that 修饰 feeling of success，并作 provide 的宾语。
+20|2|syntax|people who win the lottery or retire early|who 定语从句|win 与 retire 是共享 who 的两个谓语，限定例子中所指人群。
+20|2|link|Without a job|without：假设情境|在没有工作的情况下，引出空虚和无聊。
+20|2|link|For example|举例支持动机|退休或中彩票者回到工作的例子支持非金钱需求，但 many/often 未给证据。
+20|2|vocab|daily routine|daily routine|日常规律、固定生活节奏，不必含贬义“例行公事”。
+20|2|expression|social connections|social connections|社会联系、人际连接，解释工作的社交价值。
+20|2|expression|feel useful and connected to society|feel＋形容词|感到有用且与社会相连；两个表语描写心理需求。
+20|3|syntax|a life where work takes up all their time|where 修饰抽象情境|where = in which，说明这种生活的特点，而非真实地点。
+20|3|syntax|which are all closely connected to having a meaningful job|which＋be connected to doing|which 指 goals、achievements、communication 三项，故用 are；to 是介词。
+20|3|link|although most people would hate|although：让步|不喜欢过度工作，与不想完全失业两层判断并存。
+20|3|expression|reasonable work|reasonable work|此处想表达合理工作量，a reasonable workload 更准确；reasonable work 单独用略含糊。
+21|0|syntax|whether advertising mainly aims to increase the sales of products|whether 作介词宾语|whether 从句作 on 的宾语，说明分歧是广告“主要”目的。
+21|0|syntax|the main purpose of advertising is simply to spread information|不定式作表语|to spread … 说明 purpose 的具体内容；simply 把目的限定为信息传播。
+21|0|link|Although advertising can work that way|Although：让步回指|that way 指提高非必需品销量，先承认部分情况再作总体判断。
+21|0|vocab|aims|aim v.|旨在；aim to do 指目标，区别于名词 aim。
+21|1|syntax|even if they may make a person's life more pleasurable|make + 宾语 + 形容词|life 为宾语，more pleasurable 为补语，说明奢侈品并非毫无享受价值。
+21|1|syntax|A sports car is a good example of this, as well as luxury handbags, watches, and jewellery|例子与并列补充|跑车为主例，as well as 补充其他奢侈品；不是独立论点。
+21|1|syntax|establishing them as high-class, sophisticated or elegant in the public mind|分词结果＋establish A as B|广告将这些商品树立为高档精致形象；them 指 luxury products。
+21|1|link|by definition|定义限定|说明奢侈品按定义不是生活必需，支撑对这类广告的让步。
+21|1|link|because advertisements spread awareness of these items|because：原因|解释为什么奢侈品销量高度依赖广告。
+21|1|vocab|high-class|high-class adj.|高档的；这里描述广告塑造的产品形象。
+21|1|vocab|jewellery|jewellery n.|珠宝首饰，英式拼写，通常不可数。
+21|1|expression|depend heavily on advertising|depend on|高度依赖，heavily 强调程度。
+21|2|syntax|many of which fulfil certain needs of consumers|many of which 定语从句|指产品和服务中的许多，限定并非所有广告对象都必需。
+21|2|syntax|advertisements for luxury goods are outnumbered by advertisements|被动比较数量|奢侈品广告是被超过的一方；该数量判断本身缺少来源。
+21|2|syntax|a commercial I caught the other day that advertised car insurance|两层定语修饰|I caught … 省略宾语关系词；that advertised … 补充广告内容。
+21|2|syntax|Not all types of insurance are needed|Not all：部分否定|不是所有保险都需要，不等于所有保险都不需要。
+21|2|link|Regardless|承认后转回主张|意为尽管如此；单独作过渡副词，与引言 regardless of 的介词结构不同。
+21|2|link|of course|插入态度短语|承认保险并非一概必需，对前面例子作限定。
+21|2|link|Though phones are expensive|Though：让步|昂贵与必需并不冲突，回应非必需奢侈品的分类。
+21|2|vocab|functioning|function v.|正常运作、有效生活；本文不是指物品某项功能。
+21|2|expression|a suitable replacement for my broken phone|replacement for|某物的合适替代品，for 引出被替换对象。
+21|2|expression|essential for functioning in modern society|be essential for doing|为在现代社会正常生活所必需，for 后接动名词。
+21|3|syntax|while some advertisements aim to improve the sales of unnecessary products|while：让步＋some 限定|结论再次承认部分广告符合题目描述，但拒绝推广到大多数。
+21|3|link|Thus|推论总结|用前面两段比较收束观点，不再增加例子。
+21|3|expression|inform consumers about|inform sb about sth|告知某人某事；主张广告的信息功能，但不自动排除销售功能。
+22|0|syntax|This phenomenon is driven by specific social and professional factors|be driven by|被……推动、由……驱动；被动交代原因类别。
+22|0|link|on both family life and society as a whole|both … and …|明确题目所要求的家庭与社会两个受影响层面。
+22|0|vocab|phenomenon|phenomenon n.|现象，单数；复数为 phenomena。
+22|1|syntax|pushes people to work longer hours to secure their positions or pursue career advancement|push sb to do＋目的 to do|第一层 to work 为被迫行动；第二层 to secure/pursue 为延长工时的目的。
+22|1|syntax|feel pressured to take on extra tasks or work overtime|feel＋过去分词状态＋to do|pressured 表被施压的状态，take on 与 work 并列。
+22|1|syntax|fearful that falling behind could lead to job loss|形容词＋that 从句|fearful 描述员工担忧；falling behind 在从句中作主语。
+22|1|syntax|to improve their family’s financial situation|不定式表目的|说明选择更多工作或第二份工作是为了改善经济情况。
+22|1|link|First|First / Second 分点|第一点是竞争和工作安全感，第二点是生活成本与收入需求。
+22|1|link|especially in fields like technology or finance|具体化适用行业|举科技、金融行业作为加班压力场景，不能把行业例子另算一个原因。
+22|1|link|such as housing, education, and healthcare expenses|such as：生活成本实例|房屋、教育、医疗是成本类别的具体展开。
+22|1|vocab|secure their positions|secure v.|确保、保住岗位，熟词生义。
+22|1|vocab|leisure|leisure n.|闲暇、休闲时间。
+22|1|expression|work overtime|work overtime|加班，overtime 在这里作副词，不必加介词。
+22|1|expression|meet high performance standards|meet standards|达到高绩效标准；meet 在此不是见面。
+22|2|syntax|When people spend most of their time at work, they miss out on important family moments|When：情境与后果|设定长时间工作的情况，后面说明错失家庭时刻。
+22|2|syntax|children may feel neglected by parents who are rarely present|feel＋过去分词＋who 从句|neglected 描述孩子感受，by 引出忽视的来源；who 进一步限定父母状态。
+22|2|syntax|If many families face relationship problems, it can increase social instability|If 条件与指代|it 概括许多家庭出现关系问题的情况，写成 this situation 可使指代更清楚。
+22|2|syntax|may be more likely to feel lonely or develop behavioral issues|be likely to do＋比较级|表示可能性更高，而不是必定如此；feel 与 develop 并列。
+22|2|syntax|which could lead to problems like dropping out of school or getting involved in crime later|which 结果＋like doing|补充潜在后果，dropping 与 getting 为并列例子；因果跨度需要解释。
+22|2|link|due to lack of communication|due to：原因|指出夫妻疏远的机制是交流不足。
+22|2|link|For example|社会后果举例|儿童孤独和行为问题是解释社会层面的例子，而非所有家庭都如此。
+22|2|vocab|breakdowns|breakdown n.|熟词生义：关系破裂，不是机器故障。
+22|2|vocab|behavioral issues|behavioral issues|行为问题；behavioral 为形容词。
+22|2|expression|miss out on|miss out on|错过本来可以参与或得到的机会。
+22|2|expression|dropping out of school|drop out of|辍学、中途退出，of 后接学校或课程。
+22|3|syntax|is mainly caused by job competition and the need for higher income|be caused by|总结两个原因；mainly 表主要而非唯一。
+22|3|link|by weakening emotional connections|by + doing|交代对家庭造成损害的方式，而不是时间。
+22|3|expression|pressure on healthcare|pressure on|医疗体系承受的压力；此处结论新加入，正文未解释，应删去或前文补论证。
+23|0|syntax|It is true that many offenders continue to commit crimes|It is true that …|形式主语结构引出现象；continue to do 表继续做某事。
+23|0|syntax|even after being imprisoned for their wrongdoing|after + being + 过去分词|受罚后仍再犯；being imprisoned 为介词后的被动动名词。
+23|0|syntax|solutions that can be implemented to decrease|that 定语从句＋被动|that 指 solutions，在从句中作主语；to decrease 表实施目的。
+23|0|vocab|wrongdoing|wrongdoing n.|违法或不当行为，通常不可数。
+23|0|expression|the likelihood of repeat offenders|搭配不精确|likelihood 应对应事件，而非人；the likelihood of reoffending 更准确地表示再犯概率。
+23|1|syntax|mental health issues aggravated by a brutal and inhumane criminal justice system|过去分词后置修饰|aggravated by … 修饰 issues，说明心理问题被什么加重。
+23|1|syntax|Prisoners who are released often have a considerably difficult time reintegrating into society|who 从句＋have a difficult time doing|who 限定获释者，reintegrating 表示困难发生在哪个行动上。
+23|1|syntax|having a criminal record makes it significantly more difficult|动名词主语|having a criminal record 作主语；significantly 加强比较级 more difficult。
+23|1|syntax|leading them back into a life of crime|分词说明结果|社会污名与失业的组合可能促使再犯，them 指前囚犯。
+23|1|link|However|从总体转到重点|先承认原因复杂，再提出作者认为最重要的风险因素。
+23|1|link|including their family and friends|including：范围补充|强调排斥可能连来自最亲近的人，而不仅是陌生人。
+23|1|vocab|brutal and inhumane|brutal / inhumane|残酷的／不人道的，评价语气强，不宜无条件描述所有司法制度。
+23|1|vocab|traumatised|traumatise v.|使遭受心理创伤，英式拼写。
+23|1|vocab|labelled|label v.|贴上标签；permanently labelled 为永久负面身份化的主张。
+23|1|expression|criminal record|criminal record|犯罪记录，区别于 criminal justice system（刑事司法制度）。
+23|1|expression|employment options for former prisoners are severely limited|be severely limited|受到严重限制，severely 表程度。
+23|2|syntax|Several possible measures can be taken to prevent recidivism|measures can be taken|被动建议：可采取措施；to prevent 说明目标。
+23|2|syntax|subject prisoners to unthinkable levels of abuse|subject sb to sth|使某人遭受某事，subject 此处为动词，不是名词科目。
+23|2|syntax|Mistreatment of inmates causes them to have greater levels of anger and anguish|cause sb to do|虐待使囚犯产生更强烈的负面感受，them 指 inmates。
+23|2|syntax|which may lead them to become mentally unstable and seek revenge on society|which＋lead sb to do|may 保留可能性，become 和 seek 两个动作共享 to。
+23|2|syntax|the occupational skills they’ll need for life after prison|省略关系代词|they’ll need … 为定语从句，修饰 skills；关系词在从句中作 need 的宾语，可省略。
+23|2|link|All too often|频率评价|强调某事发生得过于频繁，带批评色彩；不能替代具体证据。
+23|2|link|In addition|第二项措施|在重改造之外补充教育和职业培训。
+23|2|vocab|deprivation|deprivation n.|剥夺、匮乏，指基本需要得不到满足。
+23|2|vocab|inmates|inmate n.|被关押者、囚犯，与 prisoners 在此近义。
+23|2|expression|seek revenge on society|seek revenge on|向社会寻求报复，on 引出对象。
+23|3|link|despite being punished|despite + being + 过去分词|虽然已经受罚仍继续犯罪，despite 后不是完整从句。
+23|3|expression|combat this issue|combat v.|应对、打击某问题；语气较强，常用于犯罪或社会问题。
+24|0|syntax|To gain a comprehensive understanding of how people live around the world|句首不定式目的＋how 从句|to gain 说明目标；how 从句作 of 的宾语，明确了解的是生活方式。
+24|0|syntax|written documents are more effective than visual media or moving images|形容词比较级＋than|直接反转题干比较，明确书面资料更好这一立场。
+24|0|link|Although visual media can provide an engaging glimpse|Although：让步|先承认影像吸引力，再指出深度可靠性不足。
+24|0|vocab|glimpse|glimpse n.|短暂一瞥、初步了解，强调观察不全面。
+24|0|expression|an engaging glimpse into different cultures|engaging adj.|有吸引力的、引人入胜的；into 引出了解的文化对象。
+24|1|syntax|One primary reason written documents are more effective is their higher level of accuracy|reason＋省略 why 的从句|主干是 One primary reason is …；后面的 higher level of accuracy 给具体理由。
+24|1|syntax|are often influenced by commercial and artistic considerations|被动结构|媒体受到商业和艺术考量影响；often 避免说成每部作品都如此。
+24|1|syntax|may choose to dramatize events, simplify complex realities, or focus on stereotypes|choose to＋三个并列动词|dramatize、simplify、focus 共享 to，列出内容取舍的三种方式。
+24|1|syntax|making written sources more reliable for understanding different cultures|make＋宾语＋形容词|written sources 为宾语，more reliable 为补语；making 表作者推导的结果。
+24|1|link|to appeal to audiences and ensure financial success|to do：目的|解释媒体为何作戏剧化或简化选择：吸引观众并盈利。
+24|1|vocab|dramatize|dramatize v.|把事情戏剧化、夸大表现；不只是拍成电视剧。
+24|1|vocab|representation|representation n.|呈现、再现；本文指如何描述人的实际生活。
+24|1|vocab|factual|factual adj.|基于事实的，区别于虚构或艺术加工。
+24|1|expression|a strong commitment to accuracy|commitment to|对准确性的重视、坚持；to 后接名词或动名词。
+24|1|expression|appeal to audiences|appeal to sb|吸引某人；此处不是法律上诉。
+24|2|syntax|personal memoirs and travelogues can offer intimate perspectives on everyday life|主语并列＋can offer|两类个人记录提供生活视角，can 限定为潜力，并非所有作品都有。
+24|2|syntax|that are rarely captured in visual media|that 定语从句的被动|修饰 perspectives，说明这些视角在影像中不常被呈现。
+24|2|syntax|to focus on the most visually compelling scenes|不定式目的|说明省略内容是为了聚焦视觉吸引力最强的场面。
+24|2|syntax|how people live, work, and interact within their cultural contexts|how 名词性从句|作 of 的宾语，三个动词说明需要理解的生活层面。
+24|2|link|Furthermore|第二个主论点|从准确性转向细节和背景深度。
+24|2|link|within their cultural contexts|within：范围|把生活行为放在各自文化背景中理解，而非脱离环境。
+24|2|vocab|intimate|intimate adj.|本文指贴近个人、深入细致的视角，不限于亲密关系。
+24|2|vocab|compelling|compelling adj.|有吸引力、令人难以忽视的；此处修饰 scenes。
+24|2|vocab|subtler|subtle 的比较级|更微妙、更不易察觉的，修饰 aspects。
+24|2|expression|thorough analyses of|thorough analyses|深入全面的分析；analyses 是 analysis 的复数。
+24|3|syntax|I maintain that written documents are a more effective tool|maintain that|坚持认为、主张；maintain 在此不是维护设备。
+24|3|syntax|due to their tendency to prioritize entertainment|due to＋名词＋to do|原因中心词 tendency 后接不定式说明倾向做什么。
+24|3|link|For a more complete and nuanced understanding|For：目标|为了获得更完整细致的理解，引出书面记录不可或缺的结论。
+24|3|expression|accuracy, depth, and context|三个评价维度|准确性、深度、背景；分别回扣两段主体的比较标准。
+25|0|syntax|a growing number of animal and plant species|a growing number of|越来越多的物种；谓语用复数 have，不受 number 单数表面形式影响。
+25|0|syntax|measures that can be taken to address it|定语从句＋情态被动|that 指 measures，can be taken 表可采取，to address 说明目的；it 指濒危问题。
+25|0|link|but there are several practical measures|but：问题与可行应对|从人类活动造成问题转向仍可采取措施，给全文原因—措施结构定调。
+25|0|vocab|practical|practical adj.|切实可行的、实际的，修饰措施。
+25|1|syntax|forests, wetlands and grasslands are cleared on a massive scale|并列主语＋被动|三个生态空间作主语，are cleared 说明遭清理；on a massive scale 为规模状语。
+25|1|syntax|because the conditions they need to survive no longer exist|because＋含定语从句的主语|主语核心 conditions，they need … 为省略关系词的修饰；谓语为 no longer exist。
+25|1|syntax|after ingesting plastic or becoming trapped in fishing nets|after＋并列 doing|ingesting 表吞入；becoming trapped 表被困，两个过程都可能导致死亡。
+25|1|syntax|disrupting migration routes and breeding cycles|分词表示后果|温度降雨变化扰乱迁徙和繁殖，disrupting 承接前半句变化。
+25|1|link|Another key factor|切换第二原因|由栖息地破坏转到污染，不把污染当成上一点的例子。
+25|1|link|In addition|追加第三原因|气候变化作为独立因素，与栖息地和污染并列。
+25|1|link|in time|时间限制|及时适应；来不及适应才构成生存风险。
+25|1|vocab|wetlands|wetlands n.|湿地，生态系统类型。
+25|1|vocab|shelters|shelter n.|栖身处、庇护所，本文指动物生存空间。
+25|1|vocab|marine species|marine adj.|海洋的；marine species 指海洋物种。
+25|1|vocab|breeding cycles|breeding cycles|繁殖周期；breeding 与生殖繁育有关。
+25|1|expression|on a massive scale|on a … scale|大规模地，scale 表规模，不是秤。
+25|1|expression|food sources|food sources|食物来源，与 shelters 共同说明栖息地损失的具体后果。
+25|2|syntax|When individuals understand how their daily habits affect wildlife, they are more likely to|When＋嵌套 how 从句|understand 的宾语是 how … wildlife；主句说明理解影响后更可能改变行为。
+25|2|syntax|By studying endangered species and breeding them in controlled environments|By＋并列 doing|studying 与 breeding 并列，逻辑主语为 scientists；说明增加种群的方法。
+25|2|syntax|before releasing them back into the wild|before＋doing|先扩大种群，再放归；them 指繁育的物种个体。
+25|2|link|First|First / Second / Finally|分别对应政府法规、公众行为、科研繁育三组措施，保持主体分工清晰。
+25|2|link|through national parks and conservation zones|through：实现途径|通过设立或利用保护区域维持栖息地。
+25|2|vocab|logging|logging n.|伐木；本文与 illegal activities 连用指非法砍伐。
+25|2|vocab|overfishing|overfishing n.|过度捕捞，over- 表过量。
+25|2|vocab|controlled environments|controlled environments|受控环境，温度、食物等条件由人管理。
+25|2|expression|public awareness campaigns|public awareness campaigns|公众意识宣传活动；campaign 不只指竞选。
+25|2|expression|recycle, reduce waste and support conservation efforts|三个并列动词|给出公众可采取的具体行动，避免只说“提高意识”。
+25|3|syntax|it is possible to slow down or even reverse this trend|形式主语＋不定式|it 占主语位置，to slow down/reverse 才是实际被评价的行动。
+25|3|syntax|Protecting biodiversity is essential not only for wildlife but also for the health of the planet and future generations|动名词主语＋并列 for 短语|Protecting … 作单数主语；两组 for 分别指野生生物与地球后代的利益。
+25|3|link|with stronger laws, better public awareness and scientific intervention|with：实现条件|明确减缓或扭转趋势所依赖的三类措施。
+25|3|vocab|intervention|intervention n.|干预、介入；scientific intervention 指科研手段参与保护。

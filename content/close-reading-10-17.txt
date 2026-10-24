@@ -1,0 +1,198 @@
+10|0|syntax|relocating large companies, factories, and their employees to rural areas could effectively solve|动名词主语|relocating … areas 是 could solve 的主语，列举公司、工厂及员工三个迁移对象。
+10|0|link|because such a move would significantly reduce|because：理由预告|把同意立场直接连到交通压力和住房需求两个核心理由。
+10|0|vocab|accommodation|accommodation n.|住处、住宿；本文指城市住房，通常不可数。
+10|0|vocab|rural|rural adj.|乡村的；与 urban（城市的）对照。
+10|0|expression|the demand for accommodation|demand for|对住房的需求，for 引出需求对象。
+10|1|syntax|The first and foremost benefit of moving big enterprises and factories to the countryside is the reduction|名词主语＋be＋名词表语|核心为 benefit is the reduction；of moving … 说明哪种做法的收益。
+10|1|syntax|commuters traveling to and from cities|现在分词后置修饰|traveling … 修饰 commuters，指往返城市的人；不是句子主谓中的独立谓语。
+10|1|syntax|leading to smoother traffic flow and less pollution|分词表示结果|车辆减少带来两个结果：车流更顺、污染更少。
+10|1|syntax|government incentives encouraging major corporations to establish offices and factories|分词修饰＋encourage sb to do|encouraging … 修饰 incentives，说明激励措施具体鼓励企业做什么。
+10|1|link|When businesses and their employees relocate|When：条件情境|设置企业和员工迁移的前提，再推导通勤人数下降。
+10|1|link|This demonstrates that|回扣论点|This 指前面研究例子，that 从句说明作者从例子得出的判断；例子本身仍需可靠来源。
+10|1|vocab|noticeable|noticeable adj.|明显可察觉的，修饰 decline。
+10|1|expression|decline sharply|decline sharply|大幅下降；sharply 修饰变化幅度。
+10|1|expression|first and foremost|first and foremost|首要的；本文强调交通收益是首先讨论的重点。
+10|2|syntax|drawing large numbers of workers to live near their workplaces|分词说明结果|就业机会吸引员工到附近居住，构成住房需求上升的原因链。
+10|2|syntax|cities would experience reduced population density, easing the housing crisis|主句＋分词结果|城市人口密度降低，easing … 补充说明由此缓解住房危机。
+10|2|link|However|反向推导|前半段解释企业吸引人口的机制，转折后将企业外迁，推出相反结果。
+10|2|vocab|affordable|affordable adj.|负担得起的，不等于单纯价格最低。
+10|2|vocab|population density|population density|人口密度，强调一定面积内的人口数量。
+10|2|expression|easing the housing crisis|ease / alleviate|在本文均为缓解；缓解危机不意味着完全消除住房短缺。
+10|3|syntax|This approach not only improves living conditions in cities but also contributes to balanced regional development|not only … but also …|并列城市生活条件与区域发展两类结果；contribute to 后接名词。
+10|3|link|not only|not only … but also …|结尾把城市内部改善与区域均衡两个层面并列，回扣前文而非新增证据。
+10|3|vocab|pressing|pressing adj.|紧迫的，修饰 challenges；不是按压动作。
+10|3|expression|balanced regional development|balanced development|均衡发展，本文指城市与乡村之间的区域平衡。
+11|0|syntax|creating a perfect community has been a desire|动名词主语＋现在完成时|creating … community 整体作 has been 的主语，说明这种愿望延续至今。
+11|0|link|although they haven’t identified|although：让步|虽有愿望，却尚未清楚界定理想社会；they 指 intellectuals。
+11|0|vocab|character|character n.|熟词生义：特征、性质；这里不是人物角色或品格。
+11|0|expression|crucial elements|crucial / vital / essential|都可强调重要，但题目要求 most important，不能只列多个同等重要因素。
+11|1|syntax|the vital element to building an ideal community, the most important element is education|重复主语问题|the vital element 与 the most important element 重复堆叠；保留后者即可形成清楚主干。
+11|1|syntax|their energy and resources can be fully utilized|can be + 过去分词|被动说明精力和资源能够被充分利用；fully 表示程度。
+11|1|link|For instance|举例|受教育者独立思考、减少社会弊病，用以支持教育的社会价值。
+11|1|link|Moreover|补充另一因素|由教育转到健康；该转换应明确二者主次，避免削弱“最重要”任务。
+11|1|link|instead of curing and defending the health-related problems|instead of + doing|表示资源用途的替代；defend problems 搭配不自然，应改成 preventing 或 addressing health problems。
+11|1|vocab|harmony|harmony n.|和谐、协调；此处强调社会关系状态。
+11|1|vocab|utilized|utilize v.|利用，正式语体；不必在所有语境替换 use。
+11|1|expression|think independently|think independently|独立思考；可积累的能力表达。
+11|1|expression|more productive|productive adj.|生产效率高、成果多；本文用于健康公民的社会贡献。
+11|2|syntax|these elements should be used by people effectively and efficiently|should be + 过去分词|被动建议，effectively 强调达到目标，efficiently 强调效率，不是重复同义。
+11|2|syntax|to achieve a perfect community|不定式表目的|放在句首，交代后续行动的目标。
+11|2|syntax|The culture and traditions should be wisely preserved|并列主语＋情态被动|culture 与 traditions 并列；preserved 表被保护保存，wisely 说明方式。
+11|2|link|For example|举例范围|medical field、science、literature 是专业服务的领域例子，并非新的主要措施。
+11|2|link|without any discrimination|without + 名词短语|强调合作的条件：不带歧视；无从句结构。
+11|2|vocab|preserved|preserve v.|保存、保护，使传统延续。
+11|2|vocab|efficiently|efficiently adv.|高效率地，以较少资源或时间完成事情。
+11|2|expression|provide their services to all segments of society|provide sth to sb|向社会各阶层提供服务；也可用 provide sb with sth，但不能混合两种搭配。
+11|3|syntax|such as education and health|举例短语|说明最重要的 elements 包括哪些；结尾仍未明确一个最高优先因素。
+11|3|vocab|integrated|integrated adj.|整合的、协同的，强调不同部分共同作用。
+11|3|expression|achieve a dream of a perfect society|achieve / realise a dream|实现梦想；这里可积累的是搭配，而不是背诵整段结论。
+12|0|syntax|with strong arguments on both sides|with + 名词短语|补充说明争议双方都有理由；不是 with + doing 的独立结构。
+12|0|syntax|Examining these viewpoints will help us understand|动名词主语＋help sb do|Examining … 作主语；understand 前省略 to。
+12|0|link|while others argue|while：观点对照|一方认为科技提升安全，另一方认为它提供犯罪途径。
+12|0|vocab|Proponents|proponent n.|支持者；常用 proponents of 某观点或措施。
+12|0|vocab|avenues|avenue n.|熟词生义：途径、渠道，不是街道。
+12|0|expression|technological advancements|technological advancements|技术进步；与题干 technology development 同话题改写。
+12|1|syntax|by increasing the perceived risk of getting caught|by + doing；of + doing|说明监控的威慑机制；getting caught 表被抓获，作 of 的宾语。
+12|1|syntax|helps police identify crime patterns and predict future incidents|help sb + 并列动词|identify 与 predict 并列，前者识别已有规律，后者预测未来事件。
+12|1|syntax|digital forensics allow|主谓一致需辨析|digital forensics 若作为学科或技术领域整体通常按单数处理，可写 digital forensic tools allow 避免歧义。
+12|1|link|Additionally|追加技术路径|从摄像头威慑转到数据分析的预测和调度功能。
+12|1|vocab|perceived|perceived adj.|被感知、被认为的；不等于客观实际风险本身。
+12|1|vocab|targeted patrols|targeted patrols|有针对性的巡逻；patrol 为巡逻行动。
+12|1|vocab|prosecution|prosecution n.|起诉、检控，与 investigation（调查）是不同阶段。
+12|1|expression|proactive measures|proactive measures|主动预防措施，与事后被动应对相对。
+12|2|syntax|The anonymity provided by online platforms can embolden criminals|过去分词后置修饰|provided by … 修饰 anonymity；整个匿名性作主语，can embolden 作谓语。
+12|2|syntax|to steal data, commit fraud, or launch cyber attacks|三个并列不定式动作|to 后共享三个动词，说明利用漏洞的目的：窃取、欺诈、攻击。
+12|2|syntax|infringing on individual privacy|分词结果状语|补充说明大规模监视的隐私后果，不是独立完整句。
+12|2|vocab|exploiting|exploit v.|熟词生义：利用漏洞；语境带负面含义，不是开发资源。
+12|2|vocab|fraud|fraud n.|欺诈、诈骗。
+12|2|expression|commit fraud, or launch cyber attacks|commit / launch|实施欺诈用 commit；发动攻击用 launch，不能只把“做”统一译成 do。
+12|3|syntax|Investing in cyber security measures, fostering responsible online behavior, and ensuring ethical implementation of surveillance are crucial steps|并列动名词作主语|三个行动并列，所以用 are；分别对应技术防护、行为规范、伦理实施。
+12|3|syntax|By harnessing technology's power for good and addressing its pitfalls, we can create|By + 两个 doing|harnessing 与 addressing 并列，逻辑主语均是 we，说明实现安全目标的方法。
+12|3|vocab|pitfalls|pitfall n.|隐患、容易遇到的问题。
+12|3|vocab|ethical implementation|ethical implementation|合乎伦理的实施，强调使用过程的规范。
+12|3|expression|The key lies in|the key lies in + doing|关键在于……；in 后接 striking a balance。
+13|0|syntax|I agree with this view to a large extent|agree … to a large extent|通过程度短语表达大体同意，为承认便利保留空间。
+13|0|link|as excessive reliance on digital communication can weaken|as：原因|引出作者同意的理由，并限定问题在 excessive reliance。
+13|0|expression|a negative impact on|impact on / effects on|表示对……的影响，on 引出承受影响的对象。
+13|1|syntax|make it easier to stay in contact|make it + 比较级 + to do|it 为形式宾语，不定式说明更容易完成的行为。
+13|1|syntax|When people communicate mainly through screens, they may miss|When 从句＋may|将屏幕交流设为情境；may 表示可能漏失线索，不绝对化。
+13|1|syntax|which can gradually reduce closeness|which 补充结果|概括家庭成员在线聊天取代家中交流的行为，gradually 强调长期累积。
+13|1|link|such as tone of voice and body language|such as：列举线索|举出两种被文字或屏幕交流削弱的信息线索。
+13|1|link|As a result|结果|由线索缺失推出误解及情感联系减弱。
+13|1|link|instead of talking to each other at home|instead of + doing|强调在线聊天替代现实交流，突出机会被挤占。
+13|1|vocab|in-person|in-person adj.|当面进行的、线下的；作前置修饰时常用连字符。
+13|1|vocab|closeness|closeness n.|亲密程度、关系紧密度。
+13|1|expression|tone of voice and body language|非语言信息搭配|语调与肢体语言，具体说明 social cues，而非泛称交流质量。
+13|2|syntax|Another negative effect is that|表语从句|that 从句完整说明另一项影响：关系趋于表面化。
+13|2|syntax|encourage users to interact briefly and frequently|encourage sb to do|briefly 与 frequently 两个副词分别描述每次时长与互动频率。
+13|2|syntax|can cause individuals to become distracted|cause sb to do|导致某人陷入某状态；become 后接形容词 distracted。
+13|2|link|without real emotional support|without + 名词|“看似联系”却缺乏真实支持，强调表象与实质的差别。
+13|2|link|In addition|补充后果|从浅层关系扩展到当面社交时分心的影响。
+13|2|vocab|constant|constant adj.|持续的、频繁不断的；形容在线交流状态。
+13|2|vocab|ignored|ignored adj.|被忽视的，与 unimportant 并列描述他人的感受。
+13|2|expression|deep and meaningful conversations|deep / meaningful|深入且有意义的对话；与 briefly and frequently 对照。
+13|3|syntax|By reducing face-to-face communication and encouraging shallow interactions|By + 并列 doing|说明技术削弱情感纽带的两条机制，逻辑主语为后面的 it。
+13|3|syntax|it is important to use communication technology in moderation and maintain|It is important to do|it 为形式主语，use 与 maintain 两个动词共享 to。
+13|3|link|while modern communication technology offers convenience|while：让步|结论承认便利，不改变总体认为有负面影响的立场。
+13|3|link|Therefore|导出建议|根据前文影响推出适度使用和维系现实联系的建议。
+13|3|expression|shallow interactions|shallow / superficial|本文均指缺乏深度；shallow interactions 与 superficial relationships 互相呼应，但修饰对象不同。
+14|0|syntax|the numbers of university students who choose science subjects show a declining trend|主干与定语从句|who choose … 修饰 students；表达总人数通常用 the number … shows 更自然，原文 numbers 暗示多个统计数量。
+14|0|syntax|science and technology are advancing|现在进行时|描述当前持续发展的趋势，不是在写单次事件。
+14|0|vocab|underlying|underlying adj.|深层的、潜在的，修饰 reasons。
+14|0|expression|knowledge-based society|knowledge-based society|以知识为基础的社会，说明科学教育的重要背景。
+14|1|syntax|the recognition that science subjects are more challenging than other subjects|that 同位语从句|解释 recognition 的内容；more … than … 是学科难度比较。
+14|1|syntax|Obtaining degrees in science requires more effort|动名词短语作主语|Obtaining … science 整体作单数主语，所以用 requires。
+14|1|syntax|spend many years working in laboratories|spend + 时间 + doing|work 用 working，不接 to work；说明实践投入较长。
+14|1|link|For instance|例子|物理化学课程及实验室工作具体解释“理科更有挑战”的主张。
+14|1|vocab|theoretical|theoretical adj.|理论的，与 practical（实践的）相对。
+14|1|vocab|lengthy|lengthy adj.|耗时很长的，往往含过长的意味。
+14|1|expression|pursuing science as a major|pursue … as a major|选择并攻读某专业；pursue 在此不是追赶。
+14|2|syntax|a lack of interest in science contributes to the low enrollment|名词主语＋contribute to|主干为 a lack … contributes；to 后的 enrollment 为结果。
+14|2|syntax|In a society where fame and fortune determine a person’s value|where 定语从句|where 修饰 society，说明作者假定的社会价值背景；判断较概括。
+14|2|syntax|fail to adequately emphasize the importance and appeal of science|fail to do|未能充分强调；importance 与 appeal 并列，分别是重要性和吸引力。
+14|2|link|With limited knowledge and little interest in science|With：背景条件|把了解与兴趣不足作为较少选择理科的背景。
+14|2|vocab|enrollment|enrollment n.|入学、选课人数；同一文章应保持语境一致。
+14|2|vocab|idolize|idolize v.|崇拜、偶像化，比 admire 程度更强。
+14|2|expression|fame and fortune|fame and fortune|名声与财富，常见并列搭配。
+14|3|syntax|There will be a shortage of personnel capable of conducting scientific study and research|There will be + 名词|预测人才短缺；capable of doing 修饰 personnel，说明短缺的人才类型。
+14|3|syntax|negatively affecting economic growth and social progress|分词结果状语|承接创新受阻和技术停滞的状态，说明对经济社会的进一步影响。
+14|3|link|as universities reduce the supply|as：原因|解释科研人才为何不足：大学输出减少。
+14|3|vocab|hindered|hinder v.|阻碍、妨碍；hindered innovation 指受阻的创新。
+14|3|expression|in the international arena|international arena|国际舞台、国际竞争领域；arena 在此非体育场。
+14|4|syntax|Efforts should be made at all levels of education|should be made：被动建议|强调所有教育阶段都应付出努力，行动主体被省略。
+14|4|link|to emphasize its importance in driving progress and innovation|目的＋介词 doing|to emphasize 与 to foster 并列；in driving … 说明科学的重要作用。
+15|0|syntax|This trend is influenced by several social and economic factors|被动结构|趋势受到多种因素影响，by 引出原因来源。
+15|0|link|Although delaying parenthood has both advantages and disadvantages|Although：让步|承认利弊并存，主句再给出总体权衡结论。
+15|0|expression|at a later age|at a later age / later in life|较晚生育的相关表达；不是所有较晚年龄都相同。
+15|1|syntax|before starting a family|before + doing|表示先建立事业再组建家庭的时间顺序。
+15|1|syntax|They hope to secure a well-paid job, gain financial independence, and create a comfortable living environment|hope to＋三个并列动词|secure、gain、create 共享 to，依次说明职业、经济和生活准备。
+15|1|syntax|making younger couples feel unprepared to take on the financial burden|making + 宾语 + 动词原形|couples 为宾语，feel 为原形；unprepared to … 描述尚未准备承担责任。
+15|1|syntax|prefer to spend their early adulthood travelling, exploring hobbies, or building relationships|prefer to do＋spend time doing|spend 后接时间及三个并列 doing，解释个人成长怎样占用较早阶段。
+15|1|syntax|which naturally delays parenthood|which 概括前述选择|指旅行、爱好和关系等生活安排带来的生育推迟结果。
+15|1|link|In addition|第三项原因|在事业与成本之外，补充个人生活偏好。
+15|1|vocab|secure|secure v.|熟词生义：获得、确保得到工作，不是形容词安全的。
+15|1|vocab|adulthood|adulthood n.|成年期；early adulthood 为成年早期。
+15|1|expression|gain financial independence|gain independence|获得经济独立；gain 表示逐渐取得某种状态。
+15|1|expression|establish a stable career|establish a career|建立稳定职业基础，stable 描述稳定性而非高收入。
+15|2|syntax|having children later in life also offers significant benefits|动名词主语|having … life 为单数主语，offers 加 s。
+15|2|syntax|better prepared to take on the responsibilities of raising a child|be prepared to do|为承担养育责任做好准备；of raising 说明 responsibilities 的内容。
+15|2|syntax|parents who have already achieved personal and professional goals|who 定语从句＋现在完成时|限定已经实现目标的父母，不能将结论无条件推广到所有年长父母。
+15|2|syntax|which can affect both their well-being and their child’s development|which＋both … and …|前面的多项困难影响父母和孩子双方；both 明确双重对象。
+15|2|link|such as reduced fertility and increased health risks during pregnancy|such as：举例|列出弊端的两个具体方面；during pregnancy 是时间范围。
+15|2|link|Moreover|补充收益|由成熟度、经济稳定延伸到工作家庭压力和陪伴质量。
+15|2|vocab|pregnancy|pregnancy n.|怀孕、妊娠期。
+15|2|vocab|mature|mature adj.|成熟的，与年龄相关但不由年龄完全决定。
+15|2|expression|safer home, better healthcare, and more educational opportunities|比较级并列|以安全、医疗、教育三个具体方面说明经济稳定怎样惠及孩子。
+15|2|expression|struggle with stress|struggle with + 名词|难以应对压力，with 后接面临的问题。
+15|3|syntax|particularly greater stability and maturity|插入式重点限定|指出权衡中最重视的优点，帮助结论与主体论据对应。
+15|3|link|for most families|范围限定|将判断限于大多数家庭，不等于所有家庭都适合推迟生育。
+15|3|vocab|maturity|maturity n.|成熟度；mature 的名词形式。
+16|0|syntax|whether advertising is a positive or negative thing|whether 名词性从句|作介词 regarding 的宾语，说明观点分歧的内容。
+16|0|syntax|advertising should be restricted to some extent|情态被动＋程度限定|should be restricted 表示应受限制，to some extent 明确不是全面禁止。
+16|0|link|Although I recognise|Although：让步|承认经济收益，主句仍提出限制措施。
+16|0|vocab|recognise|recognise v.|熟词生义：承认、认可某事实，不是认出某人。
+16|1|syntax|It does so by providing consumers with information|do so 回指＋provide sb with sth|does so 回指促进经济增长；by providing 解释实现方法。
+16|1|syntax|when I saw a commercial for a mobile phone|when 时间从句|具体叙述看到广告的经历，给信息匹配需求提供实例。
+16|1|syntax|more people are needed to make and provide those products and services|被动＋不定式|需要更多劳动力；to make and provide 说明需要他们完成的工作。
+16|1|link|When the demand for products and services increases because of advertising|When＋because of|When 设置需求增长情境；because of 后接名词 advertising 说明原因。
+16|1|link|Consequently|结果|从企业需要更多劳动力，推出新增岗位。
+16|1|vocab|replacement|replacement n.|替代品；本文是替换故障手机的新手机。
+16|1|expression|contributes to economic growth|contribute to growth|促进经济增长，to 后用名词，不接动词原形。
+16|1|expression|create jobs|create jobs|创造就业岗位，与 reduce unemployment 相关但不完全等同。
+16|2|syntax|This is because advertisements of luxury products|This is because …|用 because 从句直接解释社会危害的来源。
+16|2|syntax|the impression that if you possess these things, you become more desirable or impressive to others|同位语从句内含条件从句|that 解释 impression；if 在其内部设定拥有奢侈品的条件。
+16|2|syntax|These effects on people's behaviour are why I'm strongly in favour|why 表语从句|说明为何作者支持限制广告；前半句 effects 是主语，are 是系动词。
+16|2|syntax|ones that target younger people, who are more vulnerable to media influences|两个定语从句层级|that 修饰广告 ones；who 修饰 younger people，说明年轻受众特点。
+16|2|link|Thus|推导结果|从奢侈品代表身份的印象，推到无法购买时的低自尊。
+16|2|link|In their desperation|状态背景|在绝望的状态下；该背景并不能自动证明偷窃一定发生。
+16|2|vocab|possess|possess v.|拥有，较正式，本文指拥有奢侈品。
+16|2|vocab|desirable|desirable adj.|有吸引力的、令人向往的，描写广告暗示的人物形象。
+16|2|expression|in favour of restricting|in favour of + doing|支持限制，of 是介词。
+16|2|expression|the amount of advertisements|amount / number 的选择|advertisements 可数，宜用 the number of advertisements；advertising 不可数，可用 amount of advertising。
+16|3|syntax|it should be somewhat restricted to protect people's mental health|情态被动＋不定式目的|somewhat 限定限制程度；to protect 说明限制的目标。
+16|3|expression|promotes economic growth|promote / contribute to|结尾 promotes 回扣主体 contributes to，均表达促进而非唯一造成增长。
+17|0|syntax|public funds should be prioritized to address existing issues on Earth|被动建议的搭配|作者想说资金优先用于地球问题；public spending should prioritize … 或 funds should be allocated to … 更自然。
+17|0|vocab|alternative|alternative adj.|替代的、可供选择的；alternative planets 指潜在替代居住地。
+17|0|link|Personally|立场提示|明确接下来是作者自己的判断，与前面的预测及他人主张区分。
+17|1|syntax|searching for a new home is vital for the long-term survival of human beings|动名词主语＋be vital for|searching … 作单数主语，for 后给出重要性所针对的目标。
+17|1|syntax|meaning that our living conditions will inevitably deteriorate|分词＋that 从句|meaning 补充资源短缺被作者推导出的结果；inevitably 过于绝对，可更谨慎限定。
+17|1|syntax|The scientific breakthroughs required for space travel|过去分词后置修饰|required for … 修饰 breakthroughs，说明哪些突破。
+17|1|syntax|can be applied to improve life on Earth and promote overall human development|情态被动＋目的不定式|技术可以被应用来 improve 和 promote 两种结果。
+17|1|link|due to overpopulation and excessive industrial development|due to + 两个名词短语|解释自然资源消耗的原因，两个因素并列。
+17|1|link|Additionally|第二个支持理由|从寻找生存空间转向太空研究的技术外溢收益。
+17|1|vocab|overpopulation|overpopulation n.|人口过多，强调相对资源承载能力的压力。
+17|1|vocab|inevitably|inevitably adv.|不可避免地；表达确定性很强，需要足够论据支持。
+17|1|expression|stimulate technological progress|stimulate progress|推动、促进技术进步，stimulate 强调激发发展。
+17|1|expression|a severe shortage of energy and clean water|a shortage of|能源和清洁水的严重短缺；shortage 可数，需冠词或复数。
+17|2|syntax|it is much more rational to spend money on preserving our own planet|形式主语＋比较级|真正主语为 to spend …；on 后用 preserving。much 强调更合理的程度。
+17|2|syntax|The primary reason is that current environmental crises|that 表语从句|直接给出优先地球投入的首要理由。
+17|2|syntax|Investing in renewable energy and green technologies is far more effective and practical than spending billions of dollars|两个动名词短语比较|Investing … 与 spending … 平行，比较资金用途的效果和实用性。
+17|2|syntax|Governments have a responsibility to prioritize|have a responsibility to do|用职责结构支持财政选择，而不只表达个人偏好。
+17|2|link|Furthermore|第二个反对理由|从环境修复扩展到贫困、教育和医疗等民生需求。
+17|2|vocab|renewable|renewable adj.|可再生的，用于能源类型。
+17|2|vocab|inadequate|inadequate adj.|不充分的、不能满足需要的，修饰 education。
+17|2|expression|urgent challenges|urgent / pressing challenges|紧迫的问题，突出当前行动的时间优先性。
+17|2|expression|living standards|living standards|生活水平，常用复数；与 living conditions（生活条件）相关。
+17|3|syntax|although exploring other planets might offer a potential alternative|although＋动名词主语＋might|承认未来可能性，might 保留不确定性，随后给当前优先判断。
+17|3|link|for the distant future|时间范围限定|指长期未来的替代选项，与结尾 today 对照。
+17|3|expression|saving Earth and helping people live better today|并列 doing|spend money on 后并列 saving 与 helping；help people live 中 live 为原形。

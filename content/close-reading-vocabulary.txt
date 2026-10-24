@@ -1,0 +1,170 @@
+# Additional reading obstacles checked against each essay, not word-count targets.
+2|0|vocab|ongoing|ongoing adj.|持续进行中的；争论尚未结束。
+2|0|vocab|undermine|undermine v.|削弱、损害根基；本文指长期组织成功受损。
+2|1|vocab|extensive experience|extensive adj.|丰富而广泛的，修饰工作经验。
+2|1|vocab|retain|retain v.|保留、留住；这里指留住人才。
+2|1|vocab|secure|secure v.|熟词生义：确保获得，指获得优秀领导人才。
+2|2|vocab|undervalued|undervalued adj.|价值未被充分认可、未受到应有重视的。
+2|2|vocab|workforce|workforce n.|员工队伍、劳动力群体。
+2|2|vocab|executives|executive n.|高级管理人员；不是普通执行任务的员工。
+2|3|vocab|prioritize|prioritize v.|优先考虑、把某事放在重要位置。
+3|0|vocab|primary|primary adj.|主要的、首要的；此处不是初级的。
+3|1|vocab|analyze and process|analyze / process v.|分析／处理信息，process 在此为动词。
+3|1|vocab|multiple|multiple adj.|多个的、多种的，修饰可考虑的选项。
+3|1|vocab|effectiveness|effectiveness n.|有效性、达成目标的成效；区别于效率 efficiency。
+3|2|vocab|analytical|analytical adj.|善于分析的、分析性的，描述解决问题的方法。
+3|2|vocab|minimizing|minimize v.|尽量减少，不等于完全消除。
+3|2|vocab|appropriate|appropriate adj.|适合具体情境的、恰当的。
+3|3|vocab|capacity|capacity n.|能力、潜能；此处不是容器容量。
+4|1|vocab|interaction|interaction n.|互动、相互交流。
+4|1|vocab|reputation|reputation n.|声誉、社会评价。
+4|1|vocab|loyalty|loyalty n.|忠诚度；customer loyalty 指顾客持续选择企业的倾向。
+4|1|vocab|satisfaction|satisfaction n.|满意程度，本文指员工满意度。
+4|2|vocab|distract|distract v.|使分心、分散注意力，常接 from。
+4|2|vocab|operating costs|operating costs|经营、运营成本，不只指设备操作费用。
+4|2|vocab|burdens|burden n.|负担，本文主要指企业额外财务或经营责任。
+4|3|vocab|beneficial|beneficial adj.|有益的、有利的；常用 beneficial to/for。
+5|0|vocab|congestion|congestion n.|拥堵；交通语境为车流堵塞。
+5|0|vocab|peak|peak adj.|高峰的，peak hours 为最繁忙时段。
+5|1|vocab|excessive|excessive adj.|过度的、超过合理程度的。
+5|2|vocab|exhausting|exhausting adj.|令人疲惫的，描述通勤体验。
+5|2|vocab|metro|metro n.|地铁、城市轨道交通系统。
+5|3|vocab|imposing|impose v.|征收、实施；这里指施加收费政策。
+5|3|vocab|traffic-related|traffic-related adj.|与交通有关的，连字符组成复合修饰语。
+6|0|vocab|relatively|relatively adv.|相对而言，表示比较而非绝对数值。
+6|1|vocab|flexibility|flexibility n.|灵活性，此处指时间安排的自主程度。
+6|1|vocab|compromising|compromise v.|损害、影响质量，此处不是双方妥协。
+6|2|vocab|commutes|commute n.|上下班通勤的路程或过程。
+6|2|vocab|inconsistent|inconsistent adj.|不稳定、不持续一致的，修饰节省的成本。
+6|3|vocab|collaboration|collaboration n.|协作、共同工作。
+6|3|vocab|productivity|productivity n.|生产效率、产出能力。
+6|4|vocab|reliably|reliably adv.|可靠地、稳定可预期地，形容收益获得方式。
+7|0|vocab|thrill|thrill n.|强烈的兴奋和刺激感。
+7|1|vocab|likelihood|likelihood n.|可能性、发生概率。
+7|1|vocab|minor|minor adj.|微小的、不严重的；小失误也可能导致大后果。
+7|1|vocab|severely|severely adv.|严重地，修饰受伤程度。
+7|1|vocab|dedicated|dedicated adj.|忠实的、投入的，此处形容粉丝。
+7|2|vocab|recognition|recognition n.|熟词生义：认可、赞誉，不是识别。
+7|2|vocab|accomplishments|accomplishment n.|取得的成就、完成的重要事情。
+7|2|vocab|precautions|precaution n.|预防措施，常用复数。
+8|1|vocab|routines|routine n.|日常惯常活动、生活流程。
+8|1|vocab|vacuum cleaners|vacuum cleaner|吸尘器，具体家用电器名词。
+8|1|vocab|productive|productive adj.|有成效的、能带来有效产出的。
+8|2|vocab|access|access n.|获取机会或使用条件，常接 to。
+8|2|vocab|horizons|horizons n.|熟词生义：眼界、知识范围；不只指地平线。
+8|3|vocab|consumption|consumption n.|消费、消耗；本文指家用产品快速购置使用。
+8|3|vocab|e-waste|e-waste n.|电子废弃物，废旧电子电器产品。
+8|4|vocab|maximised|maximise v.|最大化、尽可能扩大；英式拼写。
+9|0|vocab|respects|respect v.|尊重，本文指尊重历史和原属国文化。
+9|1|vocab|symbols|symbol n.|象征、具有代表意义的事物。
+9|2|vocab|weak objects|weak adj. 的搭配|原文想表达脆弱易损的文物；fragile objects 更贴切，weak 一般不如此描述古物。
+9|2|vocab|immediately|immediately adv.|立刻、马上，强调归还的时间安排。
+9|3|vocab|partially|partially adv.|部分地，明确有条件而非全面赞成。
+9|3|vocab|rights|right v.|注意本句是 rights past wrongs：right 为动词纠正，与 wrongs 名词不公相对。
+10|0|vocab|significantly|significantly adv.|显著地、程度较大地，修饰 reduce。
+10|1|vocab|enterprises|enterprise n.|企业、商业组织，不是进取心含义。
+10|1|vocab|commuters|commuter n.|通勤者，每日往返居住地和工作地的人。
+10|1|vocab|mitigate|mitigate v.|缓和、减轻严重程度。
+10|2|vocab|alleviate|alleviate v.|缓解，本文指住房短缺。
+10|2|vocab|infrastructure|infrastructure n.|道路、供水等基础设施。
+10|2|vocab|property prices|property prices|房产价格；property 在此不是一般个人财物。
+10|3|vocab|regional|regional adj.|区域的、地区之间的。
+11|0|vocab|crucial|crucial adj.|至关重要的，程度强于一般 important。
+11|1|vocab|mankind|mankind n.|人类的总称；现代写作也常用 humankind。
+11|1|vocab|essential|essential adj.|必不可少的、极重要的。
+11|1|vocab|curing|cure v.|治疗、治愈；注意疾病对象的搭配。
+11|2|vocab|scholars|scholar n.|学者、研究者。
+11|2|vocab|literature|literature n.|此处为文学领域，不是科研中的文献综述。
+11|3|vocab|utilize|utilize v.|利用、运用，正式表达。
+12|1|vocab|incidents|incident n.|事件，此处指可能发生的犯罪事件。
+12|2|vocab|facilitated|facilitate v.|使更容易发生、便利某活动。
+12|2|vocab|misuse|misuse n.|滥用、不当使用。
+12|2|vocab|infringing|infringe v.|侵犯权利、违反规定，常与 on 连用。
+12|3|vocab|harnessing|harness v.|有效利用、驾驭某种力量。
+12|3|vocab|implementation|implementation n.|实施、落实；与提出计划不同。
+13|0|vocab|reliance|reliance n.|依赖，名词形式，常接 on。
+13|1|vocab|meaningful|meaningful adj.|有意义、有实质价值的，修饰对话。
+13|1|vocab|gradually|gradually adv.|逐渐地，表示变化随时间累积。
+13|2|vocab|briefly|briefly adv.|简短地、短时间地。
+13|2|vocab|frequently|frequently adv.|频繁地，修饰互动频率。
+13|2|vocab|contacts|contact n.|熟词生义：联系人、认识的人，此处为可数复数。
+13|3|vocab|shallow|shallow adj.|熟词生义：肤浅的、缺乏深度的，而非水浅。
+13|3|vocab|bonds|bond n.|联系、纽带，本文为情感纽带。
+14|0|vocab|declining|declining adj.|呈下降趋势的；不是拒绝邀请的含义。
+14|1|vocab|laboratories|laboratory n.|实验室，复数形式。
+14|2|vocab|appeal|appeal n.|吸引力，不是上诉或呼吁。
+14|2|vocab|influencers|influencer n.|网络上有影响力的人、网红。
+14|3|vocab|profound|profound adj.|深刻的、影响深远的。
+14|3|vocab|qualified|qualified adj.|具备资格、能力合格的，修饰毕业生。
+14|3|vocab|competitiveness|competitiveness n.|竞争力，本文是国家科技领域的相对能力。
+14|4|vocab|attributed to|attribute … to|归因于；is attributed to 为被动，说明被认为的原因。
+15|1|vocab|professional development|professional development|职业发展、专业能力提升。
+15|1|vocab|financial burden|financial burden|经济负担，常用 bear / take on a burden。
+15|1|vocab|unprepared|unprepared adj.|尚未做好准备的，后可接 to do。
+15|2|vocab|stability|stability n.|稳定性，本文包括经济和家庭准备。
+15|2|vocab|healthcare|healthcare n.|医疗保健服务，不等于单纯个人健康状态。
+15|2|vocab|well-being|well-being n.|身心健康与整体福祉。
+15|3|vocab|outweigh|outweigh v.|在重要性或程度上超过，不一定是数量更多。
+16|1|vocab|commercial|commercial n.|商业广告，此处不是形容词“商业的”。
+16|1|vocab|suitable|suitable adj.|适合用途或需要的。
+16|2|vocab|luxury|luxury adj.|奢侈的、非基本必需的，修饰 products。
+16|2|vocab|impressive|impressive adj.|给人深刻印象的，此处是广告暗示的社会评价。
+16|2|vocab|debt|debt n.|债务、负债状态，in debt 表负债。
+16|2|vocab|target|target v.|以某人群为目标，本文是针对年轻受众。
+16|3|vocab|somewhat|somewhat adv.|有些、在一定程度上，限制建议的强度。
+17|1|vocab|survival|survival n.|生存、延续存活的能力或状态。
+17|1|vocab|severe|severe adj.|严重的，修饰 shortage。
+17|1|vocab|stimulate|stimulate v.|促进、激发；此处为推动技术发展。
+17|2|vocab|preserving|preserve v.|保护、维持，使不遭损坏。
+17|2|vocab|ambitions|ambition n.|宏大目标、雄心，distant space ambitions 指遥远太空目标。
+18|0|vocab|undeniable|undeniable adj.|不可否认的，作者确信程度很强。
+18|1|vocab|Ongoing|ongoing adj.|持续进行的，修饰研究。
+18|1|vocab|breakthroughs|breakthrough n.|突破性进展，不是普通小幅改进。
+18|2|vocab|emerged|emerge v.|出现、形成；emerge as 强调以何种形式出现。
+18|3|vocab|fossil fuels|fossil fuels|化石燃料，包括煤、石油、天然气等。
+18|3|vocab|alleviates|alleviate v.|缓解、减轻压力或问题。
+19|0|vocab|accountable|accountable adj.|需负责、可被追责的，常用 accountable for/to。
+19|1|vocab|caregivers|caregiver n.|照护者，提供日常照料的人。
+19|1|vocab|misbehaviors|misbehavior n.|不良行为、不守规矩的举动；通常常作不可数总称。
+19|2|vocab|adolescents|adolescent n.|青少年，强调青春期年龄阶段。
+19|2|vocab|astray|astray adv.|偏离正道，lead sb astray＝引人入歧途。
+19|2|vocab|unjust|unjust adj.|不公正的，尤其涉及待遇或判断。
+19|3|vocab|involvement|involvement n.|参与程度、介入情况。
+20|0|vocab|purpose|purpose n.|目的、目标感；a sense of purpose 指生活有方向的感受。
+20|1|vocab|careers|career n.|职业生涯，不仅是某一天的一份任务。
+20|1|vocab|reaction|reaction n.|反应，reaction to stress 指压力引发的应对。
+20|2|vocab|part-time|part-time adj.|兼职的、非全日制的，修饰 jobs。
+20|2|vocab|retire early|retire early|提前退休；不等于永远停止所有有偿或无偿活动。
+20|3|vocab|achievements|achievement n.|成就、达成目标的成果。
+21|0|vocab|regardless|regardless adv.|不管怎样；regardless of 表不论、不顾某条件。
+21|1|vocab|luxury products|luxury products|奢侈品，强调超出基本生活所需的产品。
+21|1|vocab|awareness|awareness n.|认知、知晓程度，awareness of 指对某物的了解。
+21|2|vocab|fulfil|fulfil v.|满足需求；fulfil needs 为常见搭配。
+21|2|vocab|insurance|insurance n.|保险，本文为汽车保险，通常不可数。
+21|2|vocab|replacement|replacement n.|替代品，常接 for 指所替代之物。
+21|3|vocab|primary|primary adj.|首要的、主要的，primary purpose 指最主要目的。
+22|1|vocab|competitive|competitive adj.|竞争激烈的，形容就业市场环境。
+22|1|vocab|fearful|fearful adj.|担忧的、害怕的，后可接 that 从句说明内容。
+22|1|vocab|prioritize|prioritize v.|优先考虑，把某事排在其他事项之前。
+22|1|vocab|financial|financial adj.|财务的、经济上的，修饰家庭状况。
+22|2|vocab|gatherings|gathering n.|聚会、聚集活动，本文是家庭聚会。
+22|2|vocab|conflicts|conflict n.|冲突、矛盾，不仅指战争。
+22|2|vocab|emotional bonds|emotional bonds|情感纽带，emotional 为情绪情感方面的。
+23|1|vocab|reintegrating|reintegrating 的含义|原文 reintegrating into society 指重新融入社会；其名词形式为 reintegration。
+23|1|vocab|devastating|devastating adj.|造成极大伤害、毁灭性影响的。
+23|2|vocab|Mistreatment|mistreatment n.|虐待、不当对待。
+23|2|vocab|substance abuse|substance abuse|对酒精、药物等物质的滥用，不是一般物品误用。
+23|2|vocab|diagnosed|diagnose v.|诊断，识别健康或心理问题的性质。
+23|2|vocab|unstable|unstable adj.|不稳定的，mentally unstable 为原文对心理状态的描述。
+24|0|vocab|reliability|reliability n.|可靠性，指资料是否值得信赖。
+24|1|vocab|considerations|consideration n.|考量因素；不是对他人的体贴这一含义。
+24|1|vocab|account|account n.|熟词生义：记述、报告，不是账户。
+24|2|vocab|dynamics|dynamics n.|发展变化及相互作用，本文为社会经济文化的动态。
+24|2|vocab|compression|compression n.|压缩，指内容被缩短删减。
+24|3|vocab|indispensable|indispensable adj.|不可或缺的，用于结尾强调资料价值。
+25|1|vocab|disrupting|disrupt v.|扰乱、打断正常运行，本文为迁徙和繁殖规律。
+25|1|vocab|altered|alter v.|改变，常强调性质或状态发生变化。
+25|2|vocab|regulations|regulation n.|法规、规章制度。
+25|2|vocab|penalties|penalty n.|惩罚、处罚措施。
+25|2|vocab|reproduce|reproduce v.|繁殖，在此不是复制文字或图像。
+25|3|vocab|reverse|reverse v.|扭转、使方向相反，指改变物种减少趋势。

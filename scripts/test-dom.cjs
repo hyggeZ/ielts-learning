@@ -15,7 +15,7 @@ d.querySelector('#translate').click();assert([...d.querySelectorAll('.trans')].e
 d.querySelector('#theme').click();assert.equal(d.documentElement.dataset.theme,'dark');d.querySelector('#theme').click();assert.equal(d.documentElement.dataset.theme,'light');
 const vocab=d.querySelector('.annotation.vocab');vocab.click();assert([...d.querySelectorAll('.left .note')].some(n=>!n.hidden));vocab.click();assert([...d.querySelectorAll('.left .note')].every(n=>n.hidden));
 // Select a real text fragment, open inline editor, require a category, and persist safely.
-const para=d.querySelector('.original'),text=para.querySelector('.annotation').firstChild,range=d.createRange();range.setStart(text,0);range.setEnd(text,Math.min(5,text.length));const quote=range.toString();w.getSelection().addRange(range);para.dispatchEvent(new w.MouseEvent('mouseup',{bubbles:true}));
+const para=d.querySelector('.original'),text=para.querySelector('.annotation').firstChild,range=d.createRange();range.setStart(text,0);range.setEnd(text,Math.min(5,text.length));const quote=range.toString();w.getSelection().removeAllRanges();w.getSelection().addRange(range);para.dispatchEvent(new w.MouseEvent('mouseup',{bubbles:true}));
 assert(d.querySelector('.note-editor'));d.querySelector('.save-note').click();assert.equal(d.querySelector('.save-state').textContent,'请选择标签');
 d.querySelector('.note-editor select').value='vocab';d.querySelector('.note-editor textarea').value='<img src=x onerror=alert(1)>\n我的解释';d.querySelector('.save-note').click();assert(!d.querySelector('.note-editor'));
 assert.equal(d.querySelector('.personal-note strong').textContent,quote);assert.equal(d.querySelectorAll('.personal-note img').length,0);assert(!d.querySelector('.personal-note .anchor'));

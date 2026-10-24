@@ -1,0 +1,197 @@
+# essay | zero-based paragraph | category | exact source excerpt | title | explanation
+2|0|syntax|whether senior management should receive significantly higher salaries than other employees|whether 引导宾语从句|whether 从句作介词 over 的宾语，具体说明 debate 的内容。higher … than … 构成薪资比较；significantly 修饰 higher。
+2|0|link|While some argue|While：观点对照|这里列出一些人支持高薪、另一些人反对差距的两方看法；不是表示时间。
+2|0|vocab|justified|justify v.|证明合理、使有正当理由；be justified by 表示理由来自何处。
+2|0|expression|undermine the long-term success|undermine success|削弱长期成功的基础。比直接说 harm 更强调逐步侵蚀。
+2|0|vocab|excessive|excessive adj.|过度的；excessively 是副词，用于修饰 large。不是所有较大差距都等于 excessive。
+2|1|syntax|responsibilities that directly affect a company’s success|that 定语从句|that 指代 responsibilities，在从句中作 affect 的主语，说明这些责任为何值得高薪。
+2|1|syntax|justifying higher salaries to attract and retain top talent|分词结果＋不定式目的|justifying 补充说明经验和技能要求为何使高薪合理；to attract and retain 说明高薪的目的。
+2|1|syntax|the decisions made by a CEO|过去分词后置修饰|made by a CEO 修饰 decisions，可展开为 decisions that are made by a CEO。
+2|1|vocab|multinational corporation|multinational corporation|跨国公司；multinational 修饰 corporation。
+2|1|expression|carry substantial responsibilities|carry responsibilities|承担重大责任；carry 在此不是搬运物品。
+2|1|link|For example|举例落实责任|CEO 决策影响企业兴衰，用来支持高层责任重大，而不是另起一个论点。
+2|2|syntax|employees who feel undervalued may be less motivated to perform well|who 定语从句＋be motivated to do|who feel undervalued 修饰 employees；be less motivated to do 表示做事动力降低。
+2|2|syntax|leading to a disengaged and less productive work environment|分词结果状语|leading … 承接不愿全力投入这一情况，解释最终工作环境的变化。
+2|2|link|When the workforce sees|When：条件情境|描写员工看到收益只流向高层时的反应，为动力下降提供具体情境。
+2|2|vocab|disengaged|disengaged adj.|缺乏投入、疏离的；在职场语境不是机械装置“脱开”。
+2|2|expression|lower morale and productivity|lower morale / productivity|降低士气和生产效率；心理状态与工作结果构成连续影响。
+2|2|vocab|inclined|inclined adj.|倾向于、愿意；be inclined to do 表示有做某事的意愿。
+2|3|syntax|allocating too much to senior management salaries can reduce resources|动名词短语作主语|allocating … salaries 整体作 can reduce 的主语；too much 指资金过多。
+2|3|syntax|resources available for employee development and benefits|形容词短语后置修饰|available for … 修饰 resources，说明可供员工发展福利使用的资源。
+2|3|syntax|ensures that all employees feel valued, which can enhance|that 宾语从句＋which 补充结果|that 说明确保的内容；which 概括员工受到重视的状态及其对表现的作用。
+2|3|vocab|collaborative and committed|collaborative / committed|善于合作的／投入的；比笼统的 good 更具体地描述工作文化。
+2|3|expression|fair distribution of resources|fair distribution|公平分配；与前面的 equitable compensation 相呼应，但 resources 比薪酬范围更广。
+2|4|syntax|excessive pay gaps should be avoided|should be + 过去分词|薪酬差距是被避免的对象，用被动强调规范建议。
+2|4|link|due to their roles|due to + 名词|交代高层应获高薪的原因；后接名词短语，不接完整独立句。
+2|4|syntax|ultimately benefiting the organization as a whole and ensuring long-term success|并列分词表示结果|benefiting 与 ensuring 并列，概括合理薪酬结构的最终影响。
+2|4|expression|as a whole|as a whole|作为整体、总体上，强调受益者是全组织而非仅高层。
+3|0|vocab|traits|trait n.|人的特质、品质；这里指构成领导能力的不同特征。
+3|0|syntax|it is often suggested that the primary one for a leader is intelligence|形式主语＋被动报告|it 占主语位置，that 从句给出被提出的观点；one 回指 trait。
+3|0|link|yet|yet：转折连词|前面说品质多样，后面突出某一种被认为最主要，形成范围与重点的转折。
+3|0|expression|consist of various traits|consist of|由……组成；consist of 不用被动。skills 与 traits 概念略有差别，不应随意混用。
+3|1|syntax|This requires a person to be quick-witted and intelligent|require sb to do|要求某人具备某种状态；to be 后两个形容词并列。
+3|1|syntax|leaders not only need to think carefully about strategies, but they must also come to a clear conclusion|not only … but also …|并列思考策略与作出结论两项职责。not only 未前置到句首，不需要倒装。
+3|1|syntax|there are often multiple options to consider|不定式后置修饰|to consider 修饰 options，意为需要考虑的选项；考虑者从领导者语境中理解。
+3|1|link|as they must analyze and process a large amount of information|as：原因|解释领导者为何必须思维敏捷；analyze 与 process 并列。
+3|1|link|Moreover|递进补充|从处理信息扩展到比较策略并形成结论。
+3|1|link|Additionally|追加职责|补充细节审查与风险控制，为主论点继续提供支持。
+3|1|vocab|strategies|strategy n.|策略、行动方案；比单次具体动作更宏观。
+3|1|vocab|potential outcome|potential outcome|可能结果；potential 表示潜在的，而非已发生的。
+3|1|expression|cannot afford to make mistakes|cannot afford to do|熟词用法：承担不起某后果，不是没有钱买东西。
+3|1|expression|largely dependent on|be dependent on|很大程度取决于；largely 为程度限定，避免说成唯一决定因素。
+3|2|syntax|it is essential for a leader to help their team members identify their weak points|It is essential for sb to do|不定式说明必要的行为；help sb identify 中 identify 前可不加 to。
+3|2|syntax|as minimizing weaknesses plays a key role in making progress|动名词作主语和介词宾语|minimizing weaknesses 作 plays 的主语；making progress 作 in 的宾语。
+3|2|syntax|when dealing with a unique problem|when + doing 的省略|可理解为领导者处理特殊问题时；省略主语须能从上下文明确恢复。
+3|2|syntax|which ultimately benefits both the leader and their team|which 概括前述行动|指发现不足并采取改进的行为；both … and … 标明双方受益。
+3|2|link|Undoubtedly|判断态度副词|表示作者确信，不是额外证据；不能仅靠这个词证明论点。
+3|2|link|as they are not immune to flaws|as：原因|解释为何改进弱点也适用于领导者本人。
+3|2|expression|identify their weak points|identify weak points|识别弱点；identify 强调找出和辨认，而非解决。
+3|2|expression|aware of their own shortcomings|be aware of|意识到自己的不足；aware 后接 of 名词短语。
+3|3|syntax|the ability to guide the team effectively and the capacity to address weaknesses efficiently|名词＋to do 平行结构|ability 与 capacity 后都用不定式说明具体能力，两个名词短语概括正文。
+3|3|link|as it provides two essential benefits|as：归纳理由|用两个已展开的收益解释结论，没有增加新论点。
+3|3|expression|effectively|effectively / efficiently|前者强调有效达成目标，后者强调高效率；不是完全同义。
+4|0|syntax|there has been growing debate about whether|there has been＋名词|现在完成时描述讨论持续发展；whether 从句作 about 的宾语，明确争议内容。
+4|0|vocab|corporations|corporation n.|公司、企业法人；本文泛指大企业。
+4|0|expression|be responsible for providing|be responsible for doing|负责提供；for 后为动名词 providing。
+4|0|link|for the local community|for：受益对象|设施是为当地社区提供的，不是在说明原因。
+4|1|syntax|by promoting healthier lifestyles and greater social interaction|by + doing|说明设施如何改善福祉；两个宾语分别是生活方式和社会互动。
+4|1|syntax|a gym or community centre built by a company|过去分词后置修饰|built by a company 限定谁建设设施，省略了 which is。
+4|1|syntax|spaces where people build stronger connections|where 定语从句|where 相当于 in which；说明空间中能够发生的社会互动。
+4|1|syntax|By supporting the community, they can enhance their reputation|方法状语＋主句|supporting 的逻辑主语为 they，即公司，主语关系清晰。
+4|1|link|Second|第二个独立论点|从社区居民的收益切换到公司的间接收益，并非继续举第一个论点的例子。
+4|1|link|as workers often prefer companies|as：原因|解释社会责任为什么有助于员工满意度。
+4|1|vocab|obesity|obesity n.|肥胖，健康类名词。
+4|1|vocab|indirectly|indirectly adv.|间接地；公司并非通过设施本身直接收取收益。
+4|1|expression|a strong sense of social responsibility|a sense of social responsibility|社会责任感；可用于评价企业的行为取向。
+4|1|expression|improve employee satisfaction|improve satisfaction|提高员工满意度；satisfaction 是名词，不等于 motivation。
+4|2|syntax|Forcing them to build facilities could distract them from their core operations|动名词主语＋force sb to do|Forcing … facilities 整体作主语；distract sb from sth 表示使某人分心离开某事。
+4|2|syntax|governments, which collect taxes|which 非限制性定语从句|补充政府为何更适合承担职责；which 后 collect 与 are better placed 并列。
+4|2|link|particularly in industries with high operating costs|限定适用范围|particularly 突出成本较高的行业，避免所有企业都同样受影响的绝对化判断。
+4|2|link|among different regions and social groups|among：分配范围|资源在多个地区和社会群体间分配，among 连接分配动作和范围。
+4|2|vocab|core operations|core operations|核心业务；operation 在此不是手术。
+4|2|expression|generate profit, provide jobs, and pay taxes|三个并列动宾搭配|创造利润、提供就业、缴税，用具体职责解释企业主要目的。
+4|3|syntax|it should not be seen as a duty|be seen as + 名词|被视为某种义务，呼应引言 be considered an obligation。
+4|3|syntax|companies should be encouraged, but not forced, to contribute|并列被动＋共享不定式|encouraged 与 forced 都接 to contribute；not forced 为插入式对照。
+4|3|link|Instead|提出职责安排|由“不应是所有企业义务”转到“政府主责”的替代方案。
+4|3|expression|duty|duty / obligation|duty 回扣引言 obligation，均指义务；responsibility 更侧重责任。
+5|0|syntax|as it helps alleviate environmental problems and encourages more sustainable transport choices|as 原因从句中的并列谓语|helps alleviate 与 encourages 并列，分别对应环境改善和交通选择。
+5|0|vocab|sustainable|sustainable adj.|可持续的；交通语境强调较低资源消耗和环境负担。
+5|0|expression|introduced congestion charges|introduce charges|开始实施收费；charges 与题目 congestion tax 相关，但收费和税的法律含义不总相同。
+5|1|syntax|One key benefit of congestion charges is their ability to reduce|One benefit … is …|以名词结构点明好处，再由 to reduce 具体说明减少车辆的能力。
+5|1|syntax|which leads to lower traffic volumes|which 补充结果|概括不必要驾车被抑制这一变化，导出车流下降。
+5|1|syntax|improving overall environmental quality|分词表示结果|补充空气、噪声污染下降带来的环境改善。
+5|1|syntax|where excessive car use is a primary cause|where 定语从句|修饰 major cities，相当于 in which；解释该政策在大城市尤其重要的原因。
+5|1|vocab|discouraged|discourage v.|减少某种行为的发生、使不愿做；不只指口头劝阻。
+5|1|vocab|traffic volumes|traffic volume|车流量；volume 此处不是音量。
+5|1|expression|air pollution and noise pollution|污染的具体分类|空气污染与噪声污染，两个并列名词让环境收益更具体。
+5|2|syntax|causing stress, frustration and mental fatigue|分词说明后果|通勤时间增加带来三个心理或疲劳后果。
+5|2|syntax|make daily journeys more predictable and less exhausting|make + 宾语 + 形容词|daily journeys 是宾语，more predictable 与 less exhausting 为补语，说明通勤如何改善。
+5|2|syntax|can be invested in improving public transport systems|被动＋介词宾语|收入可以被投入交通建设；in 后接 improving，不接 improve。
+5|2|syntax|creating a more efficient and balanced transport network|分词结果状语|承接从私家车转向公交的变化，说明交通网络结果。
+5|2|link|By easing traffic flow|By：方法|说明收费政策改善出行体验的机制。
+5|2|link|such as expanding bus and metro services|such as + doing|以扩展公交地铁为改善公共交通的具体内容。
+5|2|vocab|frustration|frustration n.|挫败感、烦躁感，常由受阻或等待产生。
+5|2|vocab|predictable|predictable adj.|可预测的；本文指通勤耗时更稳定。
+5|2|expression|shift away from private cars|shift away from|逐步减少依赖、转离某种选择。
+5|3|syntax|imposing congestion charges during peak hours is a positive step forward|动名词主语|imposing … hours 整体作 is 的主语，重申对政策的评价。
+5|3|link|In the long run|时间范围|把视角从立即减少污染，扩展到长期城市宜居性。
+5|3|expression|cleaner, quieter and more livable|三个形容词比较级|从环境、噪声、生活条件三方面归纳改善，最后一项用 more 构成比较级。
+6|0|syntax|rather than employers|rather than + 名词|对比受益对象是员工还是雇主，不是对比工作地点。
+6|0|syntax|while the benefits for employers are relatively limited and conditional|while：对照|与前半句员工收益直接显著形成对照；不是时间含义。
+6|0|vocab|substantial|substantial adj.|显著的、程度大的；这里修饰好处。
+6|0|expression|limited and conditional|limited / conditional|有限且有条件，比直接说 no benefit 更有分寸，但也改变了原题 only 的强度。
+6|1|syntax|One major reason why remote work mainly benefits employees is the flexibility it provides|reason why … is + 名词短语|表语是 flexibility，后接省略 that 的定语从句 it provides。
+6|1|syntax|which are immediate and personal advantages for workers|which 非限制性定语从句|which 指前面的更高满意度及更低压力，故用复数 are。
+6|1|syntax|something that is far less achievable in a traditional office setting|something 概括前述情况|指兼顾家庭而不牺牲表现这件事；that 从句评价其在传统办公室的可行程度。
+6|1|link|For example|例子|调整时间履行家庭责任，具体说明灵活性怎样落实。
+6|1|vocab|achievable|achievable adj.|能够实现的；far less achievable 表示难以实现得多。
+6|1|vocab|professional responsibilities|professional responsibilities|职业职责，与 personal needs 构成工作与个人的对照。
+6|1|expression|balance professional responsibilities with personal needs|balance A with B|兼顾 A 与 B；不是消除职业责任。
+6|2|syntax|By eliminating long commutes, workers can spend more time with their families|By + doing|eliminating 与主句 workers 指同一行动者，说明省去通勤的具体收益。
+6|2|syntax|This not only improves overall quality of life but also helps prevent long-term issues|not only … but also …|并列现在生活质量和长期风险两层收益；not only 不在句首，无倒装。
+6|2|syntax|may be offset by investments in digital infrastructure|may be + 过去分词|被动说明节省可能被数字投入抵消；may 保留可能性。
+6|2|link|However|转折|承认雇主能省成本后，说明节省也可能被抵消。
+6|2|vocab|chronic stress|chronic stress|长期、持续性压力，chronic 不等于严重程度大。
+6|2|vocab|infrastructure|infrastructure n.|基础设施；digital infrastructure 指支持数字工作的网络系统等。
+6|3|syntax|employers must rely heavily on effective supervision and technology to achieve comparable outcomes|rely on … to do|依赖监督与技术来获得相近结果；to achieve 表示目的。
+6|3|link|Despite some potential advantages for employers|Despite + 名词短语|先承认潜在优势，再突出管理困难。
+6|3|link|particularly in large organisations|缩小重点范围|指出管理挑战尤其发生于大型组织，而非每家公司程度一致。
+6|3|vocab|demanding|demanding adj.|要求高、费力的；此处不是“提出要求”。
+6|3|vocab|comparable|comparable adj.|可比较的、相近的，修饰结果。
+6|4|syntax|highly dependent on management quality and technology|be dependent on|收益依赖管理与技术前提，highly 强调依赖程度。
+6|4|link|especially in terms of flexibility and work-life balance|in terms of：评价维度|具体限定员工在哪些方面更明显受益。
+6|4|expression|directly and reliably|direct / indirect；reliable|结论通过直接性与可靠性比较收益，而非完全否认雇主获益。
+7|0|syntax|with extreme sports competitions offering thrill and adventure|with + 名词 + doing|competitions 是 offering 的逻辑主语，附带说明受欢迎的体验来源。
+7|0|link|Though some people are in favor of|Though：让步|承认禁令支持者存在，再提出作者对自由的立场。
+7|0|vocab|participants|participant n.|参与者；区别于只观看的观众。
+7|0|expression|have the freedom to participate|have the freedom to do|有做某事的自由；不等于行为没有风险。
+7|1|syntax|People who are inexperienced might be reckless and unprepared|who 定语从句＋might|who 限定缺乏经验的人；might 表示可能，不是所有新手必然鲁莽。
+7|1|syntax|which would increase the likelihood of a life-threatening injury|which 补充结果|概括鲁莽、准备不足的状态；likelihood of 后接名词短语。
+7|1|syntax|complications resulting from his injury|现在分词后置修饰|resulting from 修饰 complications，说明并发症来源。
+7|1|syntax|not only devastating to the competitors, but also to their friends, families, and dedicated fans|not only … but also …|并列受影响的人群，两部分都由 to 引出。
+7|1|link|Even a skilled and highly experienced sports person|Even：极端情形强调|用经验丰富者仍可能出事，支持风险无法完全消除。
+7|1|vocab|life-threatening|life-threatening adj.|危及生命的，修饰 injury。
+7|1|vocab|devastating|devastating adj.|造成毁灭性打击的、令人极度悲痛的。
+7|1|vocab|backflip|backflip n.|后空翻；理解案例即可，不必列作通用写作输出词。
+7|1|expression|the likelihood of|likelihood of + 名词|……发生的可能性；increase the likelihood 表示风险上升。
+7|2|syntax|as they wish|as：方式|按他们希望的方式，说明参与选择由个人作出。
+7|2|syntax|many are well-aware and accepting of the risks involved|形容词并列＋后置分词|aware 与 accepting 共享 of；involved 后置修饰 risks。well-aware 通常无需连字符。
+7|2|link|What's more|递进补充|由挑战和刺激体验，进一步谈荣誉与国家认可。
+7|2|link|even though extreme sports are risky|even though：让步|明确承认风险，但不由此直接推出禁令。
+7|2|vocab|adrenaline rush|adrenaline rush|肾上腺素激增带来的兴奋感，运动题阅读表达。
+7|2|vocab|inherent|inherent adj.|固有的、内在的；与前段 inherently 词形呼应。
+7|2|expression|meet the required legal standards of safety|meet standards|达到标准；这里是设施达到安全要求。
+7|2|expression|glorious fame and prestige|fame / prestige|fame 是知名度，prestige 是声望；意义相关但不完全相同，glorious fame 稍显夸张。
+7|3|link|despite the risks|despite + 名词|插在破折号之间再次承认危险，仍坚持参与自由。
+7|3|vocab|immense|immense adj.|极大的，修饰 excitement。
+7|3|expression|excitement and adventure|excitement / adventure|刺激感与冒险体验，不是同一意义重复；结尾回扣引言体验价值。
+8|0|syntax|an increasing number of people purchase various household appliances|an increasing number of + 复数|表示越来越多的人，谓语用 purchase 而非 purchases。
+8|0|link|though some negative consequences cannot be ignored|though：让步|总体支持后保留弊端，为后文负面段作预告。
+8|0|vocab|consequences|consequence n.|后果，不必然为负；此处由 negative 限定。
+8|0|expression|more advantages than disadvantages|advantages / disadvantages|优点和弊端的比较表达，正文应解释重要性而非只计数。
+8|1|syntax|which is particularly beneficial for working professionals|which 补充评价|指缩短做饭时间这一益处，后面的 who 从句进一步限定上班族。
+8|1|syntax|who often struggle to balance career and family responsibilities|who 从句＋struggle to do|修饰 working professionals，说明他们为什么特别需要省时电器。
+8|1|link|For instance|举例|微波炉和电饭煲是“省时便利”的实例，不是新的中心论点。
+8|1|link|As a result|结果收束|把前面的减少家务、重新分配时间归结为生活质量改善。
+8|1|vocab|physical labour|physical labour|体力劳动，区别于脑力工作。
+8|1|vocab|remarkably|remarkably adv.|显著地、明显地，修饰 improved。
+8|1|expression|enhanced convenience and comfort|enhance convenience / comfort|提升便利与舒适，具体说明生活改善的维度。
+8|2|syntax|This not only broadens horizons but also helps people stay connected with global events|not only … but also …|两个并列谓语说明信息接触的不同结果：视野与时事联系。
+8|2|syntax|being well-informed is crucial|动名词作主语|being well-informed 整体作 is 的主语，表示掌握信息这一状态。
+8|2|syntax|far more efficient than in the past|far + 比较级|far 加强 more efficient；than in the past 为省略式时间比较。
+8|2|link|Moreover|追加独立维度|从家务便利转向信息、知识和娱乐获取。
+8|2|vocab|well-informed|well-informed adj.|消息灵通、充分知情的。
+8|2|vocab|fast-paced|fast-paced adj.|节奏快的，用于描述现代生活。
+8|3|syntax|The production and disposal of electronic appliances lead to environmental degradation|并列名词作主语|production 与 disposal 并列，谓语 lead 用复数形式。
+8|3|syntax|contributing to sedentary lifestyles|分词结果＋contribute to|说明少活动可能带来久坐生活方式；to 后接名词，不是不定式。
+8|3|link|especially in the form of e-waste|具体化范围|把环境退化落到电子垃圾这一突出表现。
+8|3|link|Additionally|第二项风险|由环境影响扩展到身体活动与健康。
+8|3|vocab|overdependence|overdependence n.|过度依赖；后常接 on。
+8|3|expression|discourage physical activity|discourage activity|降低进行活动的动力或机会，表达可能行为后果。
+8|4|syntax|although there are undeniable drawbacks|although 从句＋there be|承认存在弊端，主句再作总体权衡。
+8|4|expression|outweigh the negatives|outweigh|在程度或重要性上超过，不能简化为“数量更多”。
+9|0|syntax|Returning these items respects history and builds local pride|动名词主语＋并列谓语|Returning these items 作单数主语，respects 与 builds 都加 s。
+9|0|syntax|keeping some of them in big international museums protects them from damage|动名词主语＋protect from|保留部分文物是主语；protect sth from damage 指免受损坏。
+9|0|link|but keeping some of them|but：利益对照|在归还的历史文化价值之后，补充保留部分藏品的理由。
+9|0|vocab|partially|partially adv.|部分地，明确不是完全同意。
+9|0|expression|their home countries|country of origin / home country|原属国、来源国的相关改写；此处不是指游客的祖国。
+9|1|syntax|When foreign countries return them, it shows respect for the local history|When 从句及 it 指代|When 引出归还情境；it 概括归还行为，写成 this act shows … 指代更明确。
+9|1|syntax|which helps heal past hurts and brings different nations together|which＋并列谓语|补充归还所体现尊重的作用；helps 与 brings 并列。
+9|1|syntax|showing local treasures at home makes local people proud of their culture|make + 宾语 + 形容词|showing … 作主语；local people 是宾语，proud 为补语。
+9|1|link|When local people can see them in person|When：情境|说明亲眼接触文物怎样帮助本地人理解历史。
+9|1|vocab|heal|heal v.|本文指修复历史伤害，不仅指治愈身体伤口。
+9|1|vocab|connected|connected adj.|有联系、有归属感的；feel connected to 指情感联系。
+9|1|expression|shows respect for|show respect for|表达对……的尊重，for 引出对象。
+9|1|expression|brings different nations together|bring … together|拉近关系、促进团结，不一定是物理聚集。
+9|2|syntax|moving old and weak objects over long distances can easily break them|动名词主语|moving … distances 作 can break 主语；weak 用来形容文物不够准确，fragile 更自然。
+9|2|syntax|can be ruined by long trips or changes in weather and temperature|情态动词被动|说明文物受到的损害，by 后列出潜在因素。
+9|2|syntax|keeping them in modern, safe museums is a better choice|动名词作主语＋比较级|以 better choice 表示比较判断，但需说明与哪种运输保存条件比较。
+9|2|syntax|make it easy for people to learn about different cultures|make it + adj. + for sb + to do|it 为形式宾语，to learn … 是实际被评价的活动。
+9|2|syntax|spreading knowledge around the globe|分词表示结果|跨文化展览使知识得到更广泛传播。
+9|2|link|Therefore|推论|由长途运输可能损坏，推到继续保存的建议；是否成立取决于实际保护条件。
+9|2|link|Furthermore|新增第二理由|从实物安全转到跨文化学习价值。
+9|2|vocab|ancient|ancient adj.|古代的；比一般 old 更强调久远年代。
+9|2|expression|around the globe|around the globe / all over the world|世界各地的表达替换。
+9|3|syntax|should be sent back to where they came from|被动＋where 从句|sent back 是被动；where they came from 作 to 后的地点内容，指原属地。
+9|3|link|to keep these objects safe and help more people learn|to do 表目的|两个并列动词说明协商合作的目的。
+9|3|expression|right away|right away / immediately|立即、马上；作者反对的是立即全部归还，而非所有归还。
