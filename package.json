@@ -6,6 +6,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "node scripts/test-dom.cjs"
+    "test": "node scripts/test-dom.cjs && node scripts/test-import-print.cjs"
   }
 }

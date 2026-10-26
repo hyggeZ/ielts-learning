@@ -27,3 +27,24 @@ nav{top:var(--header-height);z-index:35;min-height:var(--tabs-height);height:var
 #essay-picker button{display:block;width:100%;max-width:none;min-width:0;padding:9px 14px;white-space:normal;text-align:left;border:0;line-height:1.5}
 #essay-picker button:hover,#essay-picker button:focus-visible{background:var(--border);outline:none}
 #essay-picker button[aria-current=page]{color:var(--ink);font-weight:600}
+
+.app-header>span{min-width:0;overflow:hidden;text-overflow:ellipsis}.header-actions{flex-shrink:0}.plain:disabled{opacity:.5;cursor:default}
+.text-import-panel{max-width:1120px;margin:16px auto;padding:0 28px 16px;border-bottom:1px solid var(--border);color:var(--muted);font-size:12px;line-height:1.7}
+.text-import-panel p{margin:8px 0}.text-import-panel textarea{display:block;width:100%;min-height:230px;resize:vertical;padding:12px;border:1px solid var(--border);border-radius:0;background:var(--paper);color:var(--ink);font:14px/1.7 "Segoe UI","Microsoft YaHei",sans-serif}
+.text-import-actions{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin-top:10px}.text-import-actions .import-label{font-size:12px}#text-import-status{color:var(--ink)}.import-help{font-size:11px}
+#print-view{display:none}
+@media(max-width:720px){.text-import-panel{padding:0 16px 14px}.header-actions{gap:8px}.app-header>span{margin-right:8px}}
+@page{size:A4;margin:16mm}
+@media print{
+ html,body{min-width:0!important;width:auto!important;margin:0!important;padding:0!important;background:#fff!important;color:#151515!important;color-scheme:light!important}
+ body>*{display:none!important}body>#print-view{display:block!important}
+ #print-view{--vocab:#885018;--syntax:#285580;--link:#72458d;--expression:#17636a;--structure:#464e58;font:10pt/1.6 "Segoe UI","Microsoft YaHei",sans-serif;color:#151515;overflow-wrap:anywhere}
+ .print-brand{font-size:8pt;color:#555;margin-bottom:7pt}#print-view h1{font-size:15pt;font-weight:600;margin:0 0 12pt;break-after:avoid}
+ .print-question{white-space:pre-wrap;font:12pt/1.6 Georgia,"Times New Roman",serif}.print-overview{border-top:1px solid #ccc;margin-top:12pt;padding-top:8pt}.print-overview p{margin:3pt 0}
+ .print-paragraph{break-inside:auto;margin-top:15pt}#print-view h2{font-size:9pt;color:#555;font-weight:400;margin:0 0 5pt;break-after:avoid}
+ .print-original{font:12pt/1.7 Georgia,"Times New Roman",serif;white-space:pre-wrap;margin:0 0 8pt;orphans:3;widows:3}
+ .print-translation{color:#333;white-space:pre-wrap;margin:8pt 0 12pt;orphans:3;widows:3}.print-analysis{margin-top:10pt}
+ .print-note{border-left:1.5pt solid var(--structure);padding-left:8pt;margin:0 0 8pt;break-inside:avoid;page-break-inside:avoid}
+ .print-note.vocab{border-color:var(--vocab)}.print-note.syntax{border-color:var(--syntax)}.print-note.link{border-color:var(--link)}.print-note.expression{border-color:var(--expression)}
+ .print-note>span{font-size:8pt;color:#555;margin-right:4pt}.print-note strong{font-weight:600}.print-note p{white-space:pre-wrap;margin:2pt 0}.print-note .print-quote{font-family:Georgia,"Times New Roman",serif;color:#444}.print-note ul{margin:3pt 0;padding-left:15pt}
+}
