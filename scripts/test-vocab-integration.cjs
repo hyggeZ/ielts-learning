@@ -1,0 +1,66 @@
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const {JSDOM,VirtualConsole}=require('jsdom'),{IDBFactory}=require('fake-indexeddb'),{zipSync,strToU8}=require('fflate');
+const root=path.join(__dirname,'..'),instances=[];
+function open(file,factory=new IDBFactory()){
+  const errors=[],console=new VirtualConsole();console.on('jsdomError',error=>errors.push(error));
+  const dom=new JSDOM(fs.readFileSync(path.join(root,file),'utf8'),{url:'https://hyggez.github.io/ielts-learning/'+(file==='index.html'?'':file),runScripts:'dangerously',pretendToBeVisual:true,virtualConsole:console,beforeParse(w){w.indexedDB=factory;w.structuredClone=structuredClone;w.TextDecoder=TextDecoder;w.TextEncoder=TextEncoder;w.matchMedia=()=>({matches:false});w.scrollTo=()=>{};w.HTMLElement.prototype.scrollIntoView=()=>{};w.print=()=>{};}});
+  instances.push(dom);return {w:dom.window,d:dom.window.document,errors};
+}
+const plain=v=>JSON.parse(JSON.stringify(v));
+async function until(check,label){for(let i=0;i<100;i++){if(await check())return;await new Promise(r=>setTimeout(r,5));}throw Error('Timed out: '+label);}
+(async()=>{
+ const factory=new IDBFactory(),words=open('words.html',factory),parser=words.w.IeltsVocabImport;
+ await words.w.IeltsVocab.ready;
+ assert.equal((await words.w.IeltsVocab.list()).length,0);
+ let entries=parser.parseText('word,pos,meaning,phrases,examples,备注\r\nspark,v.,"引发,激起",spark concern,"One\nexample",source note');
+ assert.equal(entries[0].meaning,'引发,激起');assert.equal(entries[0].examples[0],'One');assert.equal(entries[0].raw,'source note');
+ entries=parser.parseText('acquire v. 获得\ncritical thinking：批判性思维\nretain 保留');
+ assert.equal(entries[0].word,'acquire');assert.equal(entries[0].pos,'v.');assert.equal(entries[1].word,'critical thinking');assert.equal(entries[2].meaning,'保留');
+ assert.throws(()=>parser.parseText('word,meaning\nspark,"unclosed'),/双引号/);
+ assert.throws(()=>parser.parseText('{bad'),/JSON/);
+ const nested=parser.parseText(JSON.stringify([{word:'spark',meanings:[{pos:'v.',zh:'引发'}],examples:[{en:'A spark.',zh:'火花。'}],audio:'source-only'}]));
+ assert(nested[0].meaning.includes('引发'));assert(nested[0].examples[0].includes('火花。'));assert(nested[0].raw.includes('source-only'));assert(!JSON.stringify(nested).includes('[object Object]'));
+ const workbook='<workbook xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="Words" sheetId="1" r:id="rId1"/></sheets></workbook>';
+ const rels='<Relationships><Relationship Id="rId1" Target="worksheets/sheet1.xml"/></Relationships>';
+ const sheet='<worksheet><sheetData><row r="1"><c r="A1" t="inlineStr"><is><t>单词</t></is></c><c r="B1" t="inlineStr"><is><t>释义</t></is></c></row><row r="2"><c r="A2" t="s"><v>0</v></c><c r="B2" t="inlineStr"><is><t>教育工作者</t></is></c></row></sheetData></worksheet>';
+ const zipped=zipSync({'xl/workbook.xml':strToU8(workbook),'xl/_rels/workbook.xml.rels':strToU8(rels),'xl/sharedStrings.xml':strToU8('<sst><si><t>educator</t></si></sst>'),'xl/worksheets/sheet1.xml':strToU8(sheet)});
+ entries=await parser.parseFile({name:'words.xlsx',size:zipped.length,arrayBuffer:async()=>zipped.buffer.slice(zipped.byteOffset,zipped.byteOffset+zipped.byteLength)});
+ assert.equal(entries[0].word,'educator');assert.equal(entries[0].meaning,'教育工作者');
+ const essay=open('index.html',factory),{w,d}=essay,store=w.IeltsVocab;
+ await store.ready;await until(()=>d.querySelectorAll('.original').length===4,'essay render');
+ const data=JSON.parse(d.querySelector('#essay-data').textContent)[0],original=data.paragraphs;
+ const sparkIndex=data.readerNotes.findIndex(n=>n.c==='vocab'&&n.t==='spark v.');assert(sparkIndex>=0);
+ const sparkAnchor=[...d.querySelectorAll('[data-ids]')].find(a=>a.dataset.ids.split(',').map(Number).includes(sparkIndex));sparkAnchor.click();
+ d.querySelector('[data-star="'+sparkIndex+'"]').click();
+ await until(async()=>(await store.list()).some(w=>w.key==='spark'),'collect spark');
+ await until(()=>d.querySelector('[data-star="'+sparkIndex+'"]').getAttribute('aria-pressed')==='true','star on');
+ let spark=(await store.list()).find(w=>w.key==='spark');assert(spark.aliases.includes('sparked'));
+ d.querySelector('[data-star="'+sparkIndex+'"]').click();
+ await until(()=>d.querySelector('[data-star="'+sparkIndex+'"]').getAttribute('aria-pressed')==='false','star off');
+ assert((await store.list()).some(w=>w.key==='spark'),'uncollect retains word');
+ await store.importEntries([{word:'concern',meaning:'关注'},{word:'art',meaning:'艺术'}]);
+ let concern=(await store.list()).find(w=>w.key==='concern'),art=(await store.list()).find(w=>w.key==='art');
+ await store.setForgotten(concern.id,true);await store.setForgotten(art.id,true);
+ await until(()=>[...d.querySelectorAll('.library-vocab strong')].some(n=>n.textContent==='concern'),'forgotten match');
+ assert(![...d.querySelectorAll('.library-vocab strong')].some(n=>n.textContent==='art'),'no substring matching');
+ assert.deepEqual([...d.querySelectorAll('.original')].map(n=>n.textContent),original);
+ let concernCard=[...d.querySelectorAll('.library-vocab')].find(n=>n.querySelector('strong').textContent==='concern');
+ const noteId=concernCard.dataset.id;[...d.querySelectorAll('[data-ids]')].find(a=>a.dataset.ids.split(',').includes(noteId)).click();
+ concernCard.querySelector('[data-star]').click();
+ await until(()=>d.querySelector('#n'+noteId+' [data-star]')?.getAttribute('aria-pressed')==='true','dynamic star stable after description grows');
+ const contentCount=(await store.list()).find(w=>w.id===concern.id).contents.length;
+ d.querySelector('#n'+noteId+' [data-star]').click();await until(()=>d.querySelector('#n'+noteId+' [data-star]')?.getAttribute('aria-pressed')==='false','dynamic uncollect');
+ d.querySelector('#n'+noteId+' [data-star]').click();await until(()=>d.querySelector('#n'+noteId+' [data-star]')?.getAttribute('aria-pressed')==='true','dynamic recollect');
+ assert.equal((await store.list()).find(w=>w.id===concern.id).contents.length,contentCount,'no recursive copies');
+ await store.deleteWord(concern.id);await until(()=>![...d.querySelectorAll('.library-vocab strong')].some(n=>n.textContent==='concern'),'deleted forgotten note disappears');
+ const para=d.querySelector('.original'),walker=d.createTreeWalker(para,w.NodeFilter.SHOW_TEXT);let node,selected;
+ while((node=walker.nextNode())){const start=node.textContent.indexOf('educators');if(start>=0){selected={node,start};break;}}
+ assert(selected);const range=d.createRange();range.setStart(selected.node,selected.start);range.setEnd(selected.node,selected.start+9);w.getSelection().removeAllRanges();w.getSelection().addRange(range);para.dispatchEvent(new w.MouseEvent('mouseup',{bubbles:true}));
+ d.querySelector('.note-editor select').value='vocab';d.querySelector('.note-editor textarea').value='教育工作者';d.querySelector('.save-note').click();
+ d.querySelector('.personal-note [data-star]').click();await until(async()=>(await store.list()).some(w=>w.key==='educators'),'personal note collection');
+ assert.deepEqual([...d.querySelectorAll('.original')].map(n=>n.textContent),original);
+ assert((await words.w.IeltsVocab.list()).some(w=>w.key==='educators'),'second page shares database');
+ assert.equal(d.querySelectorAll('.header-actions #export-notes,.header-actions #import-notes').length,0);
+ for(const instance of [words,essay])assert.equal(instance.errors.length,0,instance.errors.map(e=>e.message).join('\n'));
+ console.log('PASS: text/CSV/JSON/XLSX parsing, essay stars and aliases, forgotten whole-word matches, stable dynamic collections, personal-note collection and shared page database.');
+})().catch(e=>{console.error(e);process.exitCode=1;}).finally(()=>instances.forEach(dom=>dom.window.close()));
