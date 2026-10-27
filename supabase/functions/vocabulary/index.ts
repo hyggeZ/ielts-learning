@@ -27,7 +27,11 @@ Deno.serve(async (request: Request) => {
   const authorization = request.headers.get("Authorization") ?? "";
   if (!/^Bearer\s+\S+$/i.test(authorization)) return reply(401, { error: "Login required" }, origin);
   const url = Deno.env.get("SUPABASE_URL");
-  const apiKey = Deno.env.get("SUPABASE_PUBLISHABLE_KEY") ?? Deno.env.get("SUPABASE_ANON_KEY");
+  let apiKey = Deno.env.get("SUPABASE_ANON_KEY");
+  try {
+    const publishableKey = JSON.parse(Deno.env.get("SUPABASE_PUBLISHABLE_KEYS") ?? "null")?.default;
+    if (typeof publishableKey === "string" && publishableKey) apiKey = publishableKey;
+  } catch { /* Retain the legacy anon key if the publishable key map is unavailable. */ }
   if (!url || !apiKey) return reply(503, { error: "Cloud endpoint is not configured" }, origin);
   const headers = { apikey: apiKey, Authorization: authorization, "Content-Type": "application/json" };
   const controller = new AbortController();

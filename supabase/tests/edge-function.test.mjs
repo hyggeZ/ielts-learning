@@ -4,14 +4,15 @@ import assert from 'node:assert/strict';
 const env = {
   ALLOWED_ORIGINS: 'https://frontend.example',
   SUPABASE_URL: 'https://project.example',
-  SUPABASE_ANON_KEY: 'test-public-key',
+  SUPABASE_PUBLISHABLE_KEYS: JSON.stringify({ default: 'test-public-key' }),
+  SUPABASE_ANON_KEY: 'test-legacy-key',
 };
-let handler, authStatus = 200, rpcStatus = 200, rpcPayload = { ok: true }, calls = [];
+let handler, authStatus = 200, rpcStatus = 200, rpcPayload = { ok: true }, calls = [], expectedApiKey = 'test-public-key';
 globalThis.Deno = { env: { get: name => env[name] }, serve: fn => { handler = fn; } };
 globalThis.fetch = async (url, options) => {
   calls.push({ url, options });
   assert.equal(options.headers.Authorization, 'Bearer test-user-access-token');
-  assert.equal(options.headers.apikey, 'test-public-key');
+  assert.equal(options.headers.apikey, expectedApiKey);
   if (url.endsWith('/auth/v1/user')) return new Response(JSON.stringify({ id: 'test-user' }), { status: authStatus });
   return new Response(JSON.stringify(rpcPayload), { status: rpcStatus });
 };
@@ -63,5 +64,11 @@ rpcStatus = 500; rpcPayload = { message: 'private database details' }; response 
 assert.equal(response.status, 502); assert.deepEqual(await response.json(), { error: 'Database operation failed' });
 rpcStatus = 200; rpcPayload = { ok: true };
 response = await request({ action: 'mutate', baseRevision: 0, operationId: uuid, operations: [{}], padding: 'x'.repeat(8 * 1024 * 1024) }); assert.equal(response.status, 413); assert.equal(calls.length, 1);
-delete env.SUPABASE_ANON_KEY; response = await request({ action: 'head' }); assert.equal(response.status, 503); assert.equal(calls.length, 0);
+delete env.SUPABASE_PUBLISHABLE_KEYS; expectedApiKey = 'test-legacy-key';
+response = await request({ action: 'head' }); assert.equal(response.status, 200); assert.equal(calls.length, 2);
+env.SUPABASE_PUBLISHABLE_KEYS = '{invalid';
+response = await request({ action: 'head' }); assert.equal(response.status, 200); assert.equal(calls.length, 2);
+delete env.SUPABASE_ANON_KEY; env.SUPABASE_PUBLISHABLE_KEYS = JSON.stringify({ default: 'test-public-key' }); expectedApiKey = 'test-public-key';
+response = await request({ action: 'head' }); assert.equal(response.status, 200); assert.equal(calls.length, 2);
+delete env.SUPABASE_PUBLISHABLE_KEYS; response = await request({ action: 'head' }); assert.equal(response.status, 503); assert.equal(calls.length, 0);
 console.log('PASS: cloud endpoint auth, exact-origin CORS, versioned RPC dispatch, conflict mapping, validation, size limits and error isolation. No cloud database was connected.');
