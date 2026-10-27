@@ -1,3 +1,3 @@
 // Project URL and publishable key are public client configuration, not secrets.
-// Fill these only after the user's Supabase project has been created.
-window.IeltsCloudConfig=Object.freeze({projectUrl:'',publishableKey:''});
+// This public project URL and publishable key are safe to include in GitHub Pages.
+window.IeltsCloudConfig=Object.freeze({projectUrl:'https://otauipzurjqlsdfxldyb.supabase.co',publishableKey:'sb_publishable_LF5v3BBkfOxw-LleogMGqg_PKQoymvb'});
