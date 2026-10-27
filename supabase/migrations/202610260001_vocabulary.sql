@@ -9,7 +9,7 @@ create table public.words (
   id uuid primary key default gen_random_uuid(),
   owner_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
   key text not null,
-  word text not null check (char_length(word) between 1 and 200),
+  word text not null check (char_length(word) between 1 and 160),
   aliases text[] not null default '{}',
   forgotten boolean not null default false,
   forget_count integer not null default 0 check (forget_count >= 0),
@@ -18,7 +18,7 @@ create table public.words (
   unique (owner_id, key),
   unique (id, owner_id),
   check (key <> '' and key = public.vocab_normalize_word(word)),
-  check (cardinality(aliases) <= 100)
+  check (cardinality(aliases) <= 50)
 );
 
 create table public.word_contents (
@@ -26,10 +26,10 @@ create table public.word_contents (
   owner_id uuid not null default auth.uid() references auth.users(id) on delete cascade,
   word_id uuid not null,
   fingerprint text not null,
-  pos text not null default '' check (char_length(pos) <= 200),
-  meaning text not null default '' check (char_length(meaning) <= 20000),
-  phrases text[] not null default '{}' check (cardinality(phrases) <= 100),
-  examples text[] not null default '{}' check (cardinality(examples) <= 100),
+  pos text not null default '' check (char_length(pos) <= 100),
+  meaning text not null default '' check (char_length(meaning) <= 30000),
+  phrases text[] not null default '{}' check (cardinality(phrases) <= 200),
+  examples text[] not null default '{}' check (cardinality(examples) <= 200),
   raw text not null default '' check (char_length(raw) <= 30000),
   sources jsonb not null default '[]'::jsonb check (jsonb_typeof(sources) = 'array'),
   created_at timestamptz not null default now(),
@@ -55,8 +55,8 @@ returns text[] language plpgsql immutable set search_path = '' as $$
 declare item jsonb; result text[] := '{}'; value text;
 begin
   if p_value is null then return result; end if;
-  if jsonb_typeof(p_value) <> 'array' or jsonb_array_length(p_value) > 100 then
-    raise exception 'Expected an array of at most 100 strings' using errcode = '22023';
+  if jsonb_typeof(p_value) <> 'array' or jsonb_array_length(p_value) > 200 then
+    raise exception 'Expected an array of at most 200 strings' using errcode = '22023';
   end if;
   for item in select * from jsonb_array_elements(p_value) loop
     if jsonb_typeof(item) <> 'string' then raise exception 'Expected string item' using errcode = '22023'; end if;

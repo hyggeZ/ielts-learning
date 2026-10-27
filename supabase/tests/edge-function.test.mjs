@@ -6,14 +6,14 @@ const env = {
   SUPABASE_URL: 'https://project.example',
   SUPABASE_ANON_KEY: 'test-public-key',
 };
-let handler, authStatus = 200, rpcStatus = 200, calls = [];
+let handler, authStatus = 200, rpcStatus = 200, rpcPayload = { ok: true }, calls = [];
 globalThis.Deno = { env: { get: name => env[name] }, serve: fn => { handler = fn; } };
 globalThis.fetch = async (url, options) => {
   calls.push({ url, options });
   assert.equal(options.headers.Authorization, 'Bearer test-user-access-token');
   assert.equal(options.headers.apikey, 'test-public-key');
   if (url.endsWith('/auth/v1/user')) return new Response(JSON.stringify({ id: 'test-user' }), { status: authStatus });
-  return new Response(JSON.stringify({ ok: true }), { status: rpcStatus });
+  return new Response(JSON.stringify(rpcPayload), { status: rpcStatus });
 };
 await import('../functions/vocabulary/index.ts');
 assert.equal(typeof handler, 'function');
@@ -32,23 +32,36 @@ assert.equal(response.status, 403); assert.equal(calls.length, 0); assert.equal(
 response = await request({ action: 'list' }, { token: '' }); assert.equal(response.status, 401); assert.equal(calls.length, 0);
 response = await request({}, { method: 'GET' }); assert.equal(response.status, 405);
 for (const [body, rpc, args] of [
-  [{ action: 'list' }, 'vocab_list', {}],
-  [{ action: 'import', entries: [{ word: 'spark', meaning: '引发' }] }, 'vocab_import', { p_entries: [{ word: 'spark', meaning: '引发' }] }],
-  [{ action: 'forget', id: uuid, forgotten: true }, 'vocab_set_forgotten', { p_word_id: uuid, p_forgotten: true }],
-  [{ action: 'forget', id: uuid, forgotten: false }, 'vocab_set_forgotten', { p_word_id: uuid, p_forgotten: false }],
-  [{ action: 'uncollect', sourceId: 'essay:1:0:spark' }, 'vocab_uncollect', { p_source_id: 'essay:1:0:spark' }],
-  [{ action: 'delete', id: uuid }, 'vocab_delete', { p_word_id: uuid }],
+  [{ action: 'head' }, 'vocab_sync_head', {}],
+  [{ action: 'snapshot' }, 'vocab_sync_snapshot', {}],
+  [{ action: 'mutate', baseRevision: 7, operationId: uuid, operations: [{ type: 'forget', key: 'spark', forgotten: true }] }, 'vocab_sync_mutate',
+    { p_base_revision: 7, p_operation_id: uuid, p_operations: [{ type: 'forget', key: 'spark', forgotten: true }] }],
+  [{ action: 'replace', baseRevision: 0, operationId: uuid, backup: { format: 'ielts-vocabulary', version: 1, words: [] } }, 'vocab_sync_replace',
+    { p_base_revision: 0, p_operation_id: uuid, p_backup: { format: 'ielts-vocabulary', version: 1, words: [] } }],
 ]) {
   response = await request(body); assert.equal(response.status, 200);
   assert.deepEqual(await response.json(), { data: { ok: true } });
   assert.equal(calls.length, 2); assert.equal(calls[1].url, `https://project.example/rest/v1/rpc/${rpc}`);
   assert.deepEqual(JSON.parse(calls[1].options.body), args);
 }
-for (const body of [{ action: 'unknown' }, { action: 'delete', id: 'bad' }, { action: 'forget', id: uuid, forgotten: 'true' }, { action: 'import', entries: {} }, { action: 'uncollect', sourceId: '' }]) {
+for (const body of [
+  { action: 'unknown' },
+  { action: 'mutate', baseRevision: -1, operationId: uuid, operations: [{}] },
+  { action: 'mutate', baseRevision: 0, operationId: 'bad', operations: [{}] },
+  { action: 'mutate', baseRevision: 0, operationId: uuid, operations: [] },
+  { action: 'mutate', baseRevision: 0, operationId: uuid, operations: Array(501).fill({}) },
+  { action: 'replace', baseRevision: 0, operationId: uuid, backup: [] },
+  { action: 'forget', id: uuid, forgotten: true },
+]) {
   response = await request(body); assert.equal(response.status, 400); assert.equal(calls.length, 1);
 }
 authStatus = 401; response = await request({ action: 'list' }); assert.equal(response.status, 401); assert.equal(calls.length, 1); authStatus = 200;
-rpcStatus = 403; response = await request({ action: 'list' }); assert.equal(response.status, 403); assert.deepEqual(await response.json(), { error: 'Database operation failed' }); rpcStatus = 200;
-response = await request({ action: 'import', entries: [], padding: 'x'.repeat(8 * 1024 * 1024) }); assert.equal(response.status, 413); assert.equal(calls.length, 1);
-delete env.SUPABASE_ANON_KEY; response = await request({ action: 'list' }); assert.equal(response.status, 503); assert.equal(calls.length, 0);
-console.log('PASS: optional cloud endpoint auth, exact-origin CORS, RPC actions, validation, size limits and error isolation. No cloud database was connected.');
+rpcStatus = 403; response = await request({ action: 'head' }); assert.equal(response.status, 403); assert.deepEqual(await response.json(), { error: 'Database operation failed' });
+rpcStatus = 400; rpcPayload = { code: '40001' }; response = await request({ action: 'mutate', baseRevision: 7, operationId: uuid, operations: [{ type: 'delete', key: 'spark' }] });
+assert.equal(response.status, 409); assert.deepEqual(await response.json(), { error: 'Revision conflict', code: 'revision_conflict' });
+rpcStatus = 500; rpcPayload = { message: 'private database details' }; response = await request({ action: 'snapshot' });
+assert.equal(response.status, 502); assert.deepEqual(await response.json(), { error: 'Database operation failed' });
+rpcStatus = 200; rpcPayload = { ok: true };
+response = await request({ action: 'mutate', baseRevision: 0, operationId: uuid, operations: [{}], padding: 'x'.repeat(8 * 1024 * 1024) }); assert.equal(response.status, 413); assert.equal(calls.length, 1);
+delete env.SUPABASE_ANON_KEY; response = await request({ action: 'head' }); assert.equal(response.status, 503); assert.equal(calls.length, 0);
+console.log('PASS: cloud endpoint auth, exact-origin CORS, versioned RPC dispatch, conflict mapping, validation, size limits and error isolation. No cloud database was connected.');

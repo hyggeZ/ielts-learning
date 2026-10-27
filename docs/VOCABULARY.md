@@ -1,6 +1,6 @@
 # 单词本与词库
 
-本次先交付本地词库和两个网页，云端配置由用户决定后再接入。当前词库在当前浏览器保存；不同设备不会自动同步。网页代码上传 GitHub，私人词库不上传仓库。
+词库保存在浏览器本机；配置 Supabase 项目并登录同一账号后，可以在电脑和手机之间同步。项目代码可上传 GitHub，私人词库和登录凭据不得提交到仓库。未填写 `cloud-config.js` 时，网页保持本地模式。
 
 ## 数据和操作
 
@@ -19,46 +19,18 @@
 
 抽词按轮随机打乱，每轮每个候选词出现一次，再打乱下一轮；有多个词时避免跨轮立即重复。“上一个”返回实际浏览历史，不重新抽取。“忘记了”不改变随机顺序。两本各自保留未完轮次，刷新后继续；新增词补入剩余队列，已删除的词会移出队列与历史。
 
-## 未来可选云端
+## 云端同步
 
-目录 `supabase/` 是预备后端，当前前端不会连接它，不含项目凭据，也没有执行建库或部署。
+单词页顶栏的“同步”用于登录和查看状态。首次登录会显示本机与云端词数，用户选择“使用云端词库”或“合并本机词库”；不会因为访问 GitHub Pages 就自动上传私人词库。选择云端会以云端快照替换当前浏览器的本机词库。合并会保留两边的不同资料，但可能重新加入此前在另一设备删除的旧词，所以首次合并前应核对本机数据来源。
 
-- `migrations/202610260001_vocabulary.sql`：PostgreSQL 两张业务表 `words`、`word_contents`，用户所有权、RLS、关联删除与事务 RPC。
-- `functions/vocabulary/index.ts`：TypeScript Edge Function，验证用户 access token，携带同一用户上下文调用 RPC；不使用 service-role key。
-- `functions/.env.example`：允许访问接口的前端 Origin 示例，不含秘密。
+完成首次连接后，当前设备的增删改、收藏、取消收藏、忘词状态都会在本机记录待同步操作；离线时可继续使用，联网后重试。同账号的其他设备只轮询版本号，版本变化时才拉取完整词库。彻底删除和移出忘词本会随版本同步，不能把旧本机备份当作云端权威快照。未同步时不要清理浏览器站点数据；有待同步修改时不能退出或切换账号。
 
-后端字段与前端含义对应：
+云端只连接通过 HTTP(S) 打开的页面；`file://` 文件页面保持本地模式。浏览器 IndexedDB 仍是离线缓存，登录会话和待同步队列保存在当前浏览器，手机与电脑要用同一个 Supabase Auth 账号。
 
-| 表 | 主要字段 |
-|---|---|
-| `words` | `owner_id`、`key`、`word`、`aliases`、`forgotten`、`forget_count`、时间 |
-| `word_contents` | `word_id`、内容指纹、词性、释义、短语、例句、原文、`sources` |
+`vocab-store.js` 保存本机数据，`vocab-cloud.js` 负责操作队列、版本冲突和云快照，`cloud-auth.js` 负责登录会话。`cloud-config.js` 只填可公开的 Project URL 和 publishable key；绝不能加入数据库密码或 secret/service-role key。`supabase/README.md` 有两份 SQL 迁移、Edge Function、Origin 和真实项目的部署顺序。
 
-`sources` 为 `{id,label,quote,collected}` 数组。词条按 `(owner_id,key)` 唯一，资料按 `(word_id,fingerprint)` 唯一。资料使用复合外键校验词条和资料属于同一用户；删除词条级联删除关联资料。所有查询和写入均使用用户身份及 RLS，匿名请求无表权限。
-
-### 接入时再执行的步骤
-
-1. 用户在自己的 Supabase 账号下创建项目，选择区域，并用常用设备检查网络可达性。
-2. 在 SQL Editor 运行迁移文件，或在已安装并登录的 Supabase CLI 中链接指定项目后执行 `supabase db push`。先在测试项目检查，不对未知现有数据库直接执行。
-3. 在 Supabase Auth 建立个人登录账号。浏览器使用 publishable key 和个人登录会话；数据库密码、service-role key 不写入网页。
-4. 设置 Edge Function 环境变量 `ALLOWED_ORIGINS` 为实际网页 Origin，例如 `https://example.com`，多个用逗号分隔，不带路径、不使用星号。托管运行环境自动提供 `SUPABASE_URL` 和 `SUPABASE_ANON_KEY`；函数也接受另行配置的 `SUPABASE_PUBLISHABLE_KEY`。
-5. 用 `supabase functions deploy vocabulary` 部署函数。当前 `config.toml` 保留 JWT 校验；部署时核对项目当前 JWT 配置，不关闭验证来绕过失败。
-6. 实现并验证前端云端适配与本地迁移；明确选择要上传的私人词库，再切换数据来源。当前页面没有自动上传行为。
-
-### 接口
-
-`POST /functions/v1/vocabulary`，请求带用户 `Authorization: Bearer <access token>` 和项目公开 API key。JSON 请求：
-
-| `action` | 其他字段 | 返回 `data` |
-|---|---|---|
-| `list` | 无 | 全部词条，包含资料 |
-| `import` | `entries` | 新增词条／资料数量 |
-| `forget` | `id`、`forgotten` | 是否更新到词条 |
-| `uncollect` | `sourceId` | 取消收藏的资料条数 |
-| `delete` | `id` | 是否删除到词条 |
-
-单次云端导入最多 5000 项、8 MB。事务内校验和合并；坏数据整批回滚。并发导入依靠唯一约束与行锁合并，重复导入保留既有状态；发生事务冲突时客户端应重新读取后重试。接口不支持直接写入任意所有者 ID。
+后端按用户分离 `words` 与 `word_contents`，另用 `vocab_sync_state` 记录版本、`vocab_sync_operations` 记录幂等操作。所有写入都检查当前用户和预期版本；冲突时客户端重新读取并重放未完成的语义操作。`sources` 为 `{id,label,quote,collected}` 数组，取消某个收藏来源不会删掉整个词。
 
 ### 验证边界
 
-`node --experimental-strip-types supabase/tests/edge-function.test.mjs` 检查接口分发、用户鉴权、Origin、长度限制和异常处理，全部使用模拟请求，不连接网络。SQL 迁移和真实 Auth／RLS／级联删除仍需在创建测试项目后执行数据库集成检查；未配置云端时不能声称云端同步已经可用。
+本地测试覆盖双设备同步模拟、离线队列、版本冲突、硬删除、取消收藏和忘词状态；两份迁移已在隔离 PostgreSQL 16 环境中验证。真实 Supabase 项目的 Auth、Edge Function、RLS 与跨设备同步仍须在部署后测试，项目公开配置未填时不能声称云端已开通。

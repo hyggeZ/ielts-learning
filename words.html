@@ -5,8 +5,15 @@
 @media(max-width:380px){.word-brand span{display:none}.word-controls button{font-size:11px;padding:5px 6px}.word-books,.word-modes{gap:2px}.word-main{padding-left:14px;padding-right:14px}}
 #word-import-preview{margin-top:15px;padding-top:8px;border-top:1px solid var(--border);font-size:12px}#word-import-preview-list>div{display:flex;align-items:baseline;gap:15px;padding:5px 0;overflow-wrap:anywhere}#word-import-preview-list strong{min-width:110px;font-weight:600}#word-import-preview-list span{color:var(--muted);white-space:pre-wrap}#word-import-confirm{margin-top:10px;font-size:12px}
 .word-edit-panel{padding:15px 0;border-bottom:1px solid var(--border)}.word-edit-panel label{display:block;font-size:11px;color:var(--muted);margin-bottom:11px}.word-edit-panel input,.word-edit-panel textarea{display:block;width:100%;background:var(--paper);color:var(--ink);border:1px solid var(--border);border-radius:0;margin-top:4px;padding:7px 9px;font-size:13px;line-height:1.6}.word-edit-panel textarea{resize:vertical}.word-edit-panel fieldset{border:0;border-top:1px solid var(--border);padding:12px 0 0;margin:15px 0 0;min-width:0}.word-edit-panel legend{padding-right:8px;font-size:10px;color:var(--muted)}.word-edit-actions{display:flex;gap:10px;font-size:12px}
+.word-cloud-panel{width:min(900px,100%);margin:0 auto;padding:13px 28px 16px;border-bottom:1px solid var(--border);font-size:12px;color:var(--muted)}
+.word-cloud-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.word-cloud-head p{margin:0;overflow-wrap:anywhere}.word-cloud-head button{border:0;padding:5px 0;font-size:11px;color:var(--muted)}
+.word-cloud-panel form{display:flex;align-items:end;flex-wrap:wrap;gap:10px;margin-top:13px}.word-cloud-panel label{display:block;min-width:min(220px,100%);flex:1;font-size:11px}.word-cloud-panel input{display:block;width:100%;margin-top:4px;padding:8px 9px;border:1px solid var(--border);border-radius:0;background:var(--paper);color:var(--ink);font-size:13px}
+.word-cloud-actions{display:flex;align-items:center;flex-wrap:wrap;gap:9px}.word-cloud-actions button,#word-cloud-retry{padding:7px 10px;font-size:11px}
+#word-cloud-choice{margin-top:12px}#word-cloud-choice p{margin:0 0 9px}#word-cloud-connected{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:12px}#word-cloud-user{overflow-wrap:anywhere}#word-cloud-retry{margin-top:10px}
+@media(max-width:600px){.word-cloud-panel{padding:12px 18px 15px}.word-cloud-panel form{display:block}.word-cloud-panel label{margin-bottom:9px}.word-cloud-actions button{min-height:36px}}
 </style></head><body>
-<header class="word-header"><a class="word-brand" href="index.html"><b>hyggeZ</b><span>雅思学习·单词本</span></a><nav class="word-header-actions" aria-label="页面操作"><a href="index.html">作文</a><button id="word-import-toggle" aria-expanded="false" aria-controls="word-import-panel">导入</button><button id="word-overview-toggle" aria-pressed="false">总览</button><button id="word-theme" class="word-theme" aria-label="切换暗色模式"></button></nav></header>
+<header class="word-header"><a class="word-brand" href="index.html"><b>hyggeZ</b><span>雅思学习·单词本</span></a><nav class="word-header-actions" aria-label="页面操作"><a href="index.html">作文</a><button id="word-import-toggle" aria-expanded="false" aria-controls="word-import-panel">导入</button><button id="word-overview-toggle" aria-pressed="false">总览</button><button id="word-cloud-toggle" aria-expanded="false" aria-controls="word-cloud-panel">同步</button><button id="word-theme" class="word-theme" aria-label="切换暗色模式"></button></nav></header>
+<section id="word-cloud-panel" class="word-cloud-panel" aria-label="云端同步" hidden><div class="word-cloud-head"><p id="word-cloud-state" role="status"></p><div class="word-cloud-actions"><button id="word-cloud-logout" type="button" hidden>退出登录</button><button id="word-cloud-close" type="button">收起</button></div></div><form id="word-cloud-login" hidden><label>邮箱<input id="word-cloud-email" type="email" autocomplete="email" required></label><label>密码<input id="word-cloud-password" type="password" autocomplete="current-password" required></label><div class="word-cloud-actions"><button type="submit">登录</button><button id="word-cloud-signup" type="button">创建登录</button></div></form><div id="word-cloud-choice" hidden><p id="word-cloud-choice-text"></p><div class="word-cloud-actions"><button id="word-cloud-use" type="button">使用云端词库</button><button id="word-cloud-merge" type="button">合并本机词库</button></div></div><div id="word-cloud-connected" hidden><span id="word-cloud-user"></span><div class="word-cloud-actions"><button id="word-cloud-sync" type="button">立即同步</button></div></div><button id="word-cloud-retry" type="button" hidden>重试连接</button></section>
 <section id="word-import-panel" class="word-import-panel" aria-label="导入单词" hidden><textarea id="word-import-input" aria-label="单词文本" placeholder="word　词性　释义&#10;每行一个词，也可以粘贴带表头的表格。"></textarea><div class="word-import-actions"><button id="word-import-save">预览</button><label>读取文件<input id="word-import-file" type="file" accept=".txt,.csv,.tsv,.json,.xlsx,text/plain,text/csv,application/json" hidden></label><button id="word-backup-export">导出词库</button><label>恢复备份<input id="word-backup-import" type="file" accept=".json,application/json" hidden></label><button id="word-import-close">收起</button></div><div id="word-import-preview" hidden><p id="word-import-preview-count"></p><div id="word-import-preview-list"></div><button id="word-import-confirm">确认导入</button></div><p class="word-import-help">支持文本、CSV、Excel（.xlsx）和 JSON。词库保存在当前浏览器。</p></section>
 <main class="word-main"><div class="word-controls"><div class="word-books" aria-label="单词本"><button data-book="all" class="active" aria-pressed="true">全部</button><button data-book="forgotten" aria-pressed="false">忘过的词</button></div><div class="word-modes" aria-label="背词模式"><button data-mode="browse" class="active" aria-pressed="true">刷词</button><button data-mode="memory" aria-pressed="false">记忆</button></div></div><p id="word-status" class="word-status" role="status" hidden></p>
 <section id="word-empty" class="word-empty" hidden><p id="word-empty-message">词库为空</p><button id="word-empty-import">导入单词</button></section>
@@ -95,7 +102,286 @@
   async function exportData(){return transaction(false,state=>({format:'ielts-vocabulary',version:1,words:fullWords(state)}));}
   function backupWords(data){if(!data||data.format!=='ielts-vocabulary'||data.version!==1||!Array.isArray(data.words)||data.words.length>LIMITS.words)fail('词库备份格式不正确');let contentCount=0;return data.words.map(item=>{if(!item||typeof item!=='object'||Array.isArray(item))fail('词库备份词条不正确');const word=wordText(item.word),key=normalizeWord(word),aliases=strings(item.aliases,'词形',true);if(typeof item.forgotten!=='boolean'||!Number.isSafeInteger(item.forgetCount)||item.forgetCount<0||item.forgetCount>1000000000)fail('词库学习状态不正确');if(!Array.isArray(item.contents)||item.contents.length>LIMITS.contents)fail('词库资料不正确');contentCount+=item.contents.length;if(contentCount>LIMITS.contents)fail('词库资料过多');const createdAt=text(item.createdAt,'创建时间',100);if(!createdAt||!Number.isFinite(Date.parse(createdAt)))fail('创建时间不正确');const contents=item.contents.map(content=>{if(!content||typeof content!=='object'||!Array.isArray(content.sources)||content.sources.length>LIMITS.sources)fail('资料来源不正确');return {...contentFields(content),sources:content.sources.map(source=>{if(!source||typeof source.collected!=='boolean')fail('收藏状态不正确');return {id:identifier(source.id,'来源编号'),label:text(source.label,'来源',500),quote:text(source.quote,'原文摘录'),collected:source.collected};})};});return {word,key,aliases,forgotten:item.forgotten,forgetCount:item.forgetCount,createdAt,contents};});}
   async function restoreData(data){const incoming=backupWords(data);return transaction(true,state=>{let addedWords=0,addedContents=0;for(const item of incoming){let word=state.words.find(word=>word.key===item.key);if(!word){if(state.words.length>=LIMITS.words)fail('词库数量超过上限');word={id:uid('w'),key:item.key,word:item.word,aliases:[],forgotten:item.forgotten,forgetCount:item.forgetCount,createdAt:item.createdAt};state.words.push(word);addedWords++;}else{word.forgotten=word.forgotten||item.forgotten;word.forgetCount=Math.max(word.forgetCount,item.forgetCount);}word.aliases=mergeAliases(word.aliases,item.aliases).filter(a=>normalizeWord(a)!==word.key);for(const source of item.contents){let content=state.contents.find(c=>c.wordId===word.id&&fingerprint(c)===fingerprint(source));if(!content){if(state.contents.length>=LIMITS.contents)fail('词库资料数量超过上限');content={id:uid('c'),wordId:word.id,...contentFields(source),sources:[]};state.contents.push(content);addedContents++;}mergeSources(content,source.sources);}}return {addedWords,addedContents};});}
-  root.IeltsVocab=Object.freeze({ready,normalizeWord,list,importEntries,collect:entry=>importEntries([entry]),uncollect,setForgotten,updateWord,updateContent,updateDetails,deleteWord,exportData,restoreData,subscribe(listener){if(typeof listener!=='function')fail('监听器不正确');listeners.add(listener);return ()=>listeners.delete(listener);},get storageMode(){return mode;},LIMITS});
+  // Cloud snapshots are authoritative. Merge-style restoreData cannot propagate a
+  // remote deletion or a forgotten=false update, so replace both stores atomically.
+  async function replaceSnapshot(data){const incoming=backupWords(data);const validId=value=>{if(value===undefined||value===null)return null;const id=identifier(value,'词库编号');if(!/^[A-Za-z0-9][A-Za-z0-9:_-]{0,159}$/.test(id))fail('词库编号格式不正确');return id;};return transaction(true,state=>{
+    const previousWords=new Map(state.words.map(word=>[word.key,word]));
+    const previousContents=new Map(state.contents.map(content=>[content.wordId+'\0'+fingerprint(content),content]));
+    const nextWords=[],nextContents=[],wordKeys=new Set(),wordIds=new Set(),contentIds=new Set();
+    for(let i=0;i<incoming.length;i++){
+      const item=incoming[i],raw=data.words[i];if(wordKeys.has(item.key))fail('云端词库含重复单词');wordKeys.add(item.key);
+      const id=validId(raw.id)||previousWords.get(item.key)?.id||uid('w');if(wordIds.has(id))fail('云端词库含重复编号');wordIds.add(id);
+      nextWords.push({id,key:item.key,word:item.word,aliases:item.aliases.filter(alias=>normalizeWord(alias)!==item.key),forgotten:item.forgotten,forgetCount:item.forgetCount,createdAt:item.createdAt});
+      const signatures=new Set();
+      for(let j=0;j<item.contents.length;j++){
+        const source=item.contents[j],signature=fingerprint(source),rawContent=raw.contents[j];
+        if(signatures.has(signature))fail('云端词库含重复资料');signatures.add(signature);
+        const old=previousWords.get(item.key),prior=old&&previousContents.get(old.id+'\0'+signature);
+        const contentId=validId(rawContent.id)||prior?.id||uid('c');if(contentIds.has(contentId))fail('云端词库含重复资料编号');contentIds.add(contentId);
+        const sourceIds=new Set();for(const entry of source.sources){if(sourceIds.has(entry.id))fail('云端资料含重复来源');sourceIds.add(entry.id);}
+        nextContents.push({id:contentId,wordId:id,...contentFields(source),sources:clone(source.sources)});
+      }
+    }
+    const removedWords=state.words.filter(word=>!wordKeys.has(word.key)).length;
+    state.words=nextWords;state.contents=nextContents;
+    return {words:nextWords.length,contents:nextContents.length,removedWords};
+  });}
+  root.IeltsVocab=Object.freeze({ready,normalizeWord,list,importEntries,collect:entry=>importEntries([entry]),uncollect,setForgotten,updateWord,updateContent,updateDetails,deleteWord,exportData,restoreData,replaceSnapshot,subscribe(listener){if(typeof listener!=='function')fail('监听器不正确');listeners.add(listener);return ()=>listeners.delete(listener);},get storageMode(){return mode;},LIMITS});
+})(typeof window!=='undefined'?window:globalThis);
+</script><script>// Project URL and publishable key are public client configuration, not secrets.
+// Fill these only after the user's Supabase project has been created.
+window.IeltsCloudConfig=Object.freeze({projectUrl:'',publishableKey:''});
+</script><script>(function(root){
+  'use strict';
+  // The local database remains the offline reading cache. Cloud writes are a
+  // journal of user actions, not a comparison of two old whole-library copies.
+  const POLL_MS=30000,CHUNK=50,PREFIX='ielts-vocab-cloud-v1:';
+  const clone=value=>JSON.parse(JSON.stringify(value));
+  const fields=content=>({pos:content.pos||'',meaning:content.meaning||'',phrases:content.phrases||[],examples:content.examples||[],raw:content.raw||''});
+  const fingerprint=content=>JSON.stringify([content.pos||'',content.meaning||'',[...(content.phrases||[])].sort(),[...(content.examples||[])].sort(),content.raw||'']);
+  const sourceKey=source=>source.id;
+  function fail(message){throw new Error(message);}
+  function uuid(crypto){if(crypto?.randomUUID)return crypto.randomUUID();if(!crypto?.getRandomValues)fail('当前浏览器无法生成同步编号');const bytes=new Uint8Array(16);crypto.getRandomValues(bytes);bytes[6]=(bytes[6]&15)|64;bytes[8]=(bytes[8]&63)|128;const hex=[...bytes].map(n=>n.toString(16).padStart(2,'0')).join('');return `${hex.slice(0,8)}-${hex.slice(8,12)}-${hex.slice(12,16)}-${hex.slice(16,20)}-${hex.slice(20)}`;}
+  function validBackup(backup){return backup?.format==='ielts-vocabulary'&&backup.version===1&&Array.isArray(backup.words);}
+  function unionAliases(a,b,normalize){const seen=new Set();return [...a,...b].filter(alias=>{const key=normalize(alias);if(seen.has(key))return false;seen.add(key);return true;});}
+  function mergeSources(oldSources,newSources,mode){const map=new Map(oldSources.map(source=>[sourceKey(source),clone(source)]));for(const source of newSources){const old=map.get(sourceKey(source));if(!old){map.set(sourceKey(source),clone(source));continue;}if(mode==='import')old.collected=old.collected||source.collected;if(!old.label)old.label=source.label;if(!old.quote)old.quote=source.quote;}return [...map.values()];}
+  function mergeWord(old,incoming,normalize,mode){if(!old)return clone(incoming);const next=clone(old);next.aliases=unionAliases(next.aliases||[],incoming.aliases||[],normalize).filter(alias=>normalize(alias)!==next.key);if(mode==='restore'){next.forgotten=next.forgotten||incoming.forgotten;next.forgetCount=Math.max(next.forgetCount||0,incoming.forgetCount||0);}
+    for(const content of incoming.contents||[]){let existing=next.contents.find(item=>fingerprint(item)===fingerprint(content));if(!existing){next.contents.push(clone(content));continue;}existing.sources=mergeSources(existing.sources||[],content.sources||[],mode);}
+    return next;
+  }
+  function fnv(value){let hash=2166136261;for(let i=0;i<value.length;i++)hash=Math.imul(hash^value.charCodeAt(i),16777619);return (hash>>>0).toString(36);}
+  function clean(value){return String(value??'').replace(/\r\n?/g,'\n').trim();}
+  function strings(values){return [...new Set((values||[]).map(clean).filter(Boolean))];}
+  function importEntry(backup,entry,normalize,newId){const wordText=clean(entry.word).normalize('NFKC').replace(/\s+/g,' '),key=normalize(wordText);let word=backup.words.find(item=>item.key===key);if(!word){word={id:newId(),key,word:wordText,aliases:[],forgotten:false,forgetCount:0,createdAt:new Date().toISOString(),contents:[]};backup.words.push(word);}word.aliases=unionAliases(word.aliases||[],entry.aliases||[],normalize).filter(alias=>normalize(alias)!==key);
+    const content=fields({pos:clean(entry.pos),meaning:clean(entry.meaning),phrases:strings(entry.phrases),examples:strings(entry.examples),raw:clean(entry.raw)});let saved=word.contents.find(item=>fingerprint(item)===fingerprint(content));if(!saved){saved={id:newId(),wordId:word.id,...content,sources:[]};word.contents.push(saved);}const label=clean(entry.sourceLabel)||'导入',source={id:clean(entry.sourceId)||`import:${fnv(label)}:${key}`,label,quote:clean(entry.quote),collected:true};saved.sources=mergeSources(saved.sources,[source],'import');return word;}
+  function sameFields(a,b){return fingerprint(a)===fingerprint(b);}
+  function editedWord(remote,before,after,normalize){if(!remote)fail('云端的这个词已被删除；请先导出本地备份再处理冲突');const next=clone(remote);if(before.word!==after.word){next.word=after.word;next.key=normalize(after.word);}if(JSON.stringify(before.aliases)!==JSON.stringify(after.aliases))next.aliases=clone(after.aliases);
+    const prior=new Map(before.contents.map(content=>[content.id,content]));const later=new Map(after.contents.map(content=>[content.id,content]));
+    for(const original of before.contents){const changed=later.get(original.id),index=next.contents.findIndex(item=>item.id===original.id||fingerprint(item)===fingerprint(original));if(!changed){if(index>=0){if(!sameFields(next.contents[index],original))fail('云端资料也被修改；请先核对冲突');next.contents.splice(index,1);}continue;}if(sameFields(original,changed))continue;if(index<0||!sameFields(next.contents[index],original))fail('云端资料也被修改；请先核对冲突');const remoteContent=next.contents[index];next.contents[index]={...remoteContent,...fields(changed),sources:mergeSources(remoteContent.sources||[],changed.sources||[],'restore')};}
+    for(const content of after.contents){if(prior.has(content.id))continue;const existing=next.contents.find(item=>fingerprint(item)===fingerprint(content));if(existing)existing.sources=mergeSources(existing.sources||[],content.sources||[],'restore');else next.contents.push(clone(content));}
+    const seen=new Map();for(const content of next.contents){const key=fingerprint(content),previous=seen.get(key);if(previous)previous.sources=mergeSources(previous.sources||[],content.sources||[],'restore');else seen.set(key,content);}next.contents=[...seen.values()];return next;
+  }
+  function applyOperation(backup,op,normalize,newId){const operations=[],words=backup.words;
+    if(op.kind==='import'){const changed=new Set();for(const entry of op.entries){const word=importEntry(backup,entry,normalize,newId);changed.add(word.key);}for(const key of changed)operations.push({type:'upsert',word:clone(words.find(word=>word.key===key))});}
+    else if(op.kind==='restore'){for(const incoming of op.words){const key=normalize(incoming.word),index=words.findIndex(word=>word.key===key),merged=mergeWord(index<0?null:words[index],incoming,normalize,'restore');if(index<0)words.push(merged);else words[index]=merged;operations.push({type:'upsert',word:clone(merged)});}}
+    else if(op.kind==='forget'){const word=words.find(item=>item.key===op.key);if(word){word.forgotten=op.forgotten;if(op.forgotten)word.forgetCount=Math.min(1000000000,(word.forgetCount||0)+1);operations.push({type:'forget',key:op.key,forgotten:op.forgotten});}}
+    else if(op.kind==='uncollect'){for(const word of words)for(const content of word.contents)for(const source of content.sources)if(source.id===op.sourceId)source.collected=false;operations.push({type:'uncollect',sourceId:op.sourceId});}
+    else if(op.kind==='delete'){const index=words.findIndex(word=>word.key===op.key);if(index>=0){words.splice(index,1);operations.push({type:'delete',key:op.key});}}
+    else if(op.kind==='edit'){const before=op.before,after=op.after;if(!after)fail('本地编辑尚未完成');const index=words.findIndex(word=>word.key===before.key);if(index<0)fail('云端的这个词已被删除；请先核对冲突');const next=editedWord(words[index],before,after,normalize);if(next.key!==before.key&&words.some((word,i)=>i!==index&&word.key===next.key))fail('云端已有同名词条；请先核对冲突');words[index]=next;operations.push(next.key===before.key?{type:'upsert',word:clone(next)}:{type:'rename',oldKey:before.key,word:clone(next)});}
+    else fail('未知的同步操作');
+    return operations;
+  }
+  class CloudError extends Error{constructor(message,status,code){super(message);this.status=status;this.code=code;}}
+  function create(options){
+    const local=options?.localStore;if(!local?.replaceSnapshot||!local?.exportData||!local?.normalizeWord)fail('词库缺少云同步需要的本地接口');
+    const endpoint=String(options.endpoint||''),apiKey=String(options.apiKey||'');if(!/^https:\/\//.test(endpoint)||!apiKey||typeof options.getAccessToken!=='function')fail('云端连接配置不完整');
+    const fetcher=options.fetch||root.fetch?.bind(root),storage=options.storage||root.localStorage,crypto=options.crypto||root.crypto;if(!fetcher||!storage)fail('当前浏览器无法连接或保存云同步队列');
+    const host=new URL(endpoint).host,newId=()=>uuid(crypto),listeners=new Set();let userId=null,active=false,remote=null,revision=null,syncPromise=null,seedPromise=null,applyPromise=null,clock=null,writes=0,lastSync=null,error=null,online=true,serial=0;
+    const normalize=local.normalizeWord;
+    const scope=id=>`${PREFIX}${host}:${id}:`,opPrefix=id=>scope(id)+'op:',flagKey=id=>scope(id)+'active',cacheOwnerKey=`${PREFIX}${host}:cache-owner`;
+    function otherPending(id){const prefix=`${PREFIX}${host}:`;let count=0;for(let i=0;i<storage.length;i++){const key=storage.key(i);if(key?.startsWith(prefix)&&key.includes(':op:')&&!key.startsWith(opPrefix(id)))count++;}return count;}
+    function operations(id=userId){if(!id)return [];const prefix=opPrefix(id),result=[];for(let i=0;i<storage.length;i++){const key=storage.key(i);if(!key?.startsWith(prefix))continue;let item;try{item=JSON.parse(storage.getItem(key));}catch(cause){fail('同步队列无法读取；请先导出本地词库备份');}if(!item||item.id!==key.slice(prefix.length)||item.owner!==id)fail('同步队列格式不正确；请先导出备份');result.push(item);}return result.sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id));}
+    function state(){return {active,syncing:!!syncPromise,pending:operations().length,online,lastSync,error,userId};}
+    function emit(){const value=state();for(const listener of [...listeners]){try{listener(value);}catch(cause){}}}
+    function saveOp(op){op.id=newId();op.owner=userId;op.at=Date.now()*1000+(serial++%1000);storage.setItem(opPrefix(op.owner)+op.id,JSON.stringify(op));emit();return op;}
+    function removeOp(op){storage.removeItem(opPrefix(op.owner)+op.id);emit();}
+    function updateOp(op){storage.setItem(opPrefix(op.owner)+op.id,JSON.stringify(op));emit();}
+    function queueMany(items){const saved=[];try{for(const item of items)saved.push(saveOp(item));return saved;}catch(cause){for(const item of saved)removeOp(item);throw new Error('本地同步队列存储不足，请先导出词库备份');}}
+    async function request(action,values={}){const token=await options.getAccessToken();if(typeof token!=='string'||!token)throw new CloudError('请先登录云端词库',401,'login_required');let subject;try{const piece=token.split('.')[1].replace(/-/g,'+').replace(/_/g,'/');subject=JSON.parse((root.atob||atob)(piece)).sub;}catch(cause){throw new CloudError('登录状态无效，请重新登录',401,'invalid_token');}if(subject!==userId)throw new CloudError('登录账号已改变，请重新连接词库',401,'account_changed');
+      let response;try{response=await fetcher(endpoint,{method:'POST',headers:{'Content-Type':'application/json',apikey:apiKey,Authorization:'Bearer '+token},body:JSON.stringify({action,...values})});}catch(cause){throw new CloudError('网络暂不可用，改动已保存在本机',0,'offline');}
+      let body;try{body=await response.json();}catch(cause){body={};}if(!response.ok)throw new CloudError(body.error||'云端请求失败',response.status,body.code||'request_failed');if(!Object.prototype.hasOwnProperty.call(body,'data'))throw new CloudError('云端响应格式不正确',502,'invalid_response');online=true;return body.data;
+    }
+    async function snapshot(){const value=await request('snapshot');if(!Number.isSafeInteger(value?.revision)||!validBackup(value.backup))fail('云端快照格式不正确');return clone(value);}
+    async function inspect(id){if(typeof id!=='string'||!id)fail('请先登录');if(active&&userId!==id)fail('请先退出原账号的云同步');if(applyPromise)await applyPromise.catch(()=>{});const prior=userId;userId=id;try{const [localBackup,cloud]=await Promise.all([local.exportData(),snapshot()]);return {localWords:localBackup.words.length,cloudWords:cloud.backup.words.length,revision:cloud.revision,pending:operations(id).length,otherAccountPending:otherPending(id),otherAccountCache:!!storage.getItem(cacheOwnerKey)&&storage.getItem(cacheOwnerKey)!==id,wasActive:storage.getItem(flagKey(id))==='1'};}finally{userId=prior;}}
+    async function resolveUnfinishedEdit(op){if(op.kind!=='edit'||op.after)return op;const list=await local.list(),target=op.desiredKey||op.before.key,current=list.find(word=>word.key===target);if(!current||JSON.stringify(current)===JSON.stringify(op.before)){removeOp(op);return null;}op.after=current;updateOp(op);return op;}
+    async function runSync(){if(!active)return state();const runningUser=userId;let needApply=false,needCanonical=false;error=null;emit();try{
+        if(seedPromise)await seedPromise;
+        if(!active||userId!==runningUser||writes)return state();
+        if(!remote){remote=await snapshot();revision=remote.revision;needApply=true;}
+        for(let op of operations()){
+          if(!active||userId!==runningUser)return state();
+          op=await resolveUnfinishedEdit(op);if(!op)continue;
+          let completed=false;
+          for(let attempt=0;attempt<5&&!completed;attempt++){
+            const candidate=clone(remote.backup),changes=applyOperation(candidate,op,normalize,newId);
+            if(!changes.length){removeOp(op);completed=true;break;}
+            try{const result=await request('mutate',{baseRevision:revision,operationId:op.id,operations:changes});if(!active||userId!==runningUser)return state();if(!Number.isSafeInteger(result?.revision))fail('云端版本格式不正确');revision=result.revision;remote={revision,backup:candidate};needCanonical ||= changes.some(change=>change.type==='upsert'||change.type==='rename');removeOp(op);completed=true;}
+            catch(cause){if(cause.code!=='revision_conflict')throw cause;remote=await snapshot();revision=remote.revision;needApply=true;}
+          }
+          if(!completed)fail('云端同时发生多次修改，请稍后重试');
+        }
+        const current=await request('head');if(!Number.isSafeInteger(current?.revision))fail('云端版本格式不正确');if(current.revision!==revision||needCanonical){remote=await snapshot();revision=remote.revision;needApply=true;}
+        if(active&&userId===runningUser&&!operations().length&&!writes&&needApply){
+          // Hold local mutations until the authoritative replacement commits.
+          // Otherwise an edit started during this await can be overwritten.
+          const applying=local.replaceSnapshot(remote.backup);applyPromise=applying;
+          try{await applying;storage.setItem(cacheOwnerKey,runningUser);}finally{if(applyPromise===applying)applyPromise=null;}
+        }
+        lastSync=new Date().toISOString();online=true;error=null;emit();return state();
+      }catch(cause){online=cause.status===0?false:online;error=cause.message||'同步失败';emit();throw cause;}
+    }
+    function sync(){if(!active)return Promise.resolve(state());if(syncPromise)return syncPromise;syncPromise=runSync().finally(()=>{syncPromise=null;emit();});emit();return syncPromise;}
+    function schedule(){if(!active)return;Promise.resolve().then(()=>sync()).catch(()=>{});}
+    function startPolling(){if(clock||!root.setInterval)return;clock=root.setInterval(()=>{if(!root.document||root.document.visibilityState==='visible')schedule();},POLL_MS);}
+    function stopPolling(){if(clock&&root.clearInterval)root.clearInterval(clock);clock=null;}
+    async function activate({userId:id,initial='use-cloud'}={}){
+      if(typeof id!=='string'||!id)fail('请先登录');if(!['use-cloud','merge-local','resume'].includes(initial))fail('同步方式不正确');if(active&&userId!==id)fail('请先退出原账号的云同步');
+      if(otherPending(id))fail('另一个账号仍有待同步修改，请先用原账号完成同步');
+      const pending=operations(id).length,owner=storage.getItem(cacheOwnerKey);
+      if(initial==='use-cloud'&&pending)fail('本机还有未完成的上传；请继续合并本地词库，不能直接覆盖');
+      if(initial==='merge-local'&&owner&&owner!==id)fail('本地词库属于另一个云端账号，不能合并到当前账号');
+      if(active)return sync();userId=id;
+      const started=storage.getItem(flagKey(id))==='1';
+      if(initial==='resume'&&!started)fail('这台浏览器尚未连接云词库');
+      active=true;emit();
+      try{
+        if(initial==='merge-local'&&!pending&&!started){
+          // Publish the active facade before reading the baseline. Mutators wait
+          // for this seed, so its restore operations always precede later edits.
+          seedPromise=(async()=>{
+            if(applyPromise)await applyPromise.catch(()=>{});
+            const backup=await local.exportData();
+            if(!active||userId!==id)fail('同步初始化已中断，请重试');
+            if(backup.words.length){const chunks=[];for(let i=0;i<backup.words.length;i+=CHUNK)chunks.push({kind:'restore',words:backup.words.slice(i,i+CHUNK)});queueMany(chunks);}
+          })();
+          await seedPromise;
+          seedPromise=null;
+        }
+        if(!active||userId!==id)fail('同步初始化已中断，请重试');
+        storage.setItem(flagKey(id),'1');if(initial==='merge-local')storage.setItem(cacheOwnerKey,id);startPolling();emit();
+        return await sync();
+      }catch(cause){
+        if(seedPromise){seedPromise=null;if(userId===id){active=false;userId=null;stopPolling();emit();}}
+        if(initial==='resume')return state();throw cause;
+      }
+    }
+    function deactivate(){active=false;remote=null;revision=null;userId=null;stopPolling();emit();}
+    async function mutate(items,operation,after){const wasActive=active,operationUser=userId;if(seedPromise)await seedPromise;if(applyPromise)await applyPromise.catch(()=>{});if(active!==wasActive||(wasActive&&userId!==operationUser))fail('同步账号已改变，请重试');if(!active)return operation();const queued=queueMany(items);let applied=false;writes++;try{const result=await operation();applied=true;storage.setItem(cacheOwnerKey,userId);if(after)await after(queued,result);schedule();return result;}catch(cause){if(!applied)for(const op of queued)removeOp(op);throw cause;}finally{writes--;if(!writes)schedule();}}
+    async function byId(id){if(applyPromise)await applyPromise.catch(()=>{});return (await local.list()).find(word=>word.id===id)||fail('这个词已被删除，请刷新词库');}
+    async function edit(id,call,desiredKey){const before=await byId(id);return mutate([{kind:'edit',before,after:null,desiredKey:desiredKey||before.key}],call,async queued=>{const after=(await local.list()).find(word=>word.key===(desiredKey||before.key));if(!after)fail('无法读取编辑后的词条');queued[0].after=after;updateOp(queued[0]);});}
+    const facade={
+      ready:local.ready,normalizeWord:local.normalizeWord,LIMITS:local.LIMITS,
+      list:options=>local.list(options),exportData:()=>local.exportData(),replaceSnapshot:backup=>local.replaceSnapshot(backup),subscribe:listener=>local.subscribe(listener),
+      inspect,activate,deactivate,sync,subscribeStatus(listener){if(typeof listener!=='function')fail('监听器不正确');listeners.add(listener);listener(state());return ()=>listeners.delete(listener);},get status(){return state();},get storageMode(){return local.storageMode;},
+      importEntries(entries){if(!Array.isArray(entries))return local.importEntries(entries);const items=[];for(let i=0;i<entries.length;i+=CHUNK)items.push({kind:'import',entries:clone(entries.slice(i,i+CHUNK))});return mutate(items,()=>local.importEntries(entries));},
+      collect(entry){return facade.importEntries([entry]);},
+      async setForgotten(id,value){const word=await byId(id);return mutate([{kind:'forget',key:word.key,forgotten:value}],()=>local.setForgotten(id,value));},
+      uncollect(sourceId){return mutate([{kind:'uncollect',sourceId}],()=>local.uncollect(sourceId));},
+      async deleteWord(id){const word=await byId(id);return mutate([{kind:'delete',key:word.key}],()=>local.deleteWord(id));},
+      async updateWord(id,patch){const before=await byId(id),key=Object.prototype.hasOwnProperty.call(patch||{},'word')?normalize(patch.word):before.key;return edit(id,()=>local.updateWord(id,patch),key);},
+      async updateContent(wordId,contentId,patch){return edit(wordId,()=>local.updateContent(wordId,contentId,patch));},
+      async updateDetails(id,patch){const before=await byId(id),key=Object.prototype.hasOwnProperty.call(patch||{},'word')?normalize(patch.word):before.key;return edit(id,()=>local.updateDetails(id,patch),key);},
+      restoreData(backup){if(!validBackup(backup))return local.restoreData(backup);const items=[];for(let i=0;i<backup.words.length;i+=CHUNK)items.push({kind:'restore',words:clone(backup.words.slice(i,i+CHUNK))});return mutate(items,()=>local.restoreData(backup));},
+    };
+    root.addEventListener?.('online',schedule);root.addEventListener?.('focus',schedule);
+    root.addEventListener?.('storage',event=>{if(userId&&event.key?.startsWith(scope(userId)))schedule();});
+    return Object.freeze(facade);
+  }
+  root.IeltsVocabCloud=Object.freeze({create,CloudError});
+})(typeof window!=='undefined'?window:globalThis);
+</script><script>(function(root){
+  'use strict';
+  const config=root.IeltsCloudConfig||{};
+  let configured=typeof config.projectUrl==='string'&&/^https:\/\/[^/]+$/.test(config.projectUrl.replace(/\/$/,''))&&typeof config.publishableKey==='string'&&config.publishableKey.length>10&&root.location?.protocol!=='file:';
+  const base=configured?config.projectUrl.replace(/\/$/,''):'';
+  const sessionKey='ielts-cloud-session-v1';
+  const listeners=new Set();
+  const localStore=root.IeltsVocab;
+  let adapter=null,session=null,refreshing=null,phase=configured?'signed-out':'unconfigured',inspection=null,error=null,notice=null;
+  let cloudStatus={active:false,syncing:false,pending:0,online:true,lastSync:null,error:null,userId:null};
+
+  function readSession(){try{const value=JSON.parse(root.localStorage.getItem(sessionKey)||'null');return value?.projectUrl===base&&typeof value.accessToken==='string'&&typeof value.refreshToken==='string'&&typeof value.userId==='string'&&typeof value.expiresAt==='number'?value:null;}catch{return null;}}
+  function writeSession(value){session=value;try{value?root.localStorage.setItem(sessionKey,JSON.stringify(value)):root.localStorage.removeItem(sessionKey);}catch{notice='登录状态无法持久保存，请检查浏览器存储权限。';}notify();}
+  function linkedKey(userId){return 'ielts-cloud-linked-v1:'+new URL(base).host+':'+userId;}
+  function linked(userId){try{return root.localStorage.getItem(linkedKey(userId))==='yes';}catch{return false;}}
+  function markLinked(userId){try{root.localStorage.setItem(linkedKey(userId),'yes');}catch{notice='同步已连接，但浏览器无法保存登录标记。';}}
+  function state(){return {configured,phase,email:session?.email||'',userId:session?.userId||null,localWords:inspection?.localWords??null,cloudWords:inspection?.cloudWords??null,revision:inspection?.revision??null,otherAccountPending:inspection?.otherAccountPending||false,otherAccountCache:inspection?.otherAccountCache||false,pending:cloudStatus.pending,syncing:cloudStatus.syncing,online:cloudStatus.online,lastSync:cloudStatus.lastSync,error:error||cloudStatus.error,notice};}
+  function notify(){const current=state();for(const listener of [...listeners]){try{listener(current);}catch{}}}
+  function fail(message){throw new Error(message);}
+  function cleanError(response,data){if(response.status===429)return '请求太频繁，请稍后再试。';const code=data?.error_code||data?.code||'';if(code==='email_not_confirmed')return '请先打开验证邮件，再登录。';if(code==='invalid_credentials'||response.status===400&&/invalid login/i.test(data?.msg||data?.message||''))return '邮箱或密码不正确。';if(code==='over_email_send_rate_limit')return '验证邮件发送过于频繁，请稍后再试。';return response.status>=500?'登录服务暂时不可用，请稍后重试。':'登录未完成，请检查邮箱和密码。';}
+  async function authRequest(path,body,token){
+    if(!configured)fail('云端尚未配置。');
+    const response=await root.fetch(base+'/auth/v1/'+path,{method:'POST',headers:{apikey:config.publishableKey,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:JSON.stringify(body||{}),cache:'no-store'});
+    const data=await response.json().catch(()=>({}));
+    if(!response.ok)fail(cleanError(response,data));return data;
+  }
+  function acceptSession(data,old=session){const user=data.user||old&&{id:old.userId,email:old.email};if(typeof data.access_token!=='string'||typeof data.refresh_token!=='string'||typeof user?.id!=='string')fail('登录返回的数据不完整，请重试。');const expiresAt=Number.isFinite(data.expires_at)?data.expires_at*1000:Date.now()+Math.max(60,Number(data.expires_in)||3600)*1000;writeSession({projectUrl:base,accessToken:data.access_token,refreshToken:data.refresh_token,expiresAt,userId:user.id,email:user.email||old?.email||''});}
+  async function getAccessToken(){
+    if(!session)fail('请先登录云端词库。');
+    if(session.expiresAt>Date.now()+60000)return session.accessToken;
+    if(refreshing)return refreshing;
+    const refresh=async()=>{
+      const latest=readSession();if(latest&&latest.userId===session?.userId&&latest.expiresAt>Date.now()+60000){session=latest;notify();return latest.accessToken;}
+      const previous=session;const data=await authRequest('token?grant_type=refresh_token',{refresh_token:(latest?.userId===previous.userId?latest:previous).refreshToken});
+      if(session?.userId!==previous.userId)fail('登录账号已更换，请重试。');acceptSession(data,previous);return session.accessToken;
+    };
+    refreshing=(async()=>root.navigator?.locks?.request?root.navigator.locks.request('ielts-cloud-token-refresh',refresh):refresh())();
+    try{return await refreshing;}finally{refreshing=null;}
+  }
+
+  if(configured){
+    try{
+      adapter=root.IeltsVocabCloud.create({localStore,endpoint:base+'/functions/v1/vocabulary',apiKey:config.publishableKey,getAccessToken,storage:root.localStorage});
+      adapter.subscribeStatus(value=>{cloudStatus=value;if(phase==='active'&&!value.error&&!value.pending&&!value.syncing)error=null;notify();});
+      root.IeltsVocab=adapter;
+      session=readSession();
+    }catch(cause){configured=false;phase='unconfigured';error='当前浏览器无法保存同步状态，请检查站点存储权限。';adapter=null;root.IeltsVocab=localStore;}
+  }
+  async function prepare(){
+    if(!configured||!session)return state();phase='checking';error=null;notice=null;inspection=null;notify();
+    try{
+      if(linked(session.userId)){
+        // activate() journals edits synchronously before its first network await.
+        // Doing this before token refresh prevents offline page-load edits being
+        // overwritten by a later cloud snapshot.
+        await adapter.activate({userId:session.userId,initial:'resume'});phase='active';
+      }else{
+        await getAccessToken();inspection=await adapter.inspect(session.userId);phase='choice';
+      }
+      notify();return state();
+    }catch(cause){
+      if(adapter?.status.active&&adapter.status.userId===session?.userId){markLinked(session.userId);phase='active';error=cause?.message||'暂未同步，联网后会重试。';notify();return state();}
+      phase='error';error=cause?.message||'无法连接云端，请稍后重试。';notify();throw cause;
+    }
+  }
+  async function signIn(email,password){
+    if(!configured)fail('云端尚未配置。');
+    if(cloudStatus.pending>0)fail('还有未同步的修改，请联网同步后再切换账号。');
+    email=String(email||'').trim();if(!email||!password)fail('请填写邮箱和密码。');
+    const data=await authRequest('token?grant_type=password',{email,password});
+    if(cloudStatus.pending>0)fail('登录期间产生了未同步的修改，请先完成同步再切换账号。');
+    adapter.deactivate();inspection=null;error=null;notice=null;acceptSession(data);
+    await prepare();return state();
+  }
+  async function signUp(email,password){
+    if(!configured)fail('云端尚未配置。');
+    if(cloudStatus.pending>0)fail('还有未同步的修改，请联网同步后再切换账号。');
+    email=String(email||'').trim();if(!email||typeof password!=='string'||password.length<6)fail('请填写邮箱和至少 6 位密码。');
+    const data=await authRequest('signup',{email,password});
+    if(data.access_token||data.session?.access_token){if(cloudStatus.pending>0)fail('注册期间产生了未同步的修改，请先完成同步再切换账号。');adapter.deactivate();acceptSession(data.session||data);await prepare();}
+    else{notice='请打开邮箱中的验证邮件，完成后回来登录。';notify();}
+    return state();
+  }
+  async function choose(initial){
+    if(phase!=='choice'||!session||!['merge-local','use-cloud'].includes(initial))fail('当前没有待选择的词库。');
+    phase='checking';error=null;notify();
+    try{await adapter.activate({userId:session.userId,initial});markLinked(session.userId);phase='active';notify();return state();}
+    catch(cause){
+      if(adapter.status.active&&adapter.status.userId===session.userId){markLinked(session.userId);phase='active';error=cause?.message||'暂未同步，联网后会重试。';notify();return state();}
+      phase='choice';error=cause?.message||'同步未完成，请重试。';notify();throw cause;
+    }
+  }
+  async function sync(){if(!configured||!session)fail('请先登录云端词库。');if(phase!=='active')return prepare();await adapter.sync();return state();}
+  async function signOut(){
+    if(cloudStatus.pending>0)fail('还有未同步的修改，请联网同步后再退出。');
+    const token=session?.accessToken;adapter?.deactivate();writeSession(null);phase='signed-out';inspection=null;error=null;notice='已退出云端账号，本机词库仍保留。';notify();
+    if(token)authRequest('logout',{},token).catch(()=>{});
+    return state();
+  }
+  function subscribe(listener){if(typeof listener!=='function')fail('监听器不正确');listeners.add(listener);listener(state());return ()=>listeners.delete(listener);}
+  root.IeltsCloudAuth=Object.freeze({configured,get ready(){return ready;},get state(){return state();},subscribe,signIn,signUp,choose,sync,signOut,retry:prepare,getAccessToken});
+  root.addEventListener?.('storage',event=>{if(!configured||event.key!==sessionKey)return;const latest=readSession();if(!latest){adapter.deactivate();session=null;phase='signed-out';inspection=null;notify();return;}if(latest.userId!==session?.userId){adapter.deactivate();session=latest;prepare().catch(()=>{});}else{session=latest;notify();}});
+  const ready=configured&&session?prepare().catch(()=>state()):Promise.resolve(state());
 })(typeof window!=='undefined'?window:globalThis);
 </script><script>/*! fflate 0.8.2
 MIT License
@@ -374,6 +660,32 @@ SOFTWARE.
   $('#word-import-confirm').onclick=()=>action(async()=>{if(!pendingEntries)return;const result=await store.importEntries(pendingEntries);clearPreview();$('#word-import-input').value='';await refresh();status('已新增 '+result.addedWords+' 个词、'+result.addedContents+' 条资料。');showImport(false);});
   $('#word-backup-export').onclick=()=>action(async()=>{download(await store.exportData());status('词库备份已导出。');});
   $('#word-backup-import').onchange=e=>action(async()=>{const file=e.target.files?.[0];try{if(!file)return;if(file.size>50*1024*1024)throw Error('备份超过 50 MB。');const result=await store.restoreData(JSON.parse(await file.text()));await refresh();status('已合并备份，新增 '+result.addedWords+' 个词、'+result.addedContents+' 条资料。');}finally{e.target.value='';}});
+  const cloud=window.IeltsCloudAuth;let cloudBusy=false,cloudUiError='';
+  function renderCloud(state){
+    const signedIn=Boolean(state.userId),choice=state.phase==='choice',active=state.phase==='active';
+    $('#word-cloud-login').hidden=!state.configured||signedIn;$('#word-cloud-choice').hidden=!choice;$('#word-cloud-connected').hidden=!active;$('#word-cloud-retry').hidden=state.phase!=='error';$('#word-cloud-logout').hidden=!signedIn;
+    $('#word-cloud-user').textContent=state.email;
+    $('#word-cloud-use').hidden=state.otherAccountPending;$('#word-cloud-merge').hidden=state.otherAccountPending||state.otherAccountCache;
+    $('#word-cloud-use').textContent=state.cloudWords?'使用云端词库':'使用空白云端词库';
+    $('#word-cloud-merge').textContent=state.cloudWords?'合并本机词库':'上传本机词库';
+    $('#word-cloud-choice-text').textContent=state.otherAccountPending?'另一账号还有未同步的修改。请退出登录，先用原账号完成同步。':state.otherAccountCache?'本机词库来自另一账号，不能合并到当前账号。选择云端词库会替换本机词库；也可以退出并登录原账号。':state.cloudWords?'云端有 '+state.cloudWords+' 词，本机有 '+state.localWords+' 词。以云端为准会覆盖本机词库；合并可能恢复此前在别处删除的词。':'云端词库为空，本机有 '+state.localWords+' 词。可上传本机词库；选择空白云端词库会清空本机词库，建议先导出备份。';
+    const summary=state.phase==='unconfigured'?'云端尚未配置。':state.phase==='checking'?'正在连接…':choice?'请选择首次同步方式。':active?(state.syncing?'正在同步…':state.pending?'有 '+state.pending+' 项待同步。':state.online?'已同步。':'离线，稍后自动同步。'):'登录同一账号后，手机和电脑可共用词库。';
+    $('#word-cloud-state').textContent=cloudUiError||state.error||state.notice||summary;
+    $('#word-cloud-toggle').title=state.error||summary;
+    $('#word-cloud-toggle').dataset.state=state.error?'error':state.pending?'pending':active?'active':'local';
+  }
+  async function cloudAction(operation){if(cloudBusy)return;cloudBusy=true;cloudUiError='';renderCloud(cloud.state);try{await operation();await refresh();}catch(error){cloudUiError=error?.message||'云端操作未完成，请重试。';renderCloud(cloud.state);}finally{cloudBusy=false;}}
+  $('#word-cloud-toggle').onclick=()=>{const open=$('#word-cloud-panel').hidden;$('#word-cloud-panel').hidden=!open;$('#word-cloud-toggle').setAttribute('aria-expanded',String(open));if(open&&cloud.state.phase==='signed-out')$('#word-cloud-email').focus();};
+  $('#word-cloud-close').onclick=()=>{$('#word-cloud-panel').hidden=true;$('#word-cloud-toggle').setAttribute('aria-expanded','false');};
+  $('#word-cloud-login').onsubmit=e=>{e.preventDefault();if(!editingGuard())return;cloudAction(async()=>{await cloud.signIn($('#word-cloud-email').value,$('#word-cloud-password').value);$('#word-cloud-password').value='';});};
+  $('#word-cloud-signup').onclick=()=>{if(!editingGuard())return;cloudAction(async()=>{await cloud.signUp($('#word-cloud-email').value,$('#word-cloud-password').value);$('#word-cloud-password').value='';});};
+  $('#word-cloud-use').onclick=()=>{if(editingGuard())cloudAction(()=>cloud.choose('use-cloud'));};
+  $('#word-cloud-merge').onclick=()=>{if(editingGuard())cloudAction(()=>cloud.choose('merge-local'));};
+  $('#word-cloud-sync').onclick=()=>cloudAction(()=>cloud.sync());
+  $('#word-cloud-retry').onclick=()=>cloudAction(()=>cloud.retry());
+  $('#word-cloud-logout').onclick=()=>{if(editingGuard())cloudAction(()=>cloud.signOut());};
+  cloud.subscribe(state=>{if(state.phase==='active'&&!state.error&&!state.pending&&!state.syncing)cloudUiError='';renderCloud(state);});
+  if(cloud.configured)$('.word-import-help').textContent='支持文本、CSV、Excel（.xlsx）和 JSON。词库先保存在本机，登录后会同步。';
   document.addEventListener('keydown',e=>{if(e.target.closest('input,textarea,select')||!$('#word-delete-confirm').hidden)return;if(overview)return;if(e.key==='ArrowRight'){e.preventDefault();move(true);}if(e.key==='ArrowLeft'){e.preventDefault();move(false);}if(e.key===' '&&!e.target.closest('button,a')){e.preventDefault();reveal();}});
   window.addEventListener('storage',e=>{if(e.key==='ielts-theme')theme(e.newValue==='dark');});
   store.subscribe(refresh);refresh();

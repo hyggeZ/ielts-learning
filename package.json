@@ -8,6 +8,6 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "node scripts/test-dom.cjs && node scripts/test-import-print.cjs && node scripts/test-vocab-store.cjs && node scripts/test-vocab-page.cjs && node scripts/test-vocab-integration.cjs && node --experimental-strip-types supabase/tests/edge-function.test.mjs"
+    "test": "node scripts/test-dom.cjs && node scripts/test-import-print.cjs && node scripts/test-vocab-store.cjs && node scripts/test-vocab-page.cjs && node scripts/test-vocab-integration.cjs && node scripts/test-vocab-cloud.cjs && node scripts/test-cloud-auth.cjs && node --experimental-strip-types supabase/tests/edge-function.test.mjs"
   }
 }

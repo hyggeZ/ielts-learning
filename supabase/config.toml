@@ -1,3 +1,3 @@
-# Reserved for the optional future cloud backend; no project is linked here.
+# Vocabulary sync function; keep JWT verification enabled when deploying.
 [functions.vocabulary]
 verify_jwt = true

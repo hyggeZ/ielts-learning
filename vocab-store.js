@@ -81,5 +81,29 @@
   async function exportData(){return transaction(false,state=>({format:'ielts-vocabulary',version:1,words:fullWords(state)}));}
   function backupWords(data){if(!data||data.format!=='ielts-vocabulary'||data.version!==1||!Array.isArray(data.words)||data.words.length>LIMITS.words)fail('词库备份格式不正确');let contentCount=0;return data.words.map(item=>{if(!item||typeof item!=='object'||Array.isArray(item))fail('词库备份词条不正确');const word=wordText(item.word),key=normalizeWord(word),aliases=strings(item.aliases,'词形',true);if(typeof item.forgotten!=='boolean'||!Number.isSafeInteger(item.forgetCount)||item.forgetCount<0||item.forgetCount>1000000000)fail('词库学习状态不正确');if(!Array.isArray(item.contents)||item.contents.length>LIMITS.contents)fail('词库资料不正确');contentCount+=item.contents.length;if(contentCount>LIMITS.contents)fail('词库资料过多');const createdAt=text(item.createdAt,'创建时间',100);if(!createdAt||!Number.isFinite(Date.parse(createdAt)))fail('创建时间不正确');const contents=item.contents.map(content=>{if(!content||typeof content!=='object'||!Array.isArray(content.sources)||content.sources.length>LIMITS.sources)fail('资料来源不正确');return {...contentFields(content),sources:content.sources.map(source=>{if(!source||typeof source.collected!=='boolean')fail('收藏状态不正确');return {id:identifier(source.id,'来源编号'),label:text(source.label,'来源',500),quote:text(source.quote,'原文摘录'),collected:source.collected};})};});return {word,key,aliases,forgotten:item.forgotten,forgetCount:item.forgetCount,createdAt,contents};});}
   async function restoreData(data){const incoming=backupWords(data);return transaction(true,state=>{let addedWords=0,addedContents=0;for(const item of incoming){let word=state.words.find(word=>word.key===item.key);if(!word){if(state.words.length>=LIMITS.words)fail('词库数量超过上限');word={id:uid('w'),key:item.key,word:item.word,aliases:[],forgotten:item.forgotten,forgetCount:item.forgetCount,createdAt:item.createdAt};state.words.push(word);addedWords++;}else{word.forgotten=word.forgotten||item.forgotten;word.forgetCount=Math.max(word.forgetCount,item.forgetCount);}word.aliases=mergeAliases(word.aliases,item.aliases).filter(a=>normalizeWord(a)!==word.key);for(const source of item.contents){let content=state.contents.find(c=>c.wordId===word.id&&fingerprint(c)===fingerprint(source));if(!content){if(state.contents.length>=LIMITS.contents)fail('词库资料数量超过上限');content={id:uid('c'),wordId:word.id,...contentFields(source),sources:[]};state.contents.push(content);addedContents++;}mergeSources(content,source.sources);}}return {addedWords,addedContents};});}
-  root.IeltsVocab=Object.freeze({ready,normalizeWord,list,importEntries,collect:entry=>importEntries([entry]),uncollect,setForgotten,updateWord,updateContent,updateDetails,deleteWord,exportData,restoreData,subscribe(listener){if(typeof listener!=='function')fail('监听器不正确');listeners.add(listener);return ()=>listeners.delete(listener);},get storageMode(){return mode;},LIMITS});
+  // Cloud snapshots are authoritative. Merge-style restoreData cannot propagate a
+  // remote deletion or a forgotten=false update, so replace both stores atomically.
+  async function replaceSnapshot(data){const incoming=backupWords(data);const validId=value=>{if(value===undefined||value===null)return null;const id=identifier(value,'词库编号');if(!/^[A-Za-z0-9][A-Za-z0-9:_-]{0,159}$/.test(id))fail('词库编号格式不正确');return id;};return transaction(true,state=>{
+    const previousWords=new Map(state.words.map(word=>[word.key,word]));
+    const previousContents=new Map(state.contents.map(content=>[content.wordId+'\0'+fingerprint(content),content]));
+    const nextWords=[],nextContents=[],wordKeys=new Set(),wordIds=new Set(),contentIds=new Set();
+    for(let i=0;i<incoming.length;i++){
+      const item=incoming[i],raw=data.words[i];if(wordKeys.has(item.key))fail('云端词库含重复单词');wordKeys.add(item.key);
+      const id=validId(raw.id)||previousWords.get(item.key)?.id||uid('w');if(wordIds.has(id))fail('云端词库含重复编号');wordIds.add(id);
+      nextWords.push({id,key:item.key,word:item.word,aliases:item.aliases.filter(alias=>normalizeWord(alias)!==item.key),forgotten:item.forgotten,forgetCount:item.forgetCount,createdAt:item.createdAt});
+      const signatures=new Set();
+      for(let j=0;j<item.contents.length;j++){
+        const source=item.contents[j],signature=fingerprint(source),rawContent=raw.contents[j];
+        if(signatures.has(signature))fail('云端词库含重复资料');signatures.add(signature);
+        const old=previousWords.get(item.key),prior=old&&previousContents.get(old.id+'\0'+signature);
+        const contentId=validId(rawContent.id)||prior?.id||uid('c');if(contentIds.has(contentId))fail('云端词库含重复资料编号');contentIds.add(contentId);
+        const sourceIds=new Set();for(const entry of source.sources){if(sourceIds.has(entry.id))fail('云端资料含重复来源');sourceIds.add(entry.id);}
+        nextContents.push({id:contentId,wordId:id,...contentFields(source),sources:clone(source.sources)});
+      }
+    }
+    const removedWords=state.words.filter(word=>!wordKeys.has(word.key)).length;
+    state.words=nextWords;state.contents=nextContents;
+    return {words:nextWords.length,contents:nextContents.length,removedWords};
+  });}
+  root.IeltsVocab=Object.freeze({ready,normalizeWord,list,importEntries,collect:entry=>importEntries([entry]),uncollect,setForgotten,updateWord,updateContent,updateDetails,deleteWord,exportData,restoreData,replaceSnapshot,subscribe(listener){if(typeof listener!=='function')fail('监听器不正确');listeners.add(listener);return ()=>listeners.delete(listener);},get storageMode(){return mode;},LIMITS});
 })(typeof window!=='undefined'?window:globalThis);

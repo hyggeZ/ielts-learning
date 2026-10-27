@@ -76,6 +76,32 @@
   $('#word-import-confirm').onclick=()=>action(async()=>{if(!pendingEntries)return;const result=await store.importEntries(pendingEntries);clearPreview();$('#word-import-input').value='';await refresh();status('已新增 '+result.addedWords+' 个词、'+result.addedContents+' 条资料。');showImport(false);});
   $('#word-backup-export').onclick=()=>action(async()=>{download(await store.exportData());status('词库备份已导出。');});
   $('#word-backup-import').onchange=e=>action(async()=>{const file=e.target.files?.[0];try{if(!file)return;if(file.size>50*1024*1024)throw Error('备份超过 50 MB。');const result=await store.restoreData(JSON.parse(await file.text()));await refresh();status('已合并备份，新增 '+result.addedWords+' 个词、'+result.addedContents+' 条资料。');}finally{e.target.value='';}});
+  const cloud=window.IeltsCloudAuth;let cloudBusy=false,cloudUiError='';
+  function renderCloud(state){
+    const signedIn=Boolean(state.userId),choice=state.phase==='choice',active=state.phase==='active';
+    $('#word-cloud-login').hidden=!state.configured||signedIn;$('#word-cloud-choice').hidden=!choice;$('#word-cloud-connected').hidden=!active;$('#word-cloud-retry').hidden=state.phase!=='error';$('#word-cloud-logout').hidden=!signedIn;
+    $('#word-cloud-user').textContent=state.email;
+    $('#word-cloud-use').hidden=state.otherAccountPending;$('#word-cloud-merge').hidden=state.otherAccountPending||state.otherAccountCache;
+    $('#word-cloud-use').textContent=state.cloudWords?'使用云端词库':'使用空白云端词库';
+    $('#word-cloud-merge').textContent=state.cloudWords?'合并本机词库':'上传本机词库';
+    $('#word-cloud-choice-text').textContent=state.otherAccountPending?'另一账号还有未同步的修改。请退出登录，先用原账号完成同步。':state.otherAccountCache?'本机词库来自另一账号，不能合并到当前账号。选择云端词库会替换本机词库；也可以退出并登录原账号。':state.cloudWords?'云端有 '+state.cloudWords+' 词，本机有 '+state.localWords+' 词。以云端为准会覆盖本机词库；合并可能恢复此前在别处删除的词。':'云端词库为空，本机有 '+state.localWords+' 词。可上传本机词库；选择空白云端词库会清空本机词库，建议先导出备份。';
+    const summary=state.phase==='unconfigured'?'云端尚未配置。':state.phase==='checking'?'正在连接…':choice?'请选择首次同步方式。':active?(state.syncing?'正在同步…':state.pending?'有 '+state.pending+' 项待同步。':state.online?'已同步。':'离线，稍后自动同步。'):'登录同一账号后，手机和电脑可共用词库。';
+    $('#word-cloud-state').textContent=cloudUiError||state.error||state.notice||summary;
+    $('#word-cloud-toggle').title=state.error||summary;
+    $('#word-cloud-toggle').dataset.state=state.error?'error':state.pending?'pending':active?'active':'local';
+  }
+  async function cloudAction(operation){if(cloudBusy)return;cloudBusy=true;cloudUiError='';renderCloud(cloud.state);try{await operation();await refresh();}catch(error){cloudUiError=error?.message||'云端操作未完成，请重试。';renderCloud(cloud.state);}finally{cloudBusy=false;}}
+  $('#word-cloud-toggle').onclick=()=>{const open=$('#word-cloud-panel').hidden;$('#word-cloud-panel').hidden=!open;$('#word-cloud-toggle').setAttribute('aria-expanded',String(open));if(open&&cloud.state.phase==='signed-out')$('#word-cloud-email').focus();};
+  $('#word-cloud-close').onclick=()=>{$('#word-cloud-panel').hidden=true;$('#word-cloud-toggle').setAttribute('aria-expanded','false');};
+  $('#word-cloud-login').onsubmit=e=>{e.preventDefault();if(!editingGuard())return;cloudAction(async()=>{await cloud.signIn($('#word-cloud-email').value,$('#word-cloud-password').value);$('#word-cloud-password').value='';});};
+  $('#word-cloud-signup').onclick=()=>{if(!editingGuard())return;cloudAction(async()=>{await cloud.signUp($('#word-cloud-email').value,$('#word-cloud-password').value);$('#word-cloud-password').value='';});};
+  $('#word-cloud-use').onclick=()=>{if(editingGuard())cloudAction(()=>cloud.choose('use-cloud'));};
+  $('#word-cloud-merge').onclick=()=>{if(editingGuard())cloudAction(()=>cloud.choose('merge-local'));};
+  $('#word-cloud-sync').onclick=()=>cloudAction(()=>cloud.sync());
+  $('#word-cloud-retry').onclick=()=>cloudAction(()=>cloud.retry());
+  $('#word-cloud-logout').onclick=()=>{if(editingGuard())cloudAction(()=>cloud.signOut());};
+  cloud.subscribe(state=>{if(state.phase==='active'&&!state.error&&!state.pending&&!state.syncing)cloudUiError='';renderCloud(state);});
+  if(cloud.configured)$('.word-import-help').textContent='支持文本、CSV、Excel（.xlsx）和 JSON。词库先保存在本机，登录后会同步。';
   document.addEventListener('keydown',e=>{if(e.target.closest('input,textarea,select')||!$('#word-delete-confirm').hidden)return;if(overview)return;if(e.key==='ArrowRight'){e.preventDefault();move(true);}if(e.key==='ArrowLeft'){e.preventDefault();move(false);}if(e.key===' '&&!e.target.closest('button,a')){e.preventDefault();reveal();}});
   window.addEventListener('storage',e=>{if(e.key==='ielts-theme')theme(e.newValue==='dark');});
   store.subscribe(refresh);refresh();
