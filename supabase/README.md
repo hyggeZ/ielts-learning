@@ -7,7 +7,7 @@
 1. 在用户自己的 Supabase 项目中依次执行 `migrations/202610260001_vocabulary.sql` 与 `migrations/202610270001_vocabulary_sync.sql`。第二个迁移创建版本号和幂等操作记录，并关闭旧的无版本写入口。不要在未知现有数据库里直接执行。
 2. 配置 Supabase Auth 的个人登录方式。在每台设备使用同一账号登录；匿名会话无法跨设备识别为同一人。
 3. 设置 Edge Function 环境变量 `ALLOWED_ORIGINS`，逗号分隔**精确 Origin**，例如 `https://hyggez.github.io,http://127.0.0.1:8765,http://127.0.0.1:8000`。不含路径、末尾斜杠或通配符；`file://` 页面不连接云端。
-4. 部署 `functions/vocabulary/index.ts`，保留 `config.toml` 的 `verify_jwt = true`。托管环境提供 `SUPABASE_URL` 和 `SUPABASE_PUBLISHABLE_KEYS`（JSON，函数取 `default` 键）；仅在前者不可用时回退到托管环境的旧版 `SUPABASE_ANON_KEY`。无需手动设置 Supabase 前缀环境变量。函数使用用户 JWT 调用 PostgREST，不使用 service-role key。
+4. 部署 `functions/vocabulary/index.ts`，关闭控制台的“Verify JWT with legacy secret”（`config.toml` 中 `verify_jwt = false`）。函数会自行向 Supabase Auth 验证用户令牌；旧版网关验证器不能验证新签名密钥签发的令牌。托管环境提供 `SUPABASE_URL` 和 `SUPABASE_PUBLISHABLE_KEYS`（JSON，函数取 `default` 键）；仅在前者不可用时回退到托管环境的旧版 `SUPABASE_ANON_KEY`。无需手动设置 Supabase 前缀环境变量。函数使用用户 JWT 调用 PostgREST，不使用 service-role key。
 5. 用真实测试账号检查登录、初次迁移、两设备增改、取消收藏、忘词状态与彻底删除。仅 Node 模拟测试通过不代表已在真实项目完成验证。
 
 Supabase 官方参考：[Edge Function 授权头](https://supabase.com/docs/guides/functions/auth-headers)、[函数环境变量](https://supabase.com/docs/guides/functions/secrets)、[浏览器 CORS](https://supabase.com/docs/guides/functions/cors)、[PostgreSQL RLS](https://supabase.com/docs/guides/database/postgres/row-level-security)。

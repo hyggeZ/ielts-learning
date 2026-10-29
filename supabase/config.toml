@@ -1,3 +1,4 @@
-# Vocabulary sync function; keep JWT verification enabled when deploying.
+# The function validates the user token with Supabase Auth itself. The legacy
+# gateway verifier rejects newer signing-key JWTs before they reach the function.
 [functions.vocabulary]
-verify_jwt = true
+verify_jwt = false
